@@ -8,7 +8,6 @@ export const Moon = () => {
       x="0px"
       y="0px"
       viewBox="0 0 49.739 49.739"
-      /*   style={{ enableBackground: "new 0 0 49.739 49.739" }} */
       xmlSpace="preserve"
     >
       <path
