@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "./navbar.scss";
 import DarkMode from "../darkmode/DarkMode";
@@ -7,6 +7,7 @@ import DarkMode from "../darkmode/DarkMode";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const location = useLocation();
 
   const navItems = ["Projects", "Bio", "Contact"];
 
@@ -27,34 +28,62 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav>
-      {(toggleMenu || screenWidth > 500) && (
-        <div className="container">
-          <div className="name">Robîn Sahin</div>
-          <div className="list">
-            <ul>
-              <li className="items">
-                <Link className="link" to="/">
-                  Home
-                </Link>
-              </li>
-              {navItems.map((item, index) => (
-                <li key={index} className="items">
-                  <Link className="link" to={"/" + item.toLowerCase()}>
-                    {item}
+    <>
+      <div className="darkModeBtn">
+        <DarkMode />
+      </div>
+
+      <header>
+        <div className="name">Robîn Sahin</div>
+        <nav className={toggleMenu ? "nav-open" : ""}>
+          {(toggleMenu || screenWidth > 500) && (
+            <div className="list">
+              <ul>
+                <li className="items" onClick={() => setToggleMenu(false)}>
+                  <Link
+                    className={
+                      location.pathname === "/" ? "active-link" : "link"
+                    }
+                    to="/"
+                  >
+                    Home
                   </Link>
                 </li>
-              ))}
-            </ul>
-            <DarkMode />
-          </div>
-        </div>
-      )}
+                {navItems.map((item, index) => (
+                  <li
+                    key={index}
+                    className="items"
+                    onClick={() => setToggleMenu(false)}
+                  >
+                    <Link
+                      className={
+                        location.pathname === "/" + item.toLowerCase()
+                          ? "active-link"
+                          : "link"
+                      }
+                      to={"/" + item.toLowerCase()}
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </nav>
 
-      <button onClick={toggleNav} className="btn">
-        BTN
-      </button>
-    </nav>
+        <div className="btnContainer">
+          <button
+            onClick={toggleNav}
+            className={`btn ${toggleMenu ? "open" : ""}`}
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </div>
+      </header>
+    </>
   );
 };
 export default Navbar;
