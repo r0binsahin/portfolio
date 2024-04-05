@@ -1,0 +1,31 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --body-bg: #fff;
+  --body-color: #323131;
+
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+}
+
+[data-theme="dark"] {
+  --body-bg: #111;
+  --body-color: #fff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
+
+* {
+  transition: all 0.9s ease-in-out;
+}
