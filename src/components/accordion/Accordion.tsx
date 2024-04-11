@@ -5,7 +5,6 @@ import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
 import myImg from "../../assets/Krasse.png";
@@ -53,23 +52,25 @@ const Accordion = () => {
   const projects = gsap.utils.toArray<HTMLElement>(".project");
 
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "container",
-        start: () => "top  top",
+        trigger: ".container",
+        start: () => "top top+=74",
         end: () => "+=" + (projects.length + 1) * window.innerHeight,
         scrub: 0.8,
-
         pin: true,
-        pinSpacing: true,
+        invalidateOnRefresh: true,
       },
     });
 
-    tl.to(".project", {
-      yPercent: -52 - (projects.length - 1),
-
-      ease: "none",
-      stagger: 0.5,
+    projects.forEach((project) => {
+      tl.to(project, {
+        yPercent: -96 + projects.length,
+        ease: "none",
+        stagger: 0.5,
+      });
     });
 
     gsap.set(".project", {
@@ -79,23 +80,26 @@ const Accordion = () => {
 
   return (
     <>
-      {" "}
       <div className="helper"></div>
       <div className="container">
         <ul className="projectList">
           {myProjects.map((project, index) => (
             <li className="project" key={index}>
-              <div className="project__header">
-                <p className="project__header--customer">{project.costumer}</p>
-                <p className="project__header--name">{project.name}</p>
-                <p className="project__header--date">{project.date}</p>
-              </div>
-              <div className="project__image">
-                <img
-                  className="project__image--img"
-                  src={myImg}
-                  alt="project image"
-                />
+              <div className="projectInner">
+                <div className="projectInner__header">
+                  <p className="projectInner__header--customer">
+                    {project.costumer}
+                  </p>
+                  <p className="projectInner__header--name">{project.name}</p>
+                  <p className="projectInner__header--date">{project.date}</p>
+                </div>
+                <div className="projectInner__image">
+                  <img
+                    className="projectInner__image--img"
+                    src={myImg}
+                    alt="project image"
+                  />
+                </div>
               </div>
             </li>
           ))}
