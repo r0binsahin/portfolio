@@ -59,20 +59,20 @@ const Accordion = () => {
         trigger: ".container",
         start: () => "top top+=74",
         end: () => "+=" + (projects.length + 1) * window.innerHeight,
+
         scrub: 0.8,
         pin: true,
-        invalidateOnRefresh: true,
       },
     });
 
     tl.to(".project", {
-      yPercent: -52 + projects.length,
+      yPercent: -74 + projects.length + 1,
       ease: "none",
       stagger: 0.5,
     });
 
     gsap.set(".project ", {
-      zIndex: (i, _target, targets) => targets.length + i,
+      zIndex: (i, _target, targets) => targets.length - i,
     });
   }, []);
 
@@ -84,19 +84,19 @@ const Accordion = () => {
           {myProjects.map((project, index) => (
             <li className="project" key={index}>
               <div className="projectInner">
-                <div className="projectInner__header">
-                  <p className="projectInner__header--customer">
-                    {project.costumer}
-                  </p>
-                  <p className="projectInner__header--name">{project.name}</p>
-                  <p className="projectInner__header--date">{project.date}</p>
-                </div>
                 <div className="projectInner__image">
                   <img
                     className="projectInner__image--img"
                     src={myImg}
                     alt="project image"
                   />
+                </div>
+                <div className="projectInner__header">
+                  <p className="projectInner__header--customer">
+                    {project.costumer}
+                  </p>
+                  <p className="projectInner__header--name">{project.name}</p>
+                  <p className="projectInner__header--date">{project.date}</p>
                 </div>
               </div>
             </li>
