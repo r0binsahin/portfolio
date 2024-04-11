@@ -65,16 +65,14 @@ const Accordion = () => {
       },
     });
 
-    projects.forEach((project) => {
-      tl.to(project, {
-        yPercent: -96 + projects.length,
-        ease: "none",
-        stagger: 0.5,
-      });
+    tl.to(".project", {
+      yPercent: -52 + projects.length,
+      ease: "none",
+      stagger: 0.5,
     });
 
-    gsap.set(".project", {
-      zIndex: (i, _target, targets) => targets.length - i,
+    gsap.set(".project ", {
+      zIndex: (i, _target, targets) => targets.length + i,
     });
   }, []);
 
@@ -105,6 +103,7 @@ const Accordion = () => {
           ))}
         </ul>
       </div>
+      <div className="helper"></div>
     </>
   );
 };
