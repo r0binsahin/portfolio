@@ -6,7 +6,10 @@ function Platform() {
   return (
     <>
       <Navbar />
-      <Outlet />
+
+      <div style={{ paddingTop: "74px" }}>
+        <Outlet />
+      </div>
     </>
   );
 }
