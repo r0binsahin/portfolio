@@ -2,7 +2,6 @@ import "./accordion.scss";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP);
@@ -43,16 +42,33 @@ const Accordion = () => {
     {
       name: "Project 4",
       img: "../../assets/Krasse.png",
-      costumer: "lorem comstumer ",
+      costumer: "Lorem Comstumer ",
+      date: "Date yyyy",
+      link: "",
+    },
+    {
+      name: "Project 5",
+      img: "../../assets/Krasse.png",
+      costumer: "Lorem Comstumer ",
       date: "Date yyyy",
       link: "",
     },
   ];
 
+  const calculateYpercentage = () => {
+    let percentage = 0;
+    if (window.innerWidth === 1920) percentage = 70;
+    if (window.innerWidth === 1470) percentage = 82;
+    else percentage === 96;
+    console.log(window.innerWidth, percentage);
+    return percentage;
+  };
+
   const projects = gsap.utils.toArray<HTMLElement>(".project");
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
+    const yPercentage = calculateYpercentage();
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -66,7 +82,8 @@ const Accordion = () => {
     });
 
     tl.to(".project", {
-      yPercent: -74 + projects.length + 1,
+      yPercent: -yPercentage,
+
       ease: "none",
       stagger: 0.5,
     });

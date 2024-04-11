@@ -30,18 +30,24 @@
       }
 
       &:nth-child(2) {
-        transform: translate(0px, 148px);
+        transform: translate(0px, 69px);
       }
 
       &:nth-child(3) {
-        transform: translate(0px, 296px);
+        transform: translate(0px, 138px);
       }
 
       &:nth-child(4) {
-        transform: translate(0px, 444px);
+        transform: translate(0px, 207px);
+      }
+      &:nth-child(5) {
+        transform: translate(0px, 276px);
       }
 
       .projectInner {
+        margin: 0;
+        padding: 0;
+
         &__header {
           display: flex;
           justify-content: space-between;
@@ -50,20 +56,28 @@
           font-size: 28px;
 
           background-color: var(--body-bg);
+          border-bottom: 1px solid var(--body-color);
           color: var(--body-color);
 
-          padding: 18px 48px;
+          padding: 10px 48px 10px 48px;
 
           &--customer {
+            margin: 0;
+            padding: 0;
           }
 
           &--name {
             font-family: var(--font-cormorant);
             font-size: 32px;
             text-transform: uppercase;
+
+            margin: 0;
+            padding: 0;
           }
 
           &--date {
+            margin: 0;
+            padding: 0;
           }
         }
 
