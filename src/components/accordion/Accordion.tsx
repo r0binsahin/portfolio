@@ -74,8 +74,8 @@ const Accordion = () => {
     tl.to(".project", {
       yPercent: -100,
       top: "148px",
-      ease: "power1.inOut",
-      stagger: 0.9,
+      /*     ease: "power1.inOut", */
+      stagger: 0.5,
     });
 
     gsap.set(".project ", {

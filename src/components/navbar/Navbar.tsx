@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       <header>
-        <div className="name">Robîn Sahin</div>
+        <div className="name">Robin Sahin</div>
         <nav className={toggleMenu ? "nav-open" : ""}>
           {(toggleMenu || screenWidth > 500) && (
             <div className="list">

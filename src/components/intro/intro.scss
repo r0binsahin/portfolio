@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 122px;
+
+    padding: 175px 0 100px 0;
+
+    h3 {
+      text-align: center;
+      font-family: var(--font-cormorant);
+      font-size: 72px;
+      color: var(--body-color);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 56px;
+      text-transform: uppercase;
+
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+      color: var(--body-color);
+      font-family: var(--forn-jakarta);
+      font-size: 400px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

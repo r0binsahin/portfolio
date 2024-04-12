@@ -22,9 +22,11 @@ header {
     display: flex;
     align-items: center;
 
-    font-family: var(--font-jakarta);
+    font-family: var(--font-cormorant);
     font-size: 32px;
+    font-weight: 100;
     color: var(--body-color);
+    text-transform: uppercase;
 
     padding-left: 48px;
   }
