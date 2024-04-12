@@ -55,25 +55,15 @@ const Accordion = () => {
     },
   ];
 
-  const calculateYpercentage = () => {
-    let percentage = 0;
-    if (window.innerWidth === 1920) percentage = 70;
-    if (window.innerWidth === 1470) percentage = 82;
-    else percentage === 96;
-    console.log(window.innerWidth, percentage);
-    return percentage;
-  };
-
   const projects = gsap.utils.toArray<HTMLElement>(".project");
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const yPercentage = calculateYpercentage();
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".container",
-        start: () => "top top+=74",
+        start: () => "top top+=752",
         end: () => "+=" + (projects.length + 1) * window.innerHeight,
 
         scrub: 0.8,
@@ -82,44 +72,44 @@ const Accordion = () => {
     });
 
     tl.to(".project", {
-      yPercent: -yPercentage,
-
+      yPercent: -100,
+      top: "148px",
       ease: "none",
       stagger: 0.5,
     });
 
     gsap.set(".project ", {
-      zIndex: (i, _target, targets) => targets.length - i,
+      zIndex: (i, _target, targets) => targets.length + i,
     });
   }, []);
 
   return (
     <>
       <div className="helper"></div>
-      <div className="container">
-        <ul className="projectList">
-          {myProjects.map((project, index) => (
-            <li className="project" key={index}>
-              <div className="projectInner">
-                <div className="projectInner__image">
-                  <img
-                    className="projectInner__image--img"
-                    src={myImg}
-                    alt="project image"
-                  />
-                </div>
-                <div className="projectInner__header">
-                  <p className="projectInner__header--customer">
-                    {project.costumer}
-                  </p>
-                  <p className="projectInner__header--name">{project.name}</p>
-                  <p className="projectInner__header--date">{project.date}</p>
-                </div>
+
+      <ul className="container">
+        {myProjects.map((project, index) => (
+          <li className="project" key={index}>
+            <div className="projectInner">
+              <div className="projectInner__header">
+                <p className="projectInner__header--customer">
+                  {project.costumer}
+                </p>
+                <p className="projectInner__header--name">{project.name}</p>
+                <p className="projectInner__header--date">{project.date}</p>
               </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+              <div className="projectInner__image">
+                <img
+                  className="projectInner__image--img"
+                  src={myImg}
+                  alt="project image"
+                />
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+
       <div className="helper"></div>
     </>
   );
