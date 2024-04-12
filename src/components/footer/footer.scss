@@ -1,0 +1,19 @@
+.footerWrapper {
+  width: 100%;
+
+  background-color: var(--footer-bg);
+  .contactLinks {
+  }
+  .fullName {
+    p {
+      color: var(--footer-color);
+      text-align: center;
+      font-family: var(--font-jakarta);
+      font-size: 176px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}
