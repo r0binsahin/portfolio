@@ -29,10 +29,6 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="darkModeBtn">
-        <DarkMode />
-      </div>
-
       <header>
         <div className="name">Robin Sahin</div>
         <nav className={toggleMenu ? "nav-open" : ""}>
@@ -68,6 +64,9 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+              <div className="darkModeBtn">
+                <DarkMode />
+              </div>
             </div>
           )}
         </nav>
