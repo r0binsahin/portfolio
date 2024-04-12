@@ -66,7 +66,7 @@ const Accordion = () => {
         start: () => "top top+=752",
         end: () => "+=" + (projects.length + 1) * window.innerHeight,
 
-        scrub: 0.8,
+        scrub: 1.2,
         pin: true,
       },
     });
@@ -74,8 +74,8 @@ const Accordion = () => {
     tl.to(".project", {
       yPercent: -100,
       top: "148px",
-      ease: "none",
-      stagger: 0.5,
+      ease: "power1.inOut",
+      stagger: 0.9,
     });
 
     gsap.set(".project ", {
