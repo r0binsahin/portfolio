@@ -1,5 +1,7 @@
+import Accordion from "../../components/accordion/Accordion";
+
 const Home = () => {
-  return <div>Home</div>;
+  return <Accordion />;
 };
 
 export default Home;
