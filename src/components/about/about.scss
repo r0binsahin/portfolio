@@ -1,0 +1,128 @@
+.about {
+  width: 100%;
+
+  color: var(--body-color);
+
+  font-family: var(--font-jakarta);
+
+  .headBox {
+    border-top: 1px solid var(--body-color);
+
+    padding: 120px 160px;
+    p {
+      font-size: 72px;
+      font-style: normal;
+      font-family: var(--font-cormorant);
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .specialties {
+    border-top: 1px solid var(--body-color);
+    display: flex;
+    align-items: center;
+    gap: 175px;
+
+    padding: 0px 160px;
+
+    .title {
+      color: #a4a4a4;
+      font-size: 24px;
+      font-family: var(--font-jakarta);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 56px;
+      text-transform: uppercase;
+      font-family: var(--font-cormorant);
+    }
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 120px 160px;
+    border-top: 1px solid var(--body-color);
+    .info {
+      display: flex;
+      flex-direction: column;
+
+      gap: 80px;
+
+      .name {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .fullname {
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 56px; /* 140% */
+          text-transform: uppercase;
+
+          padding: 0;
+          margin: 0;
+        }
+
+        p {
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .contact {
+        p {
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+
+    .photo {
+      width: 525px;
+      height: 525px;
+      overflow: hidden;
+      border: 15px solid var(--body-color);
+    }
+  }
+
+  .funFacts {
+    padding: 120px 160px;
+    border-top: 1px solid var(--body-color);
+
+    p {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .resume {
+    border-top: 1px solid var(--body-color);
+    padding: 120px 160px;
+
+    p {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
