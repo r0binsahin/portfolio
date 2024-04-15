@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Intro />
-      <Accordion />;
+      <Accordion />
     </>
   );
 };

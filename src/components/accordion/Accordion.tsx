@@ -72,9 +72,9 @@ const Accordion = () => {
     });
 
     tl.to(".project", {
-      yPercent: -100,
+      yPercent: -98.7,
       top: "148px",
-      /*     ease: "power1.inOut", */
+      ease: "none",
       stagger: 0.5,
     });
 
@@ -86,7 +86,6 @@ const Accordion = () => {
   return (
     <>
       <div className="helper"></div>
-
       <ul className="container">
         {myProjects.map((project, index) => (
           <li className="project" key={index}>
@@ -109,8 +108,6 @@ const Accordion = () => {
           </li>
         ))}
       </ul>
-
-      <div className="helper"></div>
     </>
   );
 };
