@@ -1,5 +1,7 @@
+import About from "../../components/about/About";
+
 const Bio = () => {
-  return <div>Bio</div>;
+  return <About />;
 };
 
 export default Bio;
