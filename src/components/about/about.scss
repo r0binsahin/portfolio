@@ -93,6 +93,13 @@
         }
       }
     }
+
+    .photo {
+      width: 525px;
+      height: 525px;
+      overflow: hidden;
+      border: 15px solid var(--body-color);
+    }
   }
 
   .funFacts {
