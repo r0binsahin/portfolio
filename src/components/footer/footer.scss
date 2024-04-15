@@ -2,7 +2,30 @@
   width: 100%;
 
   background-color: var(--footer-bg);
-  .contactLinks {
+
+  display: flex;
+  flex-direction: column;
+  .contact {
+    display: flex;
+    flex-direction: column;
+
+    padding: 130px 160px;
+    p {
+      color: var(--footer-color);
+      font-family: var(--font-jakarta);
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    &__links {
+      //
+    }
+    &__copy {
+      //
+    }
   }
   .fullName {
     p {
