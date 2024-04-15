@@ -1,0 +1,61 @@
+.mailContainer {
+  width: 100%;
+  height: 100vh;
+
+  color: var(--body-color);
+  font-family: var(--font-jakarta);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-top: 100px;
+
+  h1 {
+    text-align: center;
+    font-family: var(--font-cormorant);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .inputs {
+    width: 834px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    input {
+      color: var(--body-color);
+      font-family: var(--font-jakarta);
+
+      border-bottom: 1px solid var(--body-color);
+
+      &:focus {
+        border-bottom: 1px solid var(--body-color);
+      }
+
+      &:hover {
+        border-bottom: 2px solid var(--body-color);
+      }
+    }
+  }
+}
+
+/* .input {
+  background-color: var(--body-bg);
+  border-color: var(--body-color);
+  color: var(--body-color);
+}
+
+.label {
+  color: var(--body-color);
+}
+ */

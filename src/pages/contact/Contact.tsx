@@ -1,5 +1,7 @@
+import Mail from "../../components/mail/Mail";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return <Mail />;
 };
 
 export default Contact;
