@@ -1,0 +1,109 @@
+.mailContainer {
+  width: 100%;
+  height: 100vh;
+
+  color: var(--body-color);
+  font-family: var(--font-jakarta);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-top: 100px;
+
+  h1 {
+    text-align: center;
+    font-family: var(--font-cormorant);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .inputs {
+    width: 834px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    input {
+      color: var(--body-color);
+      font-family: var(--font-jakarta);
+
+      border-bottom: 1px solid var(--body-color);
+
+      &:focus {
+        border-bottom: 1px solid var(--body-color);
+      }
+
+      &:hover {
+        border-bottom: 2px solid var(--body-color);
+      }
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .inputHolder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: var(--body-color);
+        font-family: var(--font-jakarta);
+
+        label {
+          width: 100%;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        input {
+          width: 100%;
+          height: 50px;
+
+          border: none;
+          border-bottom: 1px solid var(--body-color);
+          background-color: var(--body-bg);
+
+          outline: none;
+          font-size: 24px;
+        }
+      }
+
+      .success {
+        height: 80px;
+        p {
+          text-align: center;
+          font-size: 24px;
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 84px;
+        text-align: center;
+        border: 1px solid var(--body-color);
+        background: var(--body-bg);
+        color: var(--btn-color);
+        font-family: var(--font-jakarta);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+      }
+    }
+  }
+}

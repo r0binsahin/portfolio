@@ -108,6 +108,8 @@ const Accordion = () => {
           </li>
         ))}
       </ul>
+
+      <div className="helper"></div>
     </>
   );
 };
