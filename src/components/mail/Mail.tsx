@@ -1,186 +1,28 @@
+import React from "react";
 import "./mail.scss";
-
-import { TextField } from "@mui/material";
 
 const Mail = () => {
   return (
     <div className="mailContainer">
       <h1>contact me</h1>
       <div className="inputs">
-        <form action="submit">
-          <TextField
-            label="Name"
-            name="Name"
-            variant="standard"
-            required
-            fullWidth
-            sx={{
-              "& .MuiInput-root": {
-                color: "var(--body-color)",
-                fontFamily: " var(--font-jakart)",
-
-                // Bottom border
-                "&:before": {
-                  borderColor: "var(--body-color)",
-                  borderWidth: 1,
-                },
-                // Border on focus
-                "&:after": {
-                  borderColor: "var(--font-jakart)",
-                  borderWidth: 1,
-                },
-                ":hover:not(.Mui-focused)": {
-                  "&:before": {
-                    borderColor: "var(--font-jakart)",
-                    borderWidth: 1,
-                  },
-                },
-              },
-              // Label
-              "& .MuiInputLabel-standard": {
-                color: "var(--body-color)",
-                fontFamily: " var(--font-jakart)",
-
-                "&.Mui-focused": {
-                  color: "var(--body-color)",
-                },
-              },
-              "& .MuiInput-underline": {
-                paddingTop: "20px",
-              },
-            }}
-          />
-          <TextField
-            variant="standard"
-            required
-            fullWidth
-            label="Email"
-            name="Email"
-            type="email"
-            sx={{
-              "& .MuiInput-root": {
-                color: "var(--body-color)",
-                fontFamily: " var(--font-jakart)",
-
-                // Bottom border
-                "&:before": {
-                  borderColor: "var(--body-color)",
-                  borderWidth: 1,
-                },
-                // Border on focus
-                "&:after": {
-                  borderColor: "var(--font-jakart)",
-                  borderWidth: 1,
-                },
-                ":hover:not(.Mui-focused)": {
-                  "&:before": {
-                    borderColor: "var(--font-jakart)",
-                    borderWidth: 1,
-                  },
-                },
-              },
-              // Label
-              "& .MuiInputLabel-standard": {
-                color: "var(--body-color)",
-                fontFamily: " var(--font-jakart)",
-
-                "&.Mui-focused": {
-                  color: "var(--body-color)",
-                },
-              },
-              "& .MuiInput-underline": {
-                paddingTop: "20px",
-              },
-            }}
-          />
-          <TextField
-            variant="standard"
-            label="Phone"
-            name="Phone"
-            fullWidth
-            type="Text"
-            sx={{
-              "& .MuiInput-root": {
-                color: "var(--body-color)",
-                fontFamily: " var(--font-jakart)",
-
-                // Bottom border
-                "&:before": {
-                  borderColor: "var(--body-color)",
-                  borderWidth: 1,
-                },
-                // Border on focus
-                "&:after": {
-                  borderColor: "var(--font-jakart)",
-                  borderWidth: 1,
-                },
-                ":hover:not(.Mui-focused)": {
-                  "&:before": {
-                    borderColor: "var(--font-jakart)",
-                    borderWidth: 1,
-                  },
-                },
-              },
-              // Label
-              "& .MuiInputLabel-standard": {
-                color: "var(--body-color)",
-                fontFamily: " var(--font-jakart)",
-
-                "&.Mui-focused": {
-                  color: "var(--body-color)",
-                },
-              },
-              "& .MuiInput-underline": {
-                paddingTop: "20px",
-              },
-            }}
-          />
-          <TextField
-            variant="standard"
-            required
-            /*   multiline
-            rows={5} */
-            label="Message"
-            name="Message"
-            type="Text"
-            fullWidth
-            sx={{
-              "& .MuiInput-root": {
-                color: "var(--body-color)",
-                fontFamily: " var(--font-jakart)",
-
-                // Bottom border
-                "&:before": {
-                  borderColor: "var(--body-color)",
-                  borderWidth: 1,
-                },
-                // Border on focus
-                "&:after": {
-                  borderColor: "var(--font-jakart)",
-                  borderWidth: 1,
-                },
-                ":hover:not(.Mui-focused)": {
-                  "&:before": {
-                    borderColor: "var(--font-jakart)",
-                    borderWidth: 1,
-                  },
-                },
-              },
-              // Label
-              "& .MuiInputLabel-standard": {
-                color: "var(--body-color)",
-                fontFamily: " var(--font-jakart)",
-
-                "&.Mui-focused": {
-                  color: "var(--body-color)",
-                },
-              },
-
-              "& .MuiInput-underline": {
-                paddingTop: "20px",
-              },
-            }}
-          />
+        <form action="submit" autoComplete="off">
+          <div className="inputHolder">
+            <label htmlFor="name">Name*</label>
+            <input required type="text" id="name" name="name"></input>
+          </div>
+          <div className="inputHolder">
+            <label htmlFor="email">Email*</label>
+            <input required type="email" id="email" name="email"></input>
+          </div>
+          <div className="inputHolder">
+            <label htmlFor="phone">Phone</label>
+            <input type="text" id="phone" name="phone"></input>
+          </div>
+          <div className="inputHolder">
+            <label htmlFor="message">Message*</label>
+            <input required type="text" id="message" name="message"></input>
+          </div>
 
           <button type="submit">Submit </button>
         </form>
