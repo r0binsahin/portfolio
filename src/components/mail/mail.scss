@@ -57,13 +57,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
         color: var(--body-color);
         font-family: var(--font-jakarta);
 
         label {
-          width: 100%;
           font-size: 24px;
           font-style: normal;
           font-weight: 400;

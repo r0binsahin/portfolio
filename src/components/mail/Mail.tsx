@@ -7,7 +7,6 @@ import "./mail.scss";
 const Mail = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [isDisabled, setIsDisabled] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -15,12 +14,6 @@ const Mail = () => {
     phone: "",
     message: "",
   });
-
-  useEffect(() => {
-    const isFormFilled = formData.name && formData.email && formData.message;
-
-    setIsDisabled(!isFormFilled);
-  }, [formData]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -75,7 +68,7 @@ const Mail = () => {
           onSubmit={sendEmail}
         >
           <div className="inputHolder">
-            <label htmlFor="name">Name*</label>
+            <label htmlFor="name">Name*</label>{" "}
             <input
               required
               type="text"
@@ -122,9 +115,7 @@ const Mail = () => {
             {isSuccess && <p>Your email sent successfully!</p>}
           </div>
 
-          <button type="submit" disabled={isDisabled}>
-            Submit{" "}
-          </button>
+          <button type="submit">Submit </button>
         </form>
       </div>
     </div>
