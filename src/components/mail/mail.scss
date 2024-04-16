@@ -81,6 +81,15 @@
           font-size: 24px;
         }
       }
+
+      .success {
+        height: 80px;
+        p {
+          text-align: center;
+          font-size: 24px;
+        }
+      }
+
       button {
         width: 100%;
         height: 84px;
@@ -94,8 +103,6 @@
         font-weight: 600;
         line-height: normal;
         cursor: pointer;
-
-        margin-top: 100px;
       }
     }
   }
