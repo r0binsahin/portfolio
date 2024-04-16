@@ -21,7 +21,10 @@
     }
 
     &__links {
-      //
+      &--link {
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
     &__copy {
       //
