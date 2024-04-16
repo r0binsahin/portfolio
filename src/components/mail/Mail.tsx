@@ -1,4 +1,4 @@
-import React, { FormEvent, useEffect, useRef, useState } from "react";
+import React, { FormEvent, useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
 
@@ -7,21 +7,6 @@ import "./mail.scss";
 const Mail = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSuccess, setIsSuccess] = useState(false);
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
-  };
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -40,12 +25,7 @@ const Mail = () => {
         .then(
           () => {
             console.log("SUCCESS!");
-            setFormData({
-              name: "",
-              email: "",
-              phone: "",
-              message: "",
-            });
+            (e.target as HTMLFormElement).reset();
             setIsSuccess(true);
           },
           (error) => {
@@ -69,46 +49,19 @@ const Mail = () => {
         >
           <div className="inputHolder">
             <label htmlFor="name">Name*</label>{" "}
-            <input
-              required
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-            ></input>
+            <input required type="text" name="name"></input>
           </div>
           <div className="inputHolder">
             <label htmlFor="email">Email*</label>
-            <input
-              required
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-            ></input>
+            <input required type="email" name="email"></input>
           </div>
           <div className="inputHolder">
             <label htmlFor="phone">Phone</label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleInputChange}
-            ></input>
+            <input type="text" name="phone"></input>
           </div>
           <div className="inputHolder">
             <label htmlFor="message">Message*</label>
-            <input
-              required
-              type="text"
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-            ></input>
+            <input required type="text" name="message"></input>
           </div>
 
           <div className="success">
