@@ -10,6 +10,7 @@ const Mail = () => {
         <form action="submit">
           <TextField
             label="Name"
+            name="Name"
             variant="standard"
             required
             fullWidth
@@ -54,6 +55,7 @@ const Mail = () => {
             required
             fullWidth
             label="Email"
+            name="Email"
             type="email"
             sx={{
               "& .MuiInput-root": {
@@ -94,6 +96,7 @@ const Mail = () => {
           <TextField
             variant="standard"
             label="Phone"
+            name="Phone"
             fullWidth
             type="Text"
             sx={{
@@ -138,6 +141,7 @@ const Mail = () => {
             /*   multiline
             rows={5} */
             label="Message"
+            name="Message"
             type="Text"
             fullWidth
             sx={{
