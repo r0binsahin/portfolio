@@ -10,7 +10,8 @@
     flex-direction: column;
 
     padding: 130px 160px;
-    p {
+    p,
+    a {
       color: var(--footer-color);
       font-family: var(--font-jakarta);
       font-size: 40px;

@@ -1,4 +1,3 @@
-import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
 
@@ -11,21 +10,23 @@ const Footer = () => {
             <p>contact </p>
           </Link>
 
-          <Link
-            to={"https://www.linkedin.com/in/robin-sahin-15404a24b/"}
+          <a
+            href="https://www.linkedin.com/in/robin-sahin-15404a24b/"
             className="contact__links--link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <p>linkedin</p>
-          </Link>
+          </a>
 
-          <Link
-            to={"https://github.com/r0binsahin"}
+          <a
+            href="https://github.com/r0binsahin"
             className="contact__links--link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <p>github</p>
-          </Link>
+          </a>
         </div>
         <div className="contact__copy">
           <p>&copy; 2024</p>

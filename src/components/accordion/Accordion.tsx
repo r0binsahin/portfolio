@@ -85,7 +85,6 @@ const Accordion = () => {
 
   return (
     <>
-      <div className="helper"></div>
       <ul className="container">
         {myProjects.map((project, index) => (
           <li className="project" key={index}>
