@@ -38,10 +38,22 @@ const DarkMode = () => {
       />
       <label className="dark_mode_label" htmlFor="darkmode-toggle">
         <div>
-          <Moon /> <p className="moonText">Dark</p>
+          <Moon fill={defaultMode === "dark" ? "#EFEFEF" : "#9D9D9D"} />
+          <p
+            className={
+              defaultMode === "dark" ? "moonTextDark" : "moonTextLight"
+            }
+          >
+            Dark
+          </p>
         </div>
         <div>
-          <Sun /> <p className="sunText">Light</p>
+          <Sun fill={defaultMode === "dark" ? "#A5A5A5" : "#555555"} />
+          <p
+            className={defaultMode === "dark" ? "sunTextDark" : "sunTextLight"}
+          >
+            Light
+          </p>
         </div>
       </label>
     </div>
