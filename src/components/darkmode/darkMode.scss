@@ -31,9 +31,9 @@
   cursor: pointer;
   transition: 0.9s;
 
-  display: flex; /* Add this line */
-  // align-items: center; /* Add this line */
-  justify-content: space-between; /* Add this line */
+  display: flex;
+
+  justify-content: space-between;
 
   padding: 0 5px; /* Added padding to create space between items */
 }
@@ -44,7 +44,7 @@
   position: absolute;
   top: 2px;
 
-  left: 50%;
+  left: 55%;
   background: #fff;
   border-radius: 2px;
   box-shadow: 0px 3.4px 6.7px rgba(0, 0, 0, 0.2);
@@ -59,25 +59,22 @@
   background: #4b4b4b;
 }
 .dark_mode_input:checked + .dark_mode_label:after {
-  left: 50px;
+  left: 48px;
   transform: translateX(-100%);
-  background: linear-gradient(180deg, #777, #3a3a3a);
+  background: black;
 }
-/* .dark_mode_label:active:after {
-  width: 20px;
-} */
 
 .dark_mode_label svg {
   position: absolute;
   width: 10px;
-  top: 30%;
   z-index: 100;
 }
+
 .dark_mode_label svg.sun {
-  right: 35%;
+  right: 33%;
   top: 33%;
   fill: #fff;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .dark_mode_label svg.moon {
   right: 60%;
