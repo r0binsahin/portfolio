@@ -37,8 +37,12 @@ const DarkMode = () => {
         checked={defaultMode === "dark"}
       />
       <label className="dark_mode_label" htmlFor="darkmode-toggle">
-        <Moon />
-        <Sun />
+        <div>
+          <Moon /> <p>Dark</p>
+        </div>
+        <div>
+          <Sun /> <p>Light</p>
+        </div>
       </label>
     </div>
   );
