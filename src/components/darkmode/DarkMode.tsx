@@ -38,10 +38,10 @@ const DarkMode = () => {
       />
       <label className="dark_mode_label" htmlFor="darkmode-toggle">
         <div>
-          <Moon /> <p>Dark</p>
+          <Moon /> <p className="moonText">Dark</p>
         </div>
         <div>
-          <Sun /> <p>Light</p>
+          <Sun /> <p className="sunText">Light</p>
         </div>
       </label>
     </div>

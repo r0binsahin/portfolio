@@ -7,6 +7,7 @@ export const Moon = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       x="0px"
       y="0px"
+      fill="#fff"
       viewBox="0 0 49.739 49.739"
       xmlSpace="preserve"
     >
