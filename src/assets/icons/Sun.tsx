@@ -1,113 +1,79 @@
-const Sun = () => {
+interface ISunProps {
+  fill: string;
+}
+
+const Sun = ({ fill }: ISunProps) => {
   return (
     <svg
-      version="1.1"
-      className="sun"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      x="0px"
-      y="0px"
-      viewBox="0 0 496 496"
-      xmlSpace="preserve"
+      width="10"
+      height="10"
+      viewBox="0 0 10 10"
+      fill="none"
+      className="sun"
     >
-      <rect
-        x="152.994"
-        y="58.921"
-        transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
-        width="40.001"
-        height="16"
-      />
-      <rect
-        x="46.9"
-        y="164.979"
-        transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
-        width="40.001"
-        height="16"
-      />
-      <rect
-        x="46.947"
-        y="315.048"
-        transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
-        width="40.001"
-        height="16"
-      />
-
-      <rect
-        x="164.966"
-        y="409.112"
-        transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
-        width="16"
-        height="39.999"
-      />
-
-      <rect
-        x="303.031"
-        y="421.036"
-        transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
-        width="40.001"
-        height="16"
-      />
-
-      <rect
-        x="409.088"
-        y="315.018"
-        transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
-        width="40.001"
-        height="16"
-      />
-
-      <rect
-        x="409.054"
-        y="165.011"
-        transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
-        width="40.001"
-        height="16"
-      />
-      <rect
-        x="315.001"
-        y="46.895"
-        transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
-        width="16"
-        height="39.999"
-      />
-      <path
-        d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
-				c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z"
-      />
-      <rect x="240" width="16" height="72" />
-      <rect
-        x="62.097"
-        y="90.096"
-        transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
-        width="71.999"
-        height="16"
-      />
-      <rect y="240" width="72" height="16" />
-
-      <rect
-        x="90.091"
-        y="361.915"
-        transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
-        width="16"
-        height="71.999"
-      />
-      <rect x="240" y="424" width="16" height="72" />
-
-      <rect
-        x="361.881"
-        y="389.915"
-        transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
-        width="71.999"
-        height="16"
-      />
-      <rect x="424" y="240" width="72" height="16" />
-      <rect
-        x="389.911"
-        y="62.091"
-        transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
-        width="16"
-        height="71.999"
-      />
+      <g clip-path="url(#clip0_216_924)">
+        <path
+          d="M4.99984 7.08335C6.15043 7.08335 7.08317 6.15061 7.08317 5.00002C7.08317 3.84943 6.15043 2.91669 4.99984 2.91669C3.84924 2.91669 2.9165 3.84943 2.9165 5.00002C2.9165 6.15061 3.84924 7.08335 4.99984 7.08335Z"
+          fill={fill}
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M5 0.416687V1.25002"
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M5 8.75V9.58333"
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M1.7583 1.75836L2.34997 2.35003"
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M7.6499 7.65002L8.24157 8.24169"
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M0.416504 5H1.24984"
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M8.75 5H9.58333"
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M1.7583 8.24169L2.34997 7.65002"
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M7.6499 2.35003L8.24157 1.75836"
+          stroke={fill}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_216_859">
+          <rect width="10" height="10" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

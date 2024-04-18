@@ -1,8 +1,8 @@
 .darkModeBtn {
   position: absolute;
 
-  right: 48px;
-  top: 25px;
+  right: 20px;
+  top: 19px;
 }
 
 header {
@@ -69,7 +69,14 @@ header {
             text-decoration: none;
 
             color: var(--body-color);
-            font-weight: 700;
+
+            display: inline;
+            padding: 0 10px 5px 10px;
+            border-bottom: 1px solid var(--body-color);
+          }
+
+          &:last-child {
+            margin-right: 40px;
           }
         }
       }
@@ -83,7 +90,7 @@ header {
 
 @media screen and (max-width: 500px) {
   .darkModeBtn {
-    left: 40px;
+    left: 30px;
     top: 45%;
   }
 
