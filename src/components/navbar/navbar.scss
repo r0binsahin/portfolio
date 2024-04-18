@@ -71,8 +71,10 @@ header {
             color: var(--body-color);
 
             display: inline;
-            padding: 0 10px 5px 10px;
+            padding: 0 10px 8px 10px;
             border-bottom: 1px solid var(--body-color);
+
+            transition: all 0.8s ease-in-out;
           }
 
           &:last-child {
