@@ -11,7 +11,7 @@ const About = () => {
       </div>
       <div className="specialties">
         <p className="title">specialties</p>
-        <p> frontend | react.js | typescript | node.js</p>
+        <p className="specs"> frontend | react.js | typescript | node.js</p>
       </div>
 
       <div className="card">
@@ -21,8 +21,8 @@ const About = () => {
             <p>Developer</p>
           </div>
           <div className="contacts">
-            <p>Stockholm</p>
-            <p>robinsahin@outlook.com</p>
+            <p className="city">Stockholm</p>
+            <p className="mail">robinsahin@outlook.com</p>
           </div>
         </div>
         <div className="photo">

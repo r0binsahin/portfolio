@@ -23,7 +23,7 @@ header {
     align-items: center;
 
     font-family: var(--font-cormorant);
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 100;
     color: var(--body-color);
     text-transform: uppercase;
@@ -47,12 +47,12 @@ header {
 
         position: relative;
 
-        gap: 64px;
+        gap: 40px;
 
         list-style-type: none;
 
         li {
-          font-size: 28px;
+          font-size: 20px;
           color: var(--body-color);
 
           cursor: pointer;
@@ -62,7 +62,7 @@ header {
             color: var(--body-color);
             font-style: normal;
             font-weight: 400;
-            line-height: normal;
+            line-height: 32px;
           }
 
           .active-link {

@@ -10,7 +10,7 @@
 
     padding: 120px 160px;
     p {
-      font-size: 72px;
+      font-size: 56px;
       font-style: normal;
       font-family: var(--font-cormorant);
       font-weight: 400;
@@ -29,15 +29,14 @@
 
     .title {
       color: #a4a4a4;
-      font-size: 24px;
+      font-size: 20px;
       font-family: var(--font-jakarta);
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      text-transform: uppercase;
     }
-    p {
-      font-size: 40px;
+    .specs {
+      font-size: 32px;
       font-style: normal;
       font-weight: 400;
       line-height: 56px;
@@ -53,6 +52,7 @@
 
     padding: 120px 160px;
     border-top: 1px solid var(--body-color);
+
     .info {
       display: flex;
       flex-direction: column;
@@ -65,7 +65,7 @@
         gap: 16px;
 
         .fullname {
-          font-size: 40px;
+          font-size: 56px;
           font-style: normal;
           font-weight: 400;
           line-height: 56px; /* 140% */
@@ -85,12 +85,18 @@
           margin: 0;
         }
       }
-      .contact {
+
+      .contacts {
         p {
-          font-size: 28px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+        }
+        .city {
+          font-size: 20px;
+        }
+        .mail {
+          font-size: 28px;
         }
       }
     }
