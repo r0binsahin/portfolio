@@ -56,7 +56,6 @@
         justify-content: space-between;
 
         font-family: var(--font-jakarta);
-        font-size: 28px;
 
         background-color: var(--body-bg);
         border-top: 1px solid var(--body-color);
@@ -66,6 +65,7 @@
         padding: 10px 48px 10px 48px;
 
         &--customer {
+          font-size: 24px;
           margin: 0;
           padding: 0;
         }
@@ -79,6 +79,8 @@
         }
 
         &--date {
+          font-size: 20px;
+
           margin: 0;
           padding: 0;
         }
