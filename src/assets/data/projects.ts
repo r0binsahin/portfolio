@@ -6,30 +6,35 @@ export const projects: IProject[] = [
     title: "Peyvok",
     captionText: "Caption Text",
     tools: ["React Native", "TypeScript", "MongoDB Realm"],
-    desc: "This project is a React Native mobile application developed as final project for my Frontend Development education at Medieinstitutet in Stockholm 2022-2024.",
+    shortDesc:
+      "This project is a React Native mobile application developed as final project for my Frontend Development education at Medieinstitutet in Stockholm 2022-2024.",
+    longDesc:
+      "Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ",
     github: "https://github.com/r0binsahin/Peyvok",
     live: "",
     isLive: false,
-    img1: "https://drive.google.com/uc?export=download&id=1FAkJEkhkb-bcBTwje8Mm1SCAX2cWYzgS",
-    img2: "https://drive.google.com/uc?export=1ceKbEWxUkzFVCezQCHaNkUwKlQUgVHNf",
-    img3: "https://drive.google.com/uc?export=download&id=1P42H2QNWktp0xJ2HsnbKK5qZ19V9FABt",
-    imgExtra:
-      "https://drive.google.com/uc?export=download&id=1Nu6R3kSTCR-FNnxkdAJdZYVxS9RVrYHq",
+    img1: "https://i.postimg.cc/q7zZmndc/peyvok-1.png",
+    img2: "https://i.postimg.cc/wxh4bgnr/peyvok-2.png",
+    img3: "https://i.postimg.cc/jd49CtXf/peyvok-3.png",
+    imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
   },
   {
     id: 2,
     title: "Daresay Check-in Generator",
     captionText: "Caption Text",
     tools: ["React", "TypeScript", "Framer Motion"],
-    desc: "Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ",
+    shortDesc:
+      " Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim.",
+
+    longDesc:
+      "Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ",
     github: "",
     live: "https://checkin.daresay.io/",
     isLive: true,
-    img1: "https://drive.google.com/uc?export=download&id=1vj5w13wXOUXP4YBOQm5PYuEjR_K53X4z",
-    img2: "https://drive.google.com/uc?export=1PP4668rXAqlY-rl4flX9essjz-39OKFp",
-    img3: "https://drive.google.com/uc?export=download&id=1tG-NNYi_g20iU0XKXspQseQTZ2eS-rUo",
-    imgExtra:
-      "https://drive.google.com/uc?export=download&id=1Nu6R3kSTCR-FNnxkdAJdZYVxS9RVrYHq",
+    img1: "https://i.postimg.cc/LsB3T4nB/checkin-1.png",
+    img2: "https://i.postimg.cc/qqXmtx8r/checkin-2.png",
+    img3: "https://i.postimg.cc/02sF8bpx/checkin-3.png",
+    imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
   },
   /*  {
     id: 3,

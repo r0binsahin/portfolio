@@ -3,7 +3,8 @@ export interface IProject {
   title: string;
   captionText: string;
   tools: string[];
-  desc: string;
+  shortDesc: string;
+  longDesc: string;
   github: string;
   live: string;
   isLive: boolean;
