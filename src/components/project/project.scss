@@ -269,6 +269,10 @@
 
         cursor: pointer;
       }
+
+      button[disabled] {
+        visibility: hidden;
+      }
     }
 
     &--next {

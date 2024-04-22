@@ -20,15 +20,19 @@ const Project = ({
 }: IProjectProps) => {
   const project = projects.find((project) => project.id === projectId);
   const navigate = useNavigate();
-  const [disabled, setDisabled] = useState(false);
+  const currentIndex = projects.findIndex(
+    (project) => project.id === projectId
+  );
+  const [prevDisabled, setPrevDisabled] = useState(currentIndex === 0);
+  const [nextDisabled, setNextDisabled] = useState(
+    currentIndex === projects.length - 1
+  );
 
   useEffect(() => {
-    const currentIndex = projects.findIndex(
-      (project) => project.id === projectId
-    );
-    setDisabled(currentIndex === 0);
-    setDisabled(currentIndex === projects.length - 1);
-  }, [projects, projectId]);
+    const newIndex = projects.findIndex((project) => project.id === projectId);
+    setPrevDisabled(newIndex === 0);
+    setNextDisabled(newIndex === projects.length - 1);
+  }, [currentIndex, prevDisabled, nextDisabled, projectId, projects]);
 
   const handlePrevClick = () => {
     navigateToPrev(navigate);
@@ -95,12 +99,12 @@ const Project = ({
 
       <div className="projectContainer__buttons">
         <div className="projectContainer__buttons--prev">
-          <button /* disabled={disabled}  */ onClick={handlePrevClick}>
+          <button disabled={prevDisabled} onClick={handlePrevClick}>
             &lt;- previous
           </button>
         </div>
         <div className="projectContainer__buttons--next">
-          <button /* disabled={disabled} */ onClick={handleNextClick}>
+          <button disabled={nextDisabled} onClick={handleNextClick}>
             next - &gt;
           </button>
         </div>
