@@ -1,13 +1,43 @@
+import { NavigateFunction, useNavigate } from "react-router";
 import { IProject } from "../../models/IProject";
 import "./project.scss";
+import { useEffect, useState } from "react";
+
+type NavigateFunctionType = (navigate: NavigateFunction) => void;
 
 interface IProjectProps {
   projects: IProject[];
   projectId: number;
+  navigateToPrev: NavigateFunctionType;
+  navigateToNext: NavigateFunctionType;
 }
 
-const Project = ({ projects, projectId }: IProjectProps) => {
+const Project = ({
+  projects,
+  projectId,
+  navigateToNext,
+  navigateToPrev,
+}: IProjectProps) => {
   const project = projects.find((project) => project.id === projectId);
+  const navigate = useNavigate();
+  const [disabled, setDisabled] = useState(false);
+
+  useEffect(() => {
+    const currentIndex = projects.findIndex(
+      (project) => project.id === projectId
+    );
+    setDisabled(currentIndex === 0);
+    setDisabled(currentIndex === projects.length - 1);
+  }, [projects, projectId]);
+
+  const handlePrevClick = () => {
+    navigateToPrev(navigate);
+  };
+
+  const handleNextClick = () => {
+    navigateToNext(navigate);
+  };
+
   return (
     <div className="projectContainer">
       <div className="projectContainer__head">
@@ -65,10 +95,14 @@ const Project = ({ projects, projectId }: IProjectProps) => {
 
       <div className="projectContainer__buttons">
         <div className="projectContainer__buttons--prev">
-          <button>&lt;- previous</button>
+          <button /* disabled={disabled}  */ onClick={handlePrevClick}>
+            &lt;- previous
+          </button>
         </div>
         <div className="projectContainer__buttons--next">
-          <button>next - &gt;</button>
+          <button /* disabled={disabled} */ onClick={handleNextClick}>
+            next - &gt;
+          </button>
         </div>
       </div>
     </div>

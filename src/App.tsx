@@ -9,10 +9,46 @@ import { projects } from "./assets/data/projects";
 
 import "./styles/globals.scss";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, NavigateFunction, useLocation } from "react-router-dom";
 import Project from "./components/project/Project";
 
 function App() {
+  const location = useLocation();
+
+  const navigateToPrev = (navigate: NavigateFunction) => {
+    const pathSegments = location.pathname.split("/");
+    const lastSegment = pathSegments.pop();
+    if (!lastSegment) {
+      console.error("Unexpected URL structure");
+      return;
+    }
+    const currentProjectIndex = projects.findIndex(
+      (project) => project.id === parseInt(lastSegment)
+    );
+    let newProjectIndex = currentProjectIndex - 1;
+    if (newProjectIndex < 0) {
+      newProjectIndex = projects.length - 1;
+    }
+    navigate(`/projects/${projects[newProjectIndex].id}`);
+  };
+
+  const navigateToNext = (navigate: NavigateFunction) => {
+    const pathSegments = location.pathname.split("/");
+    const lastSegment = pathSegments.pop();
+    if (!lastSegment) {
+      console.error("Unexpected URL structure");
+      return;
+    }
+    const currentProjectIndex = projects.findIndex(
+      (project) => project.id === parseInt(lastSegment)
+    );
+    let newProjectIndex = currentProjectIndex + 1;
+    if (newProjectIndex >= projects.length) {
+      newProjectIndex = 0;
+    }
+    navigate(`/projects/${projects[newProjectIndex].id}`);
+  };
+
   return (
     <Routes>
       <Route path="/" element={<Platform />}>
@@ -23,7 +59,14 @@ function App() {
           <Route
             key={project.id}
             path={`/projects/${project.id}`}
-            element={<Project projects={projects} projectId={project.id} />}
+            element={
+              <Project
+                projects={projects}
+                projectId={project.id}
+                navigateToNext={navigateToNext}
+                navigateToPrev={navigateToPrev}
+              />
+            }
           />
         ))}
 
