@@ -49,7 +49,7 @@ const Project = ({
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const tl = gsap.timeline({
+    const tlWrapper = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
         start: () => "top center+=200",
@@ -59,12 +59,57 @@ const Project = ({
       },
     });
 
-    tl.to(".wrapper", {
+    tlWrapper.to(".wrapper", {
       yPercent: -100,
       ease: "power1.out",
       y: 0,
       duration: 0.6,
       stagger: 0.5,
+    });
+
+    const tlImgBox = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projectContainer__themeImage",
+        start: "top center",
+        end: "top top",
+        scrub: 1,
+      },
+    });
+
+    tlImgBox.from(".projectContainer__themeImage--imgBox", {
+      x: "-100%",
+      duration: 0.6,
+      ease: "power1.out",
+    });
+
+    const tlTools = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projectContainer__tools",
+        start: "top center+=100",
+        end: "bottom center",
+        scrub: 0.6,
+      },
+    });
+
+    tlTools.from(".projectContainer__tools--toolName", {
+      x: "140%",
+      duration: 0.6,
+      ease: "power1.inOut",
+    });
+
+    const tlMidImg = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projectContainer__midImageBox",
+        start: "top center",
+        end: "top top",
+        scrub: 1,
+      },
+    });
+
+    tlMidImg.from(".projectContainer__midImageBox--midImage", {
+      x: "100%",
+      duration: 0.3,
+      ease: "power1.inOut",
     });
   }, []);
 
@@ -100,7 +145,7 @@ const Project = ({
         </div>
       </div>
       <div className="projectContainer__midImageBox">
-        <div className="projectContainer__midImage--midImage">
+        <div className="projectContainer__midImageBox--midImage">
           <img src={project?.img2} alt="second project image" />
         </div>
       </div>
