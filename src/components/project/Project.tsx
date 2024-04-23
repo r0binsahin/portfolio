@@ -3,6 +3,10 @@ import { IProject } from "../../models/IProject";
 import "./project.scss";
 import { useEffect, useState } from "react";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 type NavigateFunctionType = (navigate: NavigateFunction) => void;
 
 interface IProjectProps {
@@ -41,6 +45,28 @@ const Project = ({
   const handleNextClick = () => {
     navigateToNext(navigate);
   };
+
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projectContainer__themeImage",
+        start: () => "top center+=200",
+        end: () => "top top",
+
+        scrub: 1,
+      },
+    });
+
+    tl.to(".wrapper", {
+      yPercent: -100,
+      ease: "power1.out",
+      y: 0,
+      duration: 0.6,
+      stagger: 0.5,
+    });
+  }, []);
 
   return (
     <div className="projectContainer">
