@@ -1,9 +1,11 @@
 .projectContainer {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 
   gap: 150px;
+
+  overflow: hidden;
 
   &__head {
     width: 100%;
@@ -113,10 +115,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 
     border-top: 1px solid var(--body-color);
     border-bottom: 1px solid var(--body-color);
+
+    padding: 0 120px 0 120px;
+    gap: 50px;
 
     &--title {
       color: #a4a4a4;
@@ -138,7 +142,7 @@
       font-size: 32px;
       font-style: normal;
       font-weight: 400;
-      line-height: 44px; /* 137.5% */
+      line-height: 44px;
       text-transform: uppercase;
 
       p:not(:last-child) {
@@ -172,14 +176,15 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 
     border-top: 1px solid var(--body-color);
     border-bottom: 1px solid var(--body-color);
 
-    &--linkTitle {
-      display: flex;
+    padding: 0 120px 0 120px;
 
+    gap: 50px;
+
+    &--linkTitle {
       color: #a4a4a4;
       font-family: var(--font-jakarta);
       font-size: 16px;
@@ -190,7 +195,6 @@
 
     &--links {
       color: var(--body-color);
-
       font-family: var(--font-cormorant);
       font-size: 32px;
       font-style: normal;

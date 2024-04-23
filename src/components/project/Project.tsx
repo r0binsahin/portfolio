@@ -91,7 +91,7 @@ const Project = ({
     });
 
     tlTools.from(".projectContainer__tools--toolName", {
-      x: "150%",
+      x: "200%",
       duration: 0.9,
       ease: "power1.inOut",
     });
@@ -121,7 +121,7 @@ const Project = ({
     });
 
     tlLinks.from(".projectContainer__linkBox--links", {
-      x: "1000%",
+      x: "2000%",
       duration: 0.9,
       ease: "power1.inOut",
     });
@@ -189,8 +189,17 @@ const Project = ({
           <p>links</p>
         </div>
         <div className="projectContainer__linkBox--links">
-          {project?.github !== "" && <a href={project?.github}>Github</a>}
-          {project?.live !== "" && <a href={project?.live}> Live</a>}
+          {project?.github !== "" && (
+            <a href={project?.github} target="_blank">
+              Github
+            </a>
+          )}
+          {project?.live !== "" && (
+            <a href={project?.live} target="_blank">
+              {" "}
+              Live
+            </a>
+          )}
         </div>
       </div>
 
