@@ -91,7 +91,7 @@ const Project = ({
     });
 
     tlTools.from(".projectContainer__tools--toolName", {
-      x: "200%",
+      x: "250%",
       duration: 0.9,
       ease: "power1.inOut",
     });

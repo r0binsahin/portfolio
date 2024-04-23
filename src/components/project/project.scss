@@ -11,13 +11,11 @@
     width: 100%;
     display: flex;
 
-    justify-content: space-around;
-
     &--info {
       display: flex;
       width: 608px;
       height: 1480px;
-      padding-right: 1px;
+
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;

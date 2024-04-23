@@ -9,10 +9,6 @@ gsap.registerPlugin(useGSAP);
 import { projects } from "../../assets/data/projects";
 import { Link } from "react-router-dom";
 
-/* interface IAccordionProps{
-  projectId: string
-}
- */
 const Accordion = () => {
   const projectElements = gsap.utils.toArray<HTMLElement>(".project");
 
@@ -34,7 +30,7 @@ const Accordion = () => {
       yPercent: -98.7,
       top: "148px",
       ease: "none",
-      stagger: 0.5,
+      stagger: 0.6,
     });
 
     gsap.set(".project ", {

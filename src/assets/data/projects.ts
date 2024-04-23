@@ -15,7 +15,7 @@ export const projects: IProject[] = [
     github: "https://github.com/r0binsahin/Peyvok",
     live: "",
     isLive: false,
-    img1: "https://i.postimg.cc/q7zZmndc/peyvok-1.png",
+    img1: "https://i.postimg.cc/s2XXLnKV/peyvok-1.png",
     img2: "https://i.postimg.cc/wxh4bgnr/peyvok-2.png",
     img3: "https://i.postimg.cc/jd49CtXf/peyvok-3.png",
     imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
