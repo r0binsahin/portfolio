@@ -63,7 +63,7 @@ const Project = ({
       yPercent: -100,
       ease: "power1.out",
       y: 0,
-      duration: 0.6,
+      duration: 0.9,
       stagger: 0.5,
     });
 
@@ -78,8 +78,8 @@ const Project = ({
 
     tlImgBox.from(".projectContainer__themeImage--imgBox", {
       x: "-100%",
-      duration: 0.6,
-      ease: "power1.out",
+      duration: 0.9,
+      ease: "power1.inOut",
     });
 
     const tlTools = gsap.timeline({
@@ -93,7 +93,7 @@ const Project = ({
 
     tlTools.from(".projectContainer__tools--toolName", {
       x: "140%",
-      duration: 0.6,
+      duration: 0.9,
       ease: "power1.inOut",
     });
 
@@ -108,7 +108,45 @@ const Project = ({
 
     tlMidImg.from(".projectContainer__midImageBox--midImage", {
       x: "100%",
-      duration: 0.3,
+      duration: 0.9,
+      ease: "power1.inOut",
+    });
+
+    const tlLinks = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projectContainer__linkBox",
+        start: "top center+=100",
+        end: "bottom center",
+        scrub: 0.6,
+      },
+    });
+
+    tlLinks.from(".projectContainer__linkBox--links", {
+      x: "1000%",
+      duration: 0.9,
+      ease: "power1.inOut",
+    });
+
+    //
+
+    const tlLongDesc = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projectContainer__longDesc",
+        start: "top center",
+        end: "top top",
+        scrub: 1,
+      },
+    });
+
+    tlLongDesc.from(".projectContainer__longDesc--text", {
+      x: "-100%",
+      duration: 0.9,
+      ease: "power1.inOut",
+    });
+
+    tlLongDesc.from(".projectContainer__longDesc--descImage", {
+      x: "200%",
+      duration: 0.9,
       ease: "power1.inOut",
     });
   }, []);
@@ -163,7 +201,7 @@ const Project = ({
         <div className="projectContainer__longDesc--text">
           <p>{project?.longDesc}</p>
         </div>
-        <div className="projectCoontainer__longDesc--descImage">
+        <div className="projectContainer__longDesc--descImage">
           <img src={project?.img3} alt="third project image" />
         </div>
       </div>
