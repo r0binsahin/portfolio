@@ -64,7 +64,6 @@ const Project = ({
       ease: "power1.out",
       y: 0,
       duration: 0.9,
-      stagger: 0.5,
     });
 
     const tlImgBox = gsap.timeline({
@@ -77,7 +76,7 @@ const Project = ({
     });
 
     tlImgBox.from(".projectContainer__themeImage--imgBox", {
-      x: "-100%",
+      x: "-130%",
       duration: 0.9,
       ease: "power1.inOut",
     });
@@ -87,12 +86,12 @@ const Project = ({
         trigger: ".projectContainer__tools",
         start: "top center+=100",
         end: "bottom center",
-        scrub: 0.6,
+        scrub: 1,
       },
     });
 
     tlTools.from(".projectContainer__tools--toolName", {
-      x: "140%",
+      x: "150%",
       duration: 0.9,
       ease: "power1.inOut",
     });
@@ -107,7 +106,7 @@ const Project = ({
     });
 
     tlMidImg.from(".projectContainer__midImageBox--midImage", {
-      x: "100%",
+      x: "130%",
       duration: 0.9,
       ease: "power1.inOut",
     });
@@ -117,7 +116,7 @@ const Project = ({
         trigger: ".projectContainer__linkBox",
         start: "top center+=100",
         end: "bottom center",
-        scrub: 0.6,
+        scrub: 1,
       },
     });
 
@@ -126,8 +125,6 @@ const Project = ({
       duration: 0.9,
       ease: "power1.inOut",
     });
-
-    //
 
     const tlLongDesc = gsap.timeline({
       scrollTrigger: {
