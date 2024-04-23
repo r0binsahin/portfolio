@@ -3,7 +3,7 @@ import Bio from "./pages/bio/Bio";
 import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
 import Platform from "./pages/platform/Platform";
-import ProjectPage from "./pages/projects/Projects";
+import ProjectPage from "./pages/projects/ProjectPage";
 
 import { projects } from "./assets/data/projects";
 
