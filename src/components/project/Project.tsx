@@ -49,6 +49,13 @@ const Project = ({
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    const tlhead = gsap.timeline();
+
+    tlhead.from(".projectContainer__head--headImage", {
+      duration: 1.2,
+      x: 500,
+    });
+
     const tlWrapper = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
@@ -139,13 +146,6 @@ const Project = ({
       y: "40%",
       duration: 0.9,
       ease: Power1.easeInOut,
-    });
-
-    const tlFirstImg = gsap.timeline();
-
-    tlFirstImg.from(".projectContainer__head--headImage", {
-      duration: 1.5,
-      x: 500,
     });
   }, [projectId]);
 
