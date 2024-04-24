@@ -140,7 +140,14 @@ const Project = ({
       duration: 0.9,
       ease: Power1.easeInOut,
     });
-  }, []);
+
+    const tlFirstImg = gsap.timeline();
+
+    tlFirstImg.from(".projectContainer__head--headImage", {
+      duration: 1.5,
+      x: 500,
+    });
+  }, [projectId]);
 
   return (
     <div className="projectContainer">
