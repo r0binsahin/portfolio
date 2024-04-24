@@ -53,7 +53,7 @@ const Navbar = () => {
                   >
                     <Link
                       className={
-                        location.pathname === "/" + item.toLowerCase()
+                        location.pathname.includes("/" + item.toLowerCase())
                           ? "active-link"
                           : "link"
                       }

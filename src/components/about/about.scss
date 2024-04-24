@@ -5,8 +5,12 @@
 
   font-family: var(--font-jakarta);
 
+  overflow: hidden;
+
   .headBox {
     border-top: 1px solid var(--body-color);
+
+    overflow: hidden;
 
     padding: 120px 160px;
     p {
@@ -68,7 +72,7 @@
           font-size: 56px;
           font-style: normal;
           font-weight: 400;
-          line-height: 56px; /* 140% */
+          line-height: 56px;
           text-transform: uppercase;
 
           padding: 0;

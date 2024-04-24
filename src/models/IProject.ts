@@ -2,6 +2,8 @@ export interface IProject {
   id: number;
   title: string;
   captionText: string;
+  costumer: string;
+  date: string;
   tools: string[];
   shortDesc: string;
   longDesc: string;
@@ -12,4 +14,5 @@ export interface IProject {
   img2: string;
   img3: string;
   imgExtra: string;
+  coverImg: string;
 }

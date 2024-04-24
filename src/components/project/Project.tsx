@@ -3,7 +3,7 @@ import { IProject } from "../../models/IProject";
 import "./project.scss";
 import { useEffect, useState } from "react";
 
-import { gsap } from "gsap";
+import { gsap, Power1 } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -49,19 +49,25 @@ const Project = ({
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    const tlhead = gsap.timeline();
+
+    tlhead.from(".projectContainer__head--headImage", {
+      duration: 1.2,
+      x: 500,
+    });
+
     const tlWrapper = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
-        start: () => "top center+=200",
-        end: () => "top top",
-
+        start: () => "top bottom+=300",
+        end: () => "top top+=100",
         scrub: 1,
       },
     });
 
     tlWrapper.to(".wrapper", {
       yPercent: -100,
-      ease: "power1.out",
+      ease: Power1.easeInOut,
       y: 0,
       duration: 0.9,
     });
@@ -69,16 +75,15 @@ const Project = ({
     const tlImgBox = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
-        start: "top center",
+        start: "top center+=200",
         end: "top top",
-        scrub: 1,
       },
     });
 
     tlImgBox.from(".projectContainer__themeImage--imgBox", {
-      x: "-130%",
+      y: "40%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     const tlTools = gsap.timeline({
@@ -86,14 +91,13 @@ const Project = ({
         trigger: ".projectContainer__tools",
         start: "top center+=100",
         end: "bottom center",
-        scrub: 1,
       },
     });
 
     tlTools.from(".projectContainer__tools--toolName", {
-      x: "200%",
+      x: "50%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     const tlMidImg = gsap.timeline({
@@ -101,14 +105,13 @@ const Project = ({
         trigger: ".projectContainer__midImageBox",
         start: "top center",
         end: "top top",
-        scrub: 1,
       },
     });
 
     tlMidImg.from(".projectContainer__midImageBox--midImage", {
-      x: "130%",
+      y: "40%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     const tlLinks = gsap.timeline({
@@ -116,14 +119,13 @@ const Project = ({
         trigger: ".projectContainer__linkBox",
         start: "top center+=100",
         end: "bottom center",
-        scrub: 1,
       },
     });
 
     tlLinks.from(".projectContainer__linkBox--links", {
-      x: "2000%",
+      x: "300%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     const tlLongDesc = gsap.timeline({
@@ -131,22 +133,21 @@ const Project = ({
         trigger: ".projectContainer__longDesc",
         start: "top center",
         end: "top top",
-        scrub: 1,
       },
     });
 
     tlLongDesc.from(".projectContainer__longDesc--text", {
-      x: "-100%",
+      x: "-40%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     tlLongDesc.from(".projectContainer__longDesc--descImage", {
-      x: "200%",
+      y: "40%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
-  }, []);
+  }, [projectId]);
 
   return (
     <div className="projectContainer">
@@ -154,7 +155,7 @@ const Project = ({
         <div className="projectContainer__head--info">
           <div className="wrapper">
             <p className="title">{project?.title}</p>
-            <p className="caption">{project?.captionText}</p>
+            <p className="caption">{project?.costumer}</p>
           </div>
         </div>
         <div className="projectContainer__head--headImage">
@@ -173,7 +174,7 @@ const Project = ({
         <div className="projectContainer__tools--title">
           <p>tools</p>
         </div>
-        <div className="projectContainer__tools--toolName">
+        <div className="projectContainer__tools--toolName" data-speed="0.9">
           {project?.tools.map((tool) => (
             <p>{tool} </p>
           ))}

@@ -1,6 +1,32 @@
 import "./about.scss";
 
+import { gsap, Power1 } from "gsap";
+import { useGSAP } from "@gsap/react";
+
 const About = () => {
+  useGSAP(() => {
+    const tlLoad = gsap.timeline();
+
+    tlLoad.from(".about", {
+      duration: 1,
+      x: 500,
+    });
+
+    const tlImgBox = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".mail",
+        start: "top center+=200",
+        end: "top top",
+      },
+    });
+
+    tlImgBox.from(".photo", {
+      y: "50%",
+      duration: 0.9,
+      ease: Power1.easeInOut,
+    });
+  });
+
   return (
     <div className="about">
       <div className="headBox">
@@ -27,6 +53,7 @@ const About = () => {
         </div>
         <div className="photo">
           <img
+            className="portrait"
             src="https://i.postimg.cc/sfnk427k/Square-1.png"
             alt="portrait"
           />

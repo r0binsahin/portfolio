@@ -4,6 +4,8 @@ export const projects: IProject[] = [
   {
     id: 1,
     title: "Peyvok",
+    costumer: "Case study",
+    date: "december 2023",
     captionText: "Caption Text",
     tools: ["React Native", "TypeScript", "MongoDB Realm"],
     shortDesc:
@@ -13,14 +15,17 @@ export const projects: IProject[] = [
     github: "https://github.com/r0binsahin/Peyvok",
     live: "",
     isLive: false,
-    img1: "https://i.postimg.cc/q7zZmndc/peyvok-1.png",
+    img1: "https://i.postimg.cc/s2XXLnKV/peyvok-1.png",
     img2: "https://i.postimg.cc/wxh4bgnr/peyvok-2.png",
     img3: "https://i.postimg.cc/jd49CtXf/peyvok-3.png",
     imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
+    coverImg: "https://i.postimg.cc/SRBDq5xq/peyvok-cover.png",
   },
   {
     id: 2,
     title: "Daresay Check-in Generator",
+    costumer: "Daresay",
+    date: "october 2023",
     captionText: "Caption Text",
     tools: ["React", "TypeScript", "Framer Motion"],
     shortDesc:
@@ -35,6 +40,7 @@ export const projects: IProject[] = [
     img2: "https://i.postimg.cc/qqXmtx8r/checkin-2.png",
     img3: "https://i.postimg.cc/02sF8bpx/checkin-3.png",
     imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
+    coverImg: "https://i.postimg.cc/fLbHvmP4/checkin-cover.png",
   },
   /*  {
     id: 3,
