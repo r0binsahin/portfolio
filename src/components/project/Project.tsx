@@ -3,7 +3,7 @@ import { IProject } from "../../models/IProject";
 import "./project.scss";
 import { useEffect, useState } from "react";
 
-import { gsap } from "gsap";
+import { gsap, Power1 } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -54,14 +54,12 @@ const Project = ({
         trigger: ".projectContainer__themeImage",
         start: () => "top center+=200",
         end: () => "top top",
-
-        scrub: 1,
       },
     });
 
     tlWrapper.to(".wrapper", {
       yPercent: -100,
-      ease: "power1.out",
+      ease: "none" /* Power1.easeInOut */,
       y: 0,
       duration: 0.9,
     });
@@ -71,14 +69,13 @@ const Project = ({
         trigger: ".projectContainer__themeImage",
         start: "top center",
         end: "top top",
-        scrub: 1,
       },
     });
 
     tlImgBox.from(".projectContainer__themeImage--imgBox", {
-      x: "-130%",
+      y: "40%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     const tlTools = gsap.timeline({
@@ -86,14 +83,13 @@ const Project = ({
         trigger: ".projectContainer__tools",
         start: "top center+=100",
         end: "bottom center",
-        scrub: 1,
       },
     });
 
     tlTools.from(".projectContainer__tools--toolName", {
       x: "250%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     const tlMidImg = gsap.timeline({
@@ -101,14 +97,13 @@ const Project = ({
         trigger: ".projectContainer__midImageBox",
         start: "top center",
         end: "top top",
-        scrub: 1,
       },
     });
 
     tlMidImg.from(".projectContainer__midImageBox--midImage", {
       x: "130%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     const tlLinks = gsap.timeline({
@@ -116,14 +111,13 @@ const Project = ({
         trigger: ".projectContainer__linkBox",
         start: "top center+=100",
         end: "bottom center",
-        scrub: 1,
       },
     });
 
     tlLinks.from(".projectContainer__linkBox--links", {
       x: "2000%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     const tlLongDesc = gsap.timeline({
@@ -131,20 +125,19 @@ const Project = ({
         trigger: ".projectContainer__longDesc",
         start: "top center",
         end: "top top",
-        scrub: 1,
       },
     });
 
     tlLongDesc.from(".projectContainer__longDesc--text", {
       x: "-100%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
 
     tlLongDesc.from(".projectContainer__longDesc--descImage", {
       x: "200%",
       duration: 0.9,
-      ease: "power1.inOut",
+      ease: Power1.easeInOut,
     });
   }, []);
 
@@ -173,7 +166,7 @@ const Project = ({
         <div className="projectContainer__tools--title">
           <p>tools</p>
         </div>
-        <div className="projectContainer__tools--toolName">
+        <div className="projectContainer__tools--toolName" data-speed="0.9">
           {project?.tools.map((tool) => (
             <p>{tool} </p>
           ))}
