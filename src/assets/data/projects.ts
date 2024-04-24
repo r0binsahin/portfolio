@@ -4,7 +4,7 @@ export const projects: IProject[] = [
   {
     id: 1,
     title: "Peyvok",
-    costumer: "School Project",
+    costumer: "Case study",
     date: "december 2023",
     captionText: "Caption Text",
     tools: ["React Native", "TypeScript", "MongoDB Realm"],

@@ -52,14 +52,15 @@ const Project = ({
     const tlWrapper = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
-        start: () => "top center+=200",
-        end: () => "top top",
+        start: () => "top bottom+=300",
+        end: () => "top top+=100",
+        scrub: 1,
       },
     });
 
     tlWrapper.to(".wrapper", {
       yPercent: -100,
-      ease: "none" /* Power1.easeInOut */,
+      ease: Power1.easeInOut,
       y: 0,
       duration: 0.9,
     });
@@ -67,7 +68,7 @@ const Project = ({
     const tlImgBox = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
-        start: "top center",
+        start: "top center+=200",
         end: "top top",
       },
     });
@@ -87,7 +88,7 @@ const Project = ({
     });
 
     tlTools.from(".projectContainer__tools--toolName", {
-      x: "250%",
+      x: "50%",
       duration: 0.9,
       ease: Power1.easeInOut,
     });
@@ -101,7 +102,7 @@ const Project = ({
     });
 
     tlMidImg.from(".projectContainer__midImageBox--midImage", {
-      x: "130%",
+      y: "40%",
       duration: 0.9,
       ease: Power1.easeInOut,
     });
@@ -115,7 +116,7 @@ const Project = ({
     });
 
     tlLinks.from(".projectContainer__linkBox--links", {
-      x: "2000%",
+      x: "300%",
       duration: 0.9,
       ease: Power1.easeInOut,
     });
@@ -129,13 +130,13 @@ const Project = ({
     });
 
     tlLongDesc.from(".projectContainer__longDesc--text", {
-      x: "-100%",
+      x: "-40%",
       duration: 0.9,
       ease: Power1.easeInOut,
     });
 
     tlLongDesc.from(".projectContainer__longDesc--descImage", {
-      x: "200%",
+      y: "40%",
       duration: 0.9,
       ease: Power1.easeInOut,
     });
@@ -147,7 +148,7 @@ const Project = ({
         <div className="projectContainer__head--info">
           <div className="wrapper">
             <p className="title">{project?.title}</p>
-            <p className="caption">{project?.captionText}</p>
+            <p className="caption">{project?.costumer}</p>
           </div>
         </div>
         <div className="projectContainer__head--headImage">
