@@ -4,6 +4,9 @@ import emailjs from "@emailjs/browser";
 
 import "./mail.scss";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
 const Mail = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -36,6 +39,15 @@ const Mail = () => {
       console.error("Form reference is null.");
     }
   };
+
+  useGSAP(() => {
+    const tlLoad = gsap.timeline();
+
+    tlLoad.from(".mailContainer", {
+      duration: 1,
+      x: 500,
+    });
+  });
 
   return (
     <div className="mailContainer">
