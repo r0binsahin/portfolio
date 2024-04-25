@@ -59,14 +59,14 @@ const Project = ({
     const tlWrapper = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
-        start: () => "top bottom+=300",
+        start: () => "top bottom+=400",
         end: () => "top top+=100",
         scrub: 1,
       },
     });
 
     tlWrapper.to(".wrapper", {
-      yPercent: -100,
+      yPercent: -110,
       ease: Power1.easeInOut,
       y: 0,
       duration: 0.9,
