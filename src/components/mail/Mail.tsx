@@ -103,8 +103,12 @@ const Mail = () => {
             {isSuccess && <p>Your email sent successfully!</p>}
           </div>
 
-          <button type="submit" className={isFormValid ? "valid-button" : ""}>
-            Submit{" "}
+          <button
+            type="submit"
+            className={isFormValid ? "valid-button" : ""}
+            onClick={() => setIsFormValid(false)}
+          >
+            Submit
           </button>
         </form>
       </div>
