@@ -10,6 +10,14 @@ import { useGSAP } from "@gsap/react";
 const Mail = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const checkFormValidity = () => {
+    const form = formRef.current;
+    if (form) {
+      setIsFormValid(form.checkValidity());
+    }
+  };
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -60,27 +68,44 @@ const Mail = () => {
           onSubmit={sendEmail}
         >
           <div className="inputHolder">
-            <label htmlFor="name">Name*</label>{" "}
-            <input required type="text" name="name"></input>
+            <label htmlFor="name">Name*</label>
+            <input
+              required
+              type="text"
+              name="name"
+              onChange={checkFormValidity}
+            />
           </div>
           <div className="inputHolder">
             <label htmlFor="email">Email*</label>
-            <input required type="email" name="email"></input>
+            <input
+              required
+              type="email"
+              name="email"
+              onChange={checkFormValidity}
+            />
           </div>
           <div className="inputHolder">
             <label htmlFor="phone">Phone</label>
-            <input type="text" name="phone"></input>
+            <input type="text" name="phone" />
           </div>
           <div className="inputHolder">
             <label htmlFor="message">Message*</label>
-            <input required type="text" name="message"></input>
+            <input
+              required
+              type="text"
+              name="message"
+              onChange={checkFormValidity}
+            />
           </div>
 
           <div className="success">
             {isSuccess && <p>Your email sent successfully!</p>}
           </div>
 
-          <button type="submit">Submit </button>
+          <button type="submit" className={isFormValid ? "valid-button" : ""}>
+            Submit{" "}
+          </button>
         </form>
       </div>
     </div>
