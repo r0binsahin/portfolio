@@ -136,12 +136,6 @@ const Project = ({
       },
     });
 
-    tlLongDesc.from(".projectContainer__longDesc--text", {
-      x: "-40%",
-      duration: 0.9,
-      ease: Power1.easeInOut,
-    });
-
     tlLongDesc.from(".projectContainer__longDesc--descImage", {
       y: "40%",
       duration: 0.9,
