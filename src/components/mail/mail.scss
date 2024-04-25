@@ -101,6 +101,13 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        cursor: not-allowed;
+      }
+
+      .valid-button {
+        background-color: var(--bg-color-secondary);
+        color: #5b5b5b;
+        border: none;
         cursor: pointer;
       }
     }
