@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   h1 {
     color: var(--body-color);
     text-align: center;
@@ -26,7 +27,9 @@
   }
 
   .down-arrow {
-    padding-top: 200px;
+    position: absolute;
+    z-index: 1000;
+    padding-top: 400px;
     animation: jumpInfinite 2s infinite;
   }
 }
