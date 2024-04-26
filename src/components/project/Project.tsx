@@ -89,7 +89,7 @@ const Project = ({
     const tlTools = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__tools",
-        start: "top center+=100",
+        start: "top bottom",
         end: "bottom center",
       },
     });
@@ -117,7 +117,7 @@ const Project = ({
     const tlLinks = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__linkBox",
-        start: "top center+=100",
+        start: "top bottom",
         end: "bottom center",
       },
     });
@@ -137,8 +137,8 @@ const Project = ({
     });
 
     tlLongDesc.from(".projectContainer__longDesc--descImage", {
-      y: "40%",
-      duration: 0.9,
+      y: "50%",
+      duration: 0.7,
       ease: Power1.easeInOut,
     });
   }, [projectId]);
