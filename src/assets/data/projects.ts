@@ -23,7 +23,7 @@ export const projects: IProject[] = [
   },
   {
     id: 2,
-    title: "Daresay Check-in Generator",
+    title: "Check-in Generator",
     costumer: "Daresay",
     date: "october 2023",
     captionText: "Caption Text",

@@ -1,0 +1,47 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider {
+  width: 100%;
+
+  margin: auto;
+
+  overflow: hidden;
+  position: relative;
+
+  border-top: 1px solid var(--body-color);
+  border-bottom: 1px solid var(--body-color);
+
+  background: var(--body-bg);
+
+  &__track {
+    display: flex;
+
+    align-items: center;
+
+    animation: scroll 50s linear infinite;
+
+    gap: 50px;
+
+    width: calc(638px * 40);
+
+    &--slide {
+      p {
+        font-size: 70px;
+        font-family: var(--font-cormorant);
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        white-space: nowrap;
+        letter-spacing: 4px;
+      }
+    }
+  }
+}

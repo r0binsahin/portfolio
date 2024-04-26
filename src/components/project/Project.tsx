@@ -59,14 +59,14 @@ const Project = ({
     const tlWrapper = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
-        start: () => "top bottom+=300",
+        start: () => "top bottom+=400",
         end: () => "top top+=100",
         scrub: 1,
       },
     });
 
     tlWrapper.to(".wrapper", {
-      yPercent: -100,
+      yPercent: -110,
       ease: Power1.easeInOut,
       y: 0,
       duration: 0.9,
@@ -89,7 +89,7 @@ const Project = ({
     const tlTools = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__tools",
-        start: "top center+=100",
+        start: "top bottom",
         end: "bottom center",
       },
     });
@@ -117,7 +117,7 @@ const Project = ({
     const tlLinks = gsap.timeline({
       scrollTrigger: {
         trigger: ".projectContainer__linkBox",
-        start: "top center+=100",
+        start: "top bottom",
         end: "bottom center",
       },
     });
@@ -136,15 +136,9 @@ const Project = ({
       },
     });
 
-    tlLongDesc.from(".projectContainer__longDesc--text", {
-      x: "-40%",
-      duration: 0.9,
-      ease: Power1.easeInOut,
-    });
-
     tlLongDesc.from(".projectContainer__longDesc--descImage", {
-      y: "40%",
-      duration: 0.9,
+      y: "50%",
+      duration: 0.7,
       ease: Power1.easeInOut,
     });
   }, [projectId]);

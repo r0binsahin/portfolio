@@ -30,7 +30,16 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <div className="name">Robin Sahin</div>
+        <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            display: "flex",
+          }}
+        >
+          <div className="name">Robin Sahin</div>
+        </Link>
+
         <nav className={toggleMenu ? "nav-open" : ""}>
           {(toggleMenu || screenWidth > 500) && (
             <div className="list">
