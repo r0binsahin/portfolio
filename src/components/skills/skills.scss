@@ -20,32 +20,16 @@
 
   background: var(--body-bg);
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 2;
-  }
-
-  &::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-
-  &::before {
-    left: 0;
-    top: 0;
-  }
-
   &__track {
     display: flex;
 
     align-items: center;
 
-    animation: scroll 8s linear infinite;
+    animation: scroll 40s linear infinite;
 
     gap: 50px;
+
+    width: calc(638px * 40);
 
     &--slide {
       p {
