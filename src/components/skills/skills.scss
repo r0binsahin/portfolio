@@ -3,13 +3,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-50%);
   }
 }
 
 .slider {
   width: 100%;
-  height: 100px;
 
   margin: auto;
 
@@ -24,9 +23,7 @@
   &::before,
   &::after {
     content: "";
-    height: 100px;
     position: absolute;
-    width: 200px;
     z-index: 2;
   }
 
@@ -42,25 +39,24 @@
   }
 
   &__track {
-    height: 100%;
-
     display: flex;
 
     align-items: center;
 
-    animation: scroll 40s linear infinite;
-
-    width: calc(250px * 14);
+    animation: scroll 8s linear infinite;
 
     gap: 50px;
 
     &--slide {
-      height: 100px;
-      width: 250px;
-
       p {
-        font-size: 34px;
+        font-size: 70px;
         font-family: var(--font-cormorant);
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        white-space: nowrap;
+        letter-spacing: 4px;
       }
     }
   }

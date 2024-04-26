@@ -1,14 +1,55 @@
 import "./skills.scss";
 
 const Skills = () => {
-  const skills = [...Array(100).keys()];
+  const skills: string[] = [
+    "<react/>",
+    "<JavaScript/>",
+    "<TypeScript/>",
+    "<react native/>",
+    "<node.js/>",
+    "<mongodb/>",
+    "<html/>",
+    "<css/>",
+    "<figma/>",
+    "<git/>",
+    "<react/>",
+    "<JavaScript/>",
+    "<TypeScript/>",
+    "<react native/>",
+    "<node.js/>",
+    "<mongodb/>",
+    "<html/>",
+    "<css/>",
+    "<figma/>",
+    "<git/>",
+    "<react/>",
+    "<JavaScript/>",
+    "<TypeScript/>",
+    "<react native/>",
+    "<node.js/>",
+    "<mongodb/>",
+    "<html/>",
+    "<css/>",
+    "<figma/>",
+    "<git/>",
+    "<react/>",
+    "<JavaScript/>",
+    "<TypeScript/>",
+    "<react native/>",
+    "<node.js/>",
+    "<mongodb/>",
+    "<html/>",
+    "<css/>",
+    "<figma/>",
+    "<git/>",
+  ];
 
   return (
     <div className="slider">
       <div className="slider__track">
         {skills.map((skill, index) => (
           <div key={index} className="slider__track--slide">
-            <p>{skill}-</p>
+            <p>{skill}</p>
           </div>
         ))}
       </div>
