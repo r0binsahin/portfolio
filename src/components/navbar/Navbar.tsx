@@ -34,13 +34,16 @@ const Navbar = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    ScrollTrigger.create({
-      trigger: ".titleContainer",
-      start: "top center-=90%",
-      end: "bottom bottom",
-      onEnter: () => gsap.to(".navbar", { y: "-100%", duration: 0.5 }),
-      onLeaveBack: () => gsap.to(".navbar", { y: "0%", duration: 0.5 }),
-      pin: true,
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".titleContainer",
+        start: "top center-=90%",
+        end: "bottom bottom",
+        onEnter: () => gsap.to(".navbar", { y: "-100%", duration: 0.5 }),
+        onLeaveBack: () => gsap.to(".navbar", { y: "0%", duration: 0.5 }),
+        pin: true,
+        preventOverlaps: true,
+      },
     });
   }, []);
 

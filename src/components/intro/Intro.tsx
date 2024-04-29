@@ -4,10 +4,12 @@ import { useGSAP } from "@gsap/react";
 
 const Intro = () => {
   useGSAP(() => {
-    const tl = gsap.timeline();
+    const tlIntro = gsap.timeline({});
 
-    tl.from(".firstname", { duration: 2, x: 1600 });
-    tl.from(".developer", { duration: 1.3, x: -1000 });
+    tlIntro.from(".firstname", { duration: 2, x: 1600 });
+    tlIntro.from(".developer", { duration: 1.3, x: -1000 });
+    /* 
+     tlIntro.revert(); */
   }, []);
   return (
     <div className="wrapper">

@@ -22,6 +22,7 @@ const Accordion = () => {
         end: () => "+=" + (projectElements.length + 1) * window.innerHeight,
         scrub: 0.8,
         pin: true,
+        preventOverlaps: true,
       },
     });
 
