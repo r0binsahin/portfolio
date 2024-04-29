@@ -28,7 +28,7 @@ const Accordion = () => {
     tl.to(".project", {
       yPercent: -100,
       ease: "none",
-      top: 65,
+      /*     top: 65, */
       stagger: 0.4,
     });
 
