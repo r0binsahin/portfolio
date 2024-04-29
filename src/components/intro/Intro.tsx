@@ -8,8 +8,6 @@ const Intro = () => {
 
     tlIntro.from(".firstname", { duration: 2, x: 1600 });
     tlIntro.from(".developer", { duration: 1.3, x: -1000 });
-    /* 
-     tlIntro.revert(); */
   }, []);
   return (
     <div className="wrapper">
