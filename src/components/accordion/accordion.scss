@@ -1,17 +1,12 @@
-.helper {
-  width: 100%;
-  height: 100vh;
-}
-
 .container {
   position: relative;
   width: 100%;
   height: 100vh;
 
-  margin: 0;
   padding: 0;
 
-  top: 863px;
+  top: 0;
+  left: 0;
 
   .project {
     width: 100%;
@@ -35,18 +30,18 @@
     }
 
     &:nth-child(2) {
-      transform: translate(0px, 69px);
+      transform: translate(0px, 70px);
     }
 
     &:nth-child(3) {
-      transform: translate(0px, 138px);
+      transform: translate(0px, 140px);
     }
 
     &:nth-child(4) {
-      transform: translate(0px, 207px);
+      transform: translate(0px, 210px);
     }
     &:nth-child(5) {
-      transform: translate(0px, 276px);
+      transform: translate(0px, 280px);
     }
 
     .projectInner {

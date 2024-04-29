@@ -7,7 +7,7 @@ function Platform() {
   return (
     <>
       <Navbar />
-      <div style={{ paddingTop: "74px" }}>
+      <div style={{ paddingTop: "65px" }}>
         <Outlet />
       </div>
       <Footer />

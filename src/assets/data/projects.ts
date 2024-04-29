@@ -42,6 +42,27 @@ export const projects: IProject[] = [
     imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
     coverImg: "https://i.postimg.cc/fLbHvmP4/checkin-cover.png",
   },
+  {
+    id: 3,
+    title: "Check-in Generator",
+    costumer: "Daresay",
+    date: "october 2023",
+    captionText: "Caption Text",
+    tools: ["React", "TypeScript", "Framer Motion"],
+    shortDesc:
+      " Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim.",
+
+    longDesc:
+      "Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ",
+    github: "",
+    live: "https://checkin.daresay.io/",
+    isLive: true,
+    img1: "https://i.postimg.cc/LsB3T4nB/checkin-1.png",
+    img2: "https://i.postimg.cc/qqXmtx8r/checkin-2.png",
+    img3: "https://i.postimg.cc/02sF8bpx/checkin-3.png",
+    imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
+    coverImg: "https://i.postimg.cc/fLbHvmP4/checkin-cover.png",
+  },
   /*  {
     id: 3,
     title: "",
