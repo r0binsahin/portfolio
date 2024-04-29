@@ -4,6 +4,10 @@ import { Link, useLocation } from "react-router-dom";
 import "./navbar.scss";
 import DarkMode from "../darkmode/DarkMode";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -27,9 +31,25 @@ const Navbar = () => {
     };
   }, []);
 
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".titleContainer",
+        start: "top center-=90%",
+        end: "bottom bottom",
+        onEnter: () => gsap.to(".navbar", { y: "-100%", duration: 0.5 }),
+        onLeaveBack: () => gsap.to(".navbar", { y: "0%", duration: 0.5 }),
+        pin: true,
+        preventOverlaps: true,
+      },
+    });
+  }, []);
+
   return (
     <>
-      <header>
+      <header className="navbar">
         <Link
           to="/"
           style={{
