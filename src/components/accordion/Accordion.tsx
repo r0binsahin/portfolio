@@ -20,7 +20,7 @@ const Accordion = () => {
         trigger: ".container",
         start: () => "top bottom",
         end: () => "+=" + (projectElements.length + 1) * window.innerHeight,
-        scrub: 1.2,
+        scrub: 0.8,
         pin: true,
       },
     });
@@ -29,7 +29,7 @@ const Accordion = () => {
       yPercent: -100,
       ease: "none",
       top: 65,
-      stagger: 0.6,
+      stagger: 0.4,
     });
 
     gsap.set(".project ", {

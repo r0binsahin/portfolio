@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Intro />
-      <div style={{ padding: "300px 0 300px 0" }}>
+      <div style={{ padding: "150px 0 150px 0" }}>
         <Skills />
       </div>
       <ProjectTitle />
