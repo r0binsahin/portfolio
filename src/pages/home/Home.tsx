@@ -1,5 +1,6 @@
 import Accordion from "../../components/accordion/Accordion";
 import Intro from "../../components/intro/Intro";
+
 import ProjectTitle from "../../components/projectTitle/ProjectTitle";
 import Skills from "../../components/skills/Skills";
 

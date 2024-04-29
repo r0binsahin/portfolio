@@ -18,18 +18,17 @@ const Accordion = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".container",
-        start: () => "top top+=752",
+        start: () => "top bottom",
         end: () => "+=" + (projectElements.length + 1) * window.innerHeight,
-
         scrub: 1.2,
         pin: true,
       },
     });
 
     tl.to(".project", {
-      yPercent: -98.7,
-      top: "148px",
+      yPercent: -100,
       ease: "none",
+      top: 65,
       stagger: 0.6,
     });
 
@@ -65,8 +64,6 @@ const Accordion = () => {
           </li>
         ))}
       </ul>
-
-      <div className="helper"></div>
     </>
   );
 };
