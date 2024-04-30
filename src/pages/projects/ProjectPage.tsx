@@ -30,7 +30,6 @@ const ProjectPage = () => {
       <div className="projectWrapper">
         <ProjectTitle />
       </div>
-
       <Accordion />
     </>
   );

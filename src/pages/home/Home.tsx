@@ -14,7 +14,7 @@ const Home = () => {
 
     gsap.timeline({
       scrollTrigger: {
-        trigger: ".projectInner__header:first-child",
+        trigger: ".projectInner__header",
         start: "top top-=25%",
         end: "bottom bottom",
         onEnter: () => gsap.to(".navbar", { y: "-100%", duration: 0.5 }),
@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <>
       <Intro />
-      <div style={{ padding: "150px 0 150px 0" }}>
+      <div style={{ paddingTop: "150px" }}>
         <Skills />
       </div>
       <ProjectTitle />

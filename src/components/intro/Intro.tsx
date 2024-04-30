@@ -7,7 +7,7 @@ const Intro = () => {
     const tlIntro = gsap.timeline({});
 
     tlIntro.from(".firstname", { duration: 2, x: 1600 });
-    tlIntro.from(".developer", { duration: 1.3, x: -1000 });
+    tlIntro.from(".developer", { duration: 0.8, y: -100 });
   }, []);
   return (
     <div className="wrapper">
