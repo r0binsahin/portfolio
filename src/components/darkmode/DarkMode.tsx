@@ -20,6 +20,7 @@ const DarkMode = () => {
     if (e.target.checked) activateDarkMode();
     else activateLightMode();
   };
+
   //this code sets default mode to dark
   /*   useEffect(() => {
     if (defaultMode === "") {

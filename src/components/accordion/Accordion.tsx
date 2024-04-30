@@ -10,7 +10,7 @@ import { projects } from "../../assets/data/projects";
 import { Link } from "react-router-dom";
 
 const Accordion = () => {
-  const projectElements = gsap.utils.toArray<HTMLElement>(".project");
+  const projectElements = gsap.utils.toArray(".project") as HTMLElement[];
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -26,11 +26,12 @@ const Accordion = () => {
       },
     });
 
-    tl.to(".project", {
-      yPercent: -100,
-      ease: "none",
-      /*     top: 65, */
-      stagger: 0.4,
+    projectElements.forEach((project) => {
+      tl.to(project, {
+        yPercent: -100,
+        ease: "none",
+        stagger: 0.4,
+      });
     });
 
     gsap.set(".project ", {
