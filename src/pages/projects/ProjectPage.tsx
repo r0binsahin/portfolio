@@ -14,8 +14,8 @@ const ProjectPage = () => {
 
     gsap.timeline({
       scrollTrigger: {
-        trigger: ".titleContainer",
-        start: "top center-=89%",
+        trigger: ".projectInner__header:first-child",
+        start: "top top-=25%",
         end: "bottom bottom",
         onEnter: () => gsap.to(".navbar", { y: "-100%", duration: 0.5 }),
         onLeaveBack: () => gsap.to(".navbar", { y: "0%", duration: 0.5 }),
