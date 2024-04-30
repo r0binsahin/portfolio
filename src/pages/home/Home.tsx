@@ -15,7 +15,7 @@ const Home = () => {
     gsap.timeline({
       scrollTrigger: {
         trigger: ".titleContainer",
-        start: "top center-=90%",
+        start: "top center-=89%",
         end: "bottom bottom",
         onEnter: () => gsap.to(".navbar", { y: "-100%", duration: 0.5 }),
         onLeaveBack: () => gsap.to(".navbar", { y: "0%", duration: 0.5 }),
