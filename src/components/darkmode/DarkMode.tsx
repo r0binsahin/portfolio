@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Moon } from "../../assets/icons/Moon";
 import Sun from "../../assets/icons/Sun";
 import "./darkMode.scss";
@@ -21,11 +21,12 @@ const DarkMode = () => {
     else activateLightMode();
   };
 
-  useEffect(() => {
+  //this code sets default mode to dark
+  /*   useEffect(() => {
     if (defaultMode === "") {
       activateDarkMode();
     }
-  });
+  }); */
 
   return (
     <div className="dark_mode">
