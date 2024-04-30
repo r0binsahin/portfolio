@@ -5,7 +5,7 @@ const ProjectTitle = () => {
     <div className="titleContainer">
       <h1 className="projectTitle">Selected projects</h1>
 
-      <div className="down-arrow">arrow</div>
+      {/*   <div className="down-arrow">arrow</div> */}
     </div>
   );
 };
