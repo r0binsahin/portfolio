@@ -21,11 +21,11 @@ const DarkMode = () => {
     else activateLightMode();
   };
 
-  useEffect(() => {
+  /*   useEffect(() => {
     if (defaultMode === "") {
       activateDarkMode();
     }
-  });
+  }); */
 
   return (
     <div className="dark_mode">
