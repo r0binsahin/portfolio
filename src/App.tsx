@@ -9,12 +9,19 @@ import { projects } from "./assets/data/projects";
 
 import "./styles/globals.scss";
 
-import { Route, Routes, NavigateFunction, useLocation } from "react-router-dom";
+import {
+  Route,
+  Routes,
+  NavigateFunction,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import Project from "./components/project/Project";
 import Login from "./components/login/Login";
 
 function App() {
   const location = useLocation();
+  const navigateTo = useNavigate();
 
   const navigateToPrev = (navigate: NavigateFunction) => {
     const pathSegments = location.pathname.split("/");
@@ -62,7 +69,11 @@ function App() {
             path={`/projects/${project.id}`}
             element={
               project.isProtected ? (
-                <Login />
+                <Login
+                  projectId={project.id}
+                  projects={projects}
+                  navigate={navigateTo}
+                />
               ) : (
                 <Project
                   projects={projects}
