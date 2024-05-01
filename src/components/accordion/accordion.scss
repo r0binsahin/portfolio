@@ -1,7 +1,8 @@
+@import "../../styles/mixins";
+
 .container {
   position: relative;
   width: 100%;
-  /*  height: 100vh; */
 
   padding: 0;
 
@@ -30,18 +31,39 @@
     }
 
     &:nth-child(2) {
-      transform: translate(0px, 70px);
+      transform: translate(0px, 36px);
     }
 
     &:nth-child(3) {
-      transform: translate(0px, 140px);
+      transform: translate(0px, 72px);
     }
 
     &:nth-child(4) {
-      transform: translate(0px, 210px);
+      transform: translate(0px, 108px);
     }
     &:nth-child(5) {
-      transform: translate(0px, 280px);
+      transform: translate(0px, 144px);
+    }
+
+    @include desktop {
+      &:nth-child(1) {
+        transform: translate(0px, 0px);
+      }
+
+      &:nth-child(2) {
+        transform: translate(0px, 70px);
+      }
+
+      &:nth-child(3) {
+        transform: translate(0px, 140px);
+      }
+
+      &:nth-child(4) {
+        transform: translate(0px, 210px);
+      }
+      &:nth-child(5) {
+        transform: translate(0px, 280px);
+      }
     }
 
     .projectInner {
@@ -63,11 +85,12 @@
         font-family: var(--font-jakarta);
 
         background-color: var(--body-bg);
-        border-top: 1px solid var(--body-color);
-        border-bottom: 1px solid var(--body-color);
         color: var(--body-color);
 
-        padding: 10px 48px 10px 48px;
+        border-top: 1px solid var(--body-color);
+        border-bottom: 1px solid var(--body-color);
+
+        padding: 5px 20px 5px 20px;
 
         transition: all 0.4s ease-in-out;
 
@@ -78,24 +101,40 @@
         }
 
         &--customer {
-          font-size: 24px;
+          font-size: 13px;
           margin: 0;
           padding: 0;
         }
 
         &--name {
           font-family: var(--font-cormorant);
-          font-size: 32px;
+          font-size: 16px;
           text-transform: uppercase;
           margin: 0;
           padding: 0;
         }
 
         &--date {
-          font-size: 20px;
+          font-size: 13px;
 
           margin: 0;
           padding: 0;
+        }
+
+        @include desktop {
+          padding: 10px 48px 10px 48px;
+
+          &--customer {
+            font-size: 24px;
+          }
+
+          &--name {
+            font-size: 32px;
+          }
+
+          &--date {
+            font-size: 20px;
+          }
         }
       }
 
@@ -106,7 +145,11 @@
         img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: none;
+
+          @include desktop {
+            object-fit: cover;
+          }
         }
       }
     }

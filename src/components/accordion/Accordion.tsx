@@ -17,7 +17,7 @@ const Accordion = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".container",
-        start: () => "top bottom",
+        start: () => "botto bottom",
         end: () => "+=" + (projectElements.length + 1) * window.innerHeight,
         scrub: 0.8,
         pin: true,
