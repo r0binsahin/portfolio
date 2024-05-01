@@ -11,6 +11,7 @@ import "./styles/globals.scss";
 
 import { Route, Routes, NavigateFunction, useLocation } from "react-router-dom";
 import Project from "./components/project/Project";
+import Login from "./components/login/Login";
 
 function App() {
   const location = useLocation();
@@ -60,12 +61,16 @@ function App() {
             key={project.id}
             path={`/projects/${project.id}`}
             element={
-              <Project
-                projects={projects}
-                projectId={project.id}
-                navigateToNext={navigateToNext}
-                navigateToPrev={navigateToPrev}
-              />
+              project.isProtected ? (
+                <Login />
+              ) : (
+                <Project
+                  projects={projects}
+                  projectId={project.id}
+                  navigateToNext={navigateToNext}
+                  navigateToPrev={navigateToPrev}
+                />
+              )
             }
           />
         ))}
