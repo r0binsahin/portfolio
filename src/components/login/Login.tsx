@@ -3,7 +3,7 @@ import "./login.scss";
 
 import { IProject } from "../../models/IProject";
 
-import { gsap, Power1 } from "gsap";
+import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
 interface ILoginProps {
