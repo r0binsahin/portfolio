@@ -3,6 +3,9 @@ import "./login.scss";
 
 import { IProject } from "../../models/IProject";
 
+import { gsap, Power1 } from "gsap";
+import { useGSAP } from "@gsap/react";
+
 interface ILoginProps {
   projectId: number;
   projects: IProject[];
@@ -11,6 +14,7 @@ interface ILoginProps {
 
 const Login = ({ projectId, projects, navigate }: ILoginProps) => {
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
@@ -19,23 +23,28 @@ const Login = ({ projectId, projects, navigate }: ILoginProps) => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (password === "hallonbuske") {
-      // Find the project with the given projectId
+    if (password === import.meta.env.VITE_PASSWORD) {
       const projectToUpdate = projects.find(
         (project) => project.id === projectId
       );
 
-      // Update the project's isProtected property to false
       if (projectToUpdate) {
         projectToUpdate.isProtected = false;
       }
-
-      // Redirect to the project page
       navigate(`/projects/${projectId}`);
     } else {
-      return "error";
+      setError(true);
     }
   };
+
+  useGSAP(() => {
+    const tlSlide = gsap.timeline();
+
+    tlSlide.from(".loginFormContainer", {
+      duration: 1,
+      x: 500,
+    });
+  });
 
   return (
     <div className="loginFormContainer">
@@ -59,6 +68,12 @@ const Login = ({ projectId, projects, navigate }: ILoginProps) => {
             onChange={handleChange}
           />
         </div>
+
+        {error && (
+          <div className="errorMsg">
+            <p>Invalid password!</p>
+          </div>
+        )}
 
         <button>Submit</button>
       </form>

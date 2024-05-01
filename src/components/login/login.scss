@@ -58,14 +58,14 @@
         font-size: 16px;
       }
     }
-
-    /*    .success {
+    .errorMsg {
       height: 72px;
       p {
         text-align: center;
         font-size: 16px;
+        color: red;
       }
-    } */
+    }
 
     button {
       width: 100%;
@@ -81,12 +81,5 @@
       line-height: normal;
       cursor: pointer;
     }
-    /* 
-    .valid-button {
-      background-color: var(--bg-color-secondary);
-      color: #5b5b5b;
-      border: none;
-      cursor: pointer;
-    } */
   }
 }
