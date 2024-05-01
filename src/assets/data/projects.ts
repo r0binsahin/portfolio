@@ -20,6 +20,7 @@ export const projects: IProject[] = [
     img3: "https://i.postimg.cc/jd49CtXf/peyvok-3.png",
     imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
     coverImg: "https://i.postimg.cc/SRBDq5xq/peyvok-cover.png",
+    isProtected: false,
   },
   {
     id: 2,
@@ -41,6 +42,7 @@ export const projects: IProject[] = [
     img3: "https://i.postimg.cc/02sF8bpx/checkin-3.png",
     imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
     coverImg: "https://i.postimg.cc/fLbHvmP4/checkin-cover.png",
+    isProtected: false,
   },
   {
     id: 3,
@@ -62,6 +64,7 @@ export const projects: IProject[] = [
     img3: "https://i.postimg.cc/02sF8bpx/checkin-3.png",
     imgExtra: "https://i.postimg.cc/T3WDCY4L/placeholder.png",
     coverImg: "https://i.postimg.cc/fLbHvmP4/checkin-cover.png",
+    isProtected: true,
   },
   /*  {
     id: 3,

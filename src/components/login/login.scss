@@ -1,0 +1,85 @@
+.loginFormContainer {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: var(--body-color);
+  font-family: var(--font-jakarta);
+
+  .head {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    h1 {
+      font-size: 56px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .inputHolder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      padding: 50px 0 50px 0;
+
+      label {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      input {
+        width: 100%;
+        height: 50px;
+
+        border: none;
+        border-bottom: 1px solid var(--body-color);
+        background-color: var(--body-bg);
+
+        outline: none;
+        font-size: 16px;
+      }
+    }
+    .errorMsg {
+      height: 72px;
+      p {
+        text-align: center;
+        font-size: 16px;
+        color: red;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 64px;
+      text-align: center;
+      border: 1px solid var(--body-color);
+      background: var(--body-bg);
+      color: var(--btn-color);
+      font-family: var(--font-jakarta);
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      cursor: pointer;
+    }
+  }
+}

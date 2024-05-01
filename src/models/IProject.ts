@@ -15,4 +15,5 @@ export interface IProject {
   img3: string;
   imgExtra: string;
   coverImg: string;
+  isProtected: boolean;
 }
