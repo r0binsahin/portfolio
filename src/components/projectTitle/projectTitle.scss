@@ -1,14 +1,4 @@
-/* @keyframes jumpInfinite {
-  0% {
-    margin-top: 0;
-  }
-  50% {
-    margin-top: 20px;
-  }
-  100% {
-    margin-top: 0;
-  }
-} */
+@import "../../styles/mixins";
 
 .titleContainer {
   height: 100vh;
@@ -23,17 +13,16 @@
     color: var(--body-color);
     text-align: center;
     font-family: var(--font-cormorant);
-    font-size: 84px;
+    font-size: 56px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
   }
 
-  .down-arrow {
-    /* position: absolute;
-    z-index: 1000;
-    padding-top: 400px; */
-    /*     animation: jumpInfinite 2s infinite; */
+  @include desktop {
+    h1 {
+      font-size: 84px;
+    }
   }
 }

@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .wrapper {
   width: 100%;
   display: flex;
@@ -10,14 +12,14 @@
 
     align-items: flex-start;
 
-    gap: 122px;
+    gap: 40px;
 
-    padding: 175px 0 100px 0;
+    padding: 125px 0 78px 0;
 
     h3 {
       text-align: center;
       font-family: var(--font-cormorant);
-      font-size: 72px;
+      font-size: 32px;
       color: var(--body-color);
       font-style: normal;
       font-weight: 400;
@@ -31,7 +33,7 @@
     h1 {
       color: var(--body-color);
       font-family: var(--forn-jakarta);
-      font-size: 400px;
+      font-size: 120px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
@@ -39,6 +41,20 @@
 
       padding: 0;
       margin: 0;
+    }
+
+    @include desktop {
+      gap: 122px;
+
+      padding: 175px 0 100px 0;
+
+      h3 {
+        font-size: 72px;
+      }
+
+      h1 {
+        font-size: 400px;
+      }
     }
   }
 }
