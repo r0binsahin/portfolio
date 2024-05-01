@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .about {
   width: 100%;
 
@@ -12,9 +14,10 @@
 
     overflow: hidden;
 
-    padding: 120px 160px;
+    padding: 50px;
+
     p {
-      font-size: 56px;
+      font-size: 28px;
       font-style: normal;
       font-family: var(--font-cormorant);
       font-weight: 400;
@@ -26,10 +29,11 @@
   .specialties {
     border-top: 1px solid var(--body-color);
     display: flex;
-    align-items: center;
-    gap: 175px;
+    flex-direction: column;
 
-    padding: 0px 160px;
+    gap: 25px;
+
+    padding: 50px 0 50px 50px;
 
     .title {
       color: #a4a4a4;
@@ -39,33 +43,46 @@
       font-weight: 400;
       line-height: normal;
     }
+
     .specs {
-      font-size: 32px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 400;
-      line-height: 56px;
+
       text-transform: uppercase;
       font-family: var(--font-cormorant);
       word-spacing: 16px;
+
+      padding: 0;
+      margin: 0;
+    }
+
+    .verticalBar {
+      display: none;
     }
   }
 
   .card {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
-    padding: 120px 160px;
+    padding: 50px;
     border-top: 1px solid var(--body-color);
+
+    gap: 50px;
 
     .info {
       display: flex;
       flex-direction: column;
 
-      gap: 80px;
+      gap: 50px;
 
       .name {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         gap: 16px;
 
         .fullname {
@@ -97,28 +114,34 @@
           line-height: normal;
         }
         .city {
-          font-size: 20px;
+          font-size: 18px;
         }
         .mail {
-          font-size: 28px;
+          font-size: 20px;
         }
       }
     }
 
     .photo {
-      width: 525px;
-      height: 525px;
+      width: 270px;
+      height: 270px;
       overflow: hidden;
       border: 15px solid var(--body-color);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 
   .funFacts {
-    padding: 120px 160px;
+    padding: 50px;
     border-top: 1px solid var(--body-color);
 
     p {
-      font-size: 28px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -127,13 +150,99 @@
 
   .resume {
     border-top: 1px solid var(--body-color);
-    padding: 120px 160px;
+    padding: 50px;
 
     p {
-      font-size: 28px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+    }
+  }
+
+  @include desktop {
+    .headBox {
+      padding: 120px 160px;
+      p {
+        font-size: 56px;
+      }
+    }
+
+    .specialties {
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+
+      padding: 0px 160px;
+
+      .title {
+        font-size: 20px;
+      }
+      .specs {
+        font-size: 32px;
+        line-height: 56px;
+      }
+
+      .verticalBar {
+        display: block;
+
+        font-size: 32px;
+        font-family: var(--font-cormorant);
+      }
+    }
+
+    .card {
+      padding: 120px 160px;
+      flex-direction: row;
+
+      .info {
+        gap: 80px;
+
+        .name {
+          gap: 16px;
+
+          .fullname {
+            font-size: 56px;
+          }
+
+          p {
+            font-size: 28px;
+            font-style: normal;
+          }
+        }
+
+        .contacts {
+          p {
+          }
+          .city {
+            font-size: 20px;
+          }
+          .mail {
+            font-size: 28px;
+          }
+        }
+      }
+
+      .photo {
+        width: 525px;
+        height: 525px;
+      }
+    }
+
+    .funFacts {
+      padding: 120px 160px;
+
+      p {
+        font-size: 28px;
+      }
+    }
+
+    .resume {
+      padding: 120px 160px;
+
+      p {
+        font-size: 28px;
+      }
     }
   }
 }
