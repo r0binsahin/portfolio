@@ -44,17 +44,19 @@
       line-height: normal;
     }
 
-    .specs {
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
+    div {
+      .specs {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
 
-      text-transform: uppercase;
-      font-family: var(--font-cormorant);
-      word-spacing: 16px;
+        text-transform: uppercase;
+        font-family: var(--font-cormorant);
+        word-spacing: 16px;
 
-      padding: 0;
-      margin: 0;
+        padding: 0;
+        margin: 5px 9 5px 0;
+      }
     }
 
     .verticalBar {
@@ -178,9 +180,22 @@
       .title {
         font-size: 20px;
       }
-      .specs {
-        font-size: 32px;
-        line-height: 56px;
+
+      div {
+        display: flex;
+        gap: 50px;
+
+        p:not(:last-child) {
+          &::after {
+            content: "|";
+            margin-left: 15px;
+          }
+        }
+
+        .specs {
+          font-size: 32px;
+          line-height: 56px;
+        }
       }
 
       .verticalBar {

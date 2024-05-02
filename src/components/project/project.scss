@@ -1,9 +1,11 @@
+@import "../../styles/mixins";
+
 .projectContainer {
   width: 100vw;
   display: flex;
   flex-direction: column;
 
-  gap: 150px;
+  gap: 100px;
 
   overflow: hidden;
 
@@ -11,31 +13,45 @@
     width: 100%;
     display: flex;
 
+    position: relative;
+    top: 74px;
+
     &--info {
       display: flex;
-      width: 35%;
-      height: 1480px;
+      width: 100%;
+      height: 1000px;
 
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
 
-      position: relative;
       overflow: auto;
+
+      position: absolute;
+      z-index: 2;
 
       .wrapper {
         display: flex;
         flex-direction: column;
 
-        width: 400px;
+        justify-content: center;
+        align-items: center;
+
+        width: 250px;
         position: fixed;
+
+        background: rgba(255, 252, 252, 0.33);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(5.5px);
 
         .title {
           color: var(--body-color);
           text-align: center;
 
           font-family: var(--font-cormorant);
-          font-size: 66px;
+          font-size: 35px;
           font-style: normal;
           font-weight: 300;
           line-height: 84px;
@@ -43,7 +59,6 @@
 
           padding: 0;
           margin: 0;
-          padding-top: 100px;
         }
 
         .caption {
@@ -58,20 +73,19 @@
           text-transform: uppercase;
 
           padding: 0;
-          margin: 24px 0 0 0;
         }
       }
     }
 
     &--headImage {
-      width: 65%;
-      height: 1480px;
+      width: 100%;
+      height: 1000px;
       flex-shrink: 0;
 
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: none;
       }
     }
   }
@@ -79,16 +93,15 @@
   &__themeImage {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 50px;
 
     &--imgBox {
-      width: 722px;
-      height: 541px;
-      flex-shrink: 0;
+      width: 100%;
 
-      padding-left: 120px;
+      flex-shrink: 0;
 
       img {
         width: 100%;
@@ -98,11 +111,10 @@
     }
     &--desc {
       display: flex;
-      width: 591px;
+      width: 90%;
+
       justify-content: center;
       align-items: center;
-
-      padding-right: 120px;
 
       p {
         color: var(--body-color);
@@ -119,13 +131,12 @@
   &__tools {
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 
     border-top: 1px solid var(--body-color);
     border-bottom: 1px solid var(--body-color);
 
-    padding: 0 120px 0 120px;
-    gap: 100px;
+    padding-left: 50px;
 
     &--title {
       color: #a4a4a4;
@@ -139,22 +150,20 @@
 
     &--toolName {
       display: flex;
-      gap: 15px;
+      flex-direction: column;
 
       color: var(--body-color);
 
       font-family: var(--font-cormorant);
-      font-size: 32px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 400;
       line-height: 44px;
       text-transform: uppercase;
 
-      p:not(:last-child) {
-        &::after {
-          content: "|";
-          margin-left: 15px;
-        }
+      p {
+        margin: 5px 0 5px 0;
+        padding: 0;
       }
     }
   }
@@ -165,8 +174,8 @@
     justify-content: center;
 
     &--midImage {
-      width: 1574px;
-      height: 840px;
+      width: 100%;
+
       flex-shrink: 0;
 
       img {
@@ -180,14 +189,12 @@
   &__linkBox {
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 
     border-top: 1px solid var(--body-color);
     border-bottom: 1px solid var(--body-color);
 
-    padding: 0 120px 0 120px;
-
-    gap: 100px;
+    padding-left: 50px;
 
     &--linkTitle {
       color: #a4a4a4;
@@ -201,7 +208,7 @@
     &--links {
       color: var(--body-color);
       font-family: var(--font-cormorant);
-      font-size: 32px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 400;
       line-height: 44px;
@@ -211,17 +218,28 @@
         text-decoration: none;
         color: inherit;
         cursor: pointer;
+
+        margin: 5px 0 5px 0;
+      }
+
+      a:not(:last-child) {
+        &::after {
+          content: "|";
+          margin-left: 15px;
+        }
       }
     }
   }
 
   &__longDesc {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 50px;
 
     &--text {
-      width: 55%;
-      height: 745px;
+      width: 100%;
+      height: 600px;
       flex-shrink: 0;
       background: #2d2d2d;
 
@@ -230,7 +248,7 @@
       align-items: center;
 
       p {
-        width: 70%;
+        width: 90%;
 
         color: #fff;
 
@@ -243,13 +261,12 @@
     }
 
     &--descImage {
-      width: 500px;
-      height: 745px;
+      width: 96%;
 
       img {
         width: 100%;
         height: 100%;
-        object-fit: fill;
+        object-fit: cover;
       }
     }
   }
@@ -267,15 +284,15 @@
     &--next {
       width: 50%;
 
-      padding-left: 48px;
-      padding-right: 48px;
+      padding-left: 24px;
+      padding-right: 24px;
 
       button {
         all: unset;
         color: #111;
 
         font-family: var(--font-cormorant);
-        font-size: 32px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: 44px;
@@ -292,6 +309,193 @@
     &--next {
       display: flex;
       justify-content: end;
+    }
+  }
+
+  @include desktop {
+    width: 100vw;
+
+    gap: 150px;
+
+    &__head {
+      width: 100%;
+
+      &--info {
+        display: flex;
+        width: 35%;
+        height: 1480px;
+
+        position: relative;
+
+        .wrapper {
+          background-color: transparent;
+          padding: 0;
+          border-radius: 0;
+
+          background: none;
+
+          box-shadow: none;
+          backdrop-filter: none;
+
+          .title {
+            font-size: 66px;
+
+            padding-top: 100px;
+          }
+
+          .caption {
+            font-size: 20px;
+
+            margin: 24px 0 0 0;
+          }
+        }
+      }
+
+      &--headImage {
+        width: 65%;
+        height: 1480px;
+        flex-shrink: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__themeImage {
+      width: 100%;
+      flex-direction: row;
+      gap: 120px;
+
+      &--imgBox {
+        width: 722px;
+        height: 541px;
+        flex-shrink: 0;
+
+        padding-left: 120px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &--desc {
+        width: 591px;
+
+        padding-right: 120px;
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &__tools {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      padding: 0 120px 0 120px;
+      gap: 100px;
+
+      &--title {
+        font-size: 16px;
+      }
+
+      &--toolName {
+        gap: 15px;
+
+        font-size: 32px;
+        flex-direction: row;
+
+        p:not(:last-child) {
+          &::after {
+            content: "|";
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+
+    &__midImageBox {
+      width: 100%;
+
+      &--midImage {
+        width: 1574px;
+        height: 840px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__linkBox {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+
+      padding: 0 120px 0 120px;
+
+      gap: 100px;
+
+      &--linkTitle {
+        font-size: 16px;
+      }
+
+      &--links {
+        font-size: 32px;
+      }
+    }
+
+    &__longDesc {
+      flex-direction: row;
+      gap: 50px;
+
+      &--text {
+        width: 55%;
+        height: 745px;
+
+        p {
+          width: 70%;
+
+          font-size: 20px;
+        }
+      }
+
+      &--descImage {
+        width: 500px;
+        height: 745px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+        }
+      }
+    }
+
+    &__buttons {
+      width: 100%;
+
+      padding-top: 13px;
+      padding-bottom: 13px;
+
+      &--prev,
+      &--next {
+        width: 50%;
+
+        padding-left: 48px;
+        padding-right: 48px;
+
+        button {
+          font-size: 32px;
+        }
+      }
     }
   }
 }
