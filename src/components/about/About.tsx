@@ -37,10 +37,12 @@ const About = () => {
       </div>
       <div className="specialties">
         <p className="title">specialties</p>
-        <p className="specs"> frontend </p> <p className="verticalBar">|</p>
-        <p className="specs"> react.js </p> <p className="verticalBar">|</p>
-        <p className="specs"> typescript </p> <p className="verticalBar">|</p>
-        <p className="specs"> node.js</p>
+        <div>
+          <p className="specs"> frontend </p>
+          <p className="specs"> react.js </p>
+          <p className="specs"> typescript </p>
+          <p className="specs"> node.js</p>
+        </div>
       </div>
 
       <div className="card">

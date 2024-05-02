@@ -60,13 +60,13 @@ const Project = ({
       scrollTrigger: {
         trigger: ".projectContainer__themeImage",
         start: () => "top bottom+=400",
-        end: () => "top top+=100",
+        end: () => "top top+=200",
         scrub: 1,
       },
     });
 
     tlWrapper.to(".wrapper", {
-      yPercent: -110,
+      yPercent: -130,
       ease: Power1.easeInOut,
       y: 0,
       duration: 0.9,
