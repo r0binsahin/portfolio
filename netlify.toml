@@ -1,0 +1,11 @@
+# /*    /index.html   200
+
+[build]
+ command = "CI= npm run build"
+ publish = "/dist"
+ base = "/"
+
+[[redirects]]
+ from = "/*"
+ to = "/index.html"
+ status = 200
