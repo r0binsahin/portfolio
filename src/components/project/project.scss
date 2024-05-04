@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@import '../../styles/mixins';
 
 .projectContainer {
   width: 100vw;
@@ -224,7 +224,7 @@
 
       a:not(:last-child) {
         &::after {
-          content: "|";
+          content: '|';
           margin-left: 15px;
         }
       }
@@ -412,7 +412,7 @@
 
         p:not(:last-child) {
           &::after {
-            content: "|";
+            content: '|';
             margin-left: 15px;
           }
         }
