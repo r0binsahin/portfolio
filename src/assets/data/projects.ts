@@ -24,6 +24,31 @@ export const projects: IProject[] = [
       'https://www.dl.dropboxusercontent.com/scl/fi/1zwvxmwthgrv1tkcafap2/nanoCover.png?rlkey=5tq9vq6v1zq8g7xzvtyomyhb9&st=9wba4iaz&dl=0',
     isProtected: false,
   },
+
+  {
+    id: 2,
+    title: 'Check-in Generator',
+    costumer: 'Daresay',
+    date: 'october 2023',
+    captionText: 'Daresay',
+    tools: ['React', 'TypeScript', 'Framer Motion'],
+    shortDesc:
+      ' Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim.',
+
+    longDesc:
+      'Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ',
+    github: '',
+    live: 'https://checkin.daresay.io/',
+    isLive: true,
+    img1: 'https://www.dl.dropboxusercontent.com/scl/fi/ps4iyuceb96fn5y9q68mz/checkin1.png?rlkey=q91cyhzzncx16rl1c7j4yk5qp&st=p7hcvqim&dl=0',
+    img2: 'https://www.dl.dropboxusercontent.com/scl/fi/1wa1j3j178fbrvg43yyvg/chechin2.png?rlkey=yf31wbcgm6lr4yl8ovk0z5tdt&st=lqp8xtfv&dl=0',
+    img3: 'https://www.dl.dropboxusercontent.com/scl/fi/3nupzp7tn0siqhuv5lkjt/checkin3.png?rlkey=4eg3raptzqz2275icra5kxcnu&st=udsmdpp9&dl=0',
+    imgExtra:
+      'https://www.dl.dropboxusercontent.com/scl/fi/7jqzlo6zpmnrhoe5htcjr/robin2.jpg?rlkey=qaezbirqplt0wb77qxbsm81td&st=dw8bgwei&dl=0',
+    coverImg:
+      'https://www.dl.dropboxusercontent.com/scl/fi/1f3j3f6tiy0hjj5cs6utv/checkinCover.png?rlkey=3p9og300cyev1khnqzi3z7j5p&st=x0aqk8p0&dl=0',
+    isProtected: false,
+  },
   /*  {
     id: 2,
     title: 'Peyvok',
@@ -45,28 +70,7 @@ export const projects: IProject[] = [
     coverImg: 'https://i.postimg.cc/qqHGyrrb/Group-2506.png',
     isProtected: false,
   },
-  {
-    id: 2,
-    title: 'Check-in Generator',
-    costumer: 'Daresay',
-    date: 'october 2023',
-    captionText: 'Caption Text',
-    tools: ['React', 'TypeScript', 'Framer Motion'],
-    shortDesc:
-      ' Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim.',
-
-    longDesc:
-      'Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ',
-    github: '',
-    live: 'https://checkin.daresay.io/',
-    isLive: true,
-    img1: 'https://i.postimg.cc/LsB3T4nB/checkin-1.png',
-    img2: 'https://i.postimg.cc/qqXmtx8r/checkin-2.png',
-    img3: 'https://i.postimg.cc/02sF8bpx/checkin-3.png',
-    imgExtra: 'https://i.postimg.cc/T3WDCY4L/placeholder.png',
-    coverImg: 'https://i.postimg.cc/fLbHvmP4/checkin-cover.png',
-    isProtected: false,
-  },
+  
   {
     id: 3,
     title: 'Check-in Generator',
