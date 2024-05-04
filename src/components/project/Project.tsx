@@ -180,27 +180,26 @@ const Project = ({
         </div>
       </div>
 
-      {project?.live ||
-        (project?.github && (
-          <div className='projectContainer__linkBox'>
-            <div className='projectContainer__linkBox--linkTitle'>
-              <p>links</p>
-            </div>
-            <div className='projectContainer__linkBox--links'>
-              {project?.github !== '' && (
-                <a href={project?.github} target='_blank'>
-                  Github
-                </a>
-              )}
-              {project?.live !== '' && (
-                <a href={project?.live} target='_blank'>
-                  {' '}
-                  Live
-                </a>
-              )}
-            </div>
+      {project?.live !== '' || project?.github !== '' ? (
+        <div className='projectContainer__linkBox'>
+          <div className='projectContainer__linkBox--linkTitle'>
+            <p>links</p>
           </div>
-        ))}
+          <div className='projectContainer__linkBox--links'>
+            {project?.github !== '' && (
+              <a href={project?.github} target='_blank'>
+                Github
+              </a>
+            )}
+            {project?.live !== '' && (
+              <a href={project?.live} target='_blank'>
+                {' '}
+                Live
+              </a>
+            )}
+          </div>
+        </div>
+      ) : null}
 
       <div className='projectContainer__longDesc'>
         <div className='projectContainer__longDesc--text'>
