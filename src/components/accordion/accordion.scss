@@ -45,6 +45,10 @@
       transform: translate(0px, 144px);
     }
 
+    &:nth-child(6) {
+      transform: translate(0px, 180px);
+    }
+
     @include desktop {
       &:nth-child(1) {
         transform: translate(0px, 0px);
@@ -64,6 +68,10 @@
       &:nth-child(5) {
         transform: translate(0px, 280px);
       }
+
+      &:nth-child(6) {
+        transform: translate(0px, 350px);
+      }
     }
 
     .projectInner {
@@ -81,6 +89,7 @@
       &__header {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
 
         font-family: var(--font-jakarta);
 
@@ -98,6 +107,10 @@
 
         &:hover {
           color: #a4a4a4;
+        }
+
+        p {
+          width: 33.3%;
         }
 
         &--customer {
@@ -119,6 +132,7 @@
 
           margin: 0;
           padding: 0;
+          text-align: right;
         }
 
         @include desktop {

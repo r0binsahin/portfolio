@@ -5,7 +5,7 @@ export const projects: IProject[] = [
     id: 1,
     title: 'BPS Calculator',
     costumer: 'Precision NanoSystems',
-    date: 'March 2024',
+    date: 'march 2024',
     captionText: 'Precision NanoSystems',
     tools: ['Next.js', 'React', 'TypeScript', 'Material UI'],
     shortDesc:
@@ -120,5 +120,30 @@ export const projects: IProject[] = [
     coverImg:
       'https://www.dl.dropboxusercontent.com/scl/fi/5p22t6ty41vr1pkypm1dk/peyvokCover.png?rlkey=a03fz23pxtyup6n5oz9jaq9o1&st=g1107yp4&dl=0',
     isProtected: false,
+  },
+
+  {
+    id: 6,
+    title: 'Electron Meeting App',
+    costumer: 'Private costumer',
+    date: 'februari 2024',
+    captionText: 'Private customer',
+    tools: ['React', 'TypeScript', 'Electron'],
+    shortDesc:
+      'etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttito',
+    longDesc:
+      ' etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitoetiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttito',
+
+    github: '',
+    live: '',
+    isLive: false,
+    img1: 'https://www.dl.dropboxusercontent.com/scl/fi/xuzgyc1bfk90shly3kytv/stv1.png?rlkey=4j5vvzrlmbeb558tvr4qk965d&st=20qgdx0k&dl=0',
+    img2: 'https://www.dl.dropboxusercontent.com/scl/fi/s9ucnjxpazickzmw893gn/stv2.png?rlkey=hxc09o6tsz6t2zc98fbf9p14r&st=nsm7fe9d&dl=0',
+    img3: 'https://www.dl.dropboxusercontent.com/scl/fi/eafjuy6socf13nmz22k1m/stv3.png?rlkey=0bftkhxr388k72dpu9imkumec&st=w9hqxp16&dl=0',
+    imgExtra:
+      ' https://www.dl.dropboxusercontent.com/scl/fi/t9ed48t68w6lcx5xyfzsy/stvExtra.png?rlkey=5wmowo78u7rpdeywrul1ziglf&st=eubranzl&dl=0',
+    coverImg:
+      'https://www.dl.dropboxusercontent.com/scl/fi/bcyxuzwvigttkrzpy18d3/stvCover.png?rlkey=cnc1vzoygqh570vyoqecx4nue&st=7wq373xg&dl=0',
+    isProtected: true,
   },
 ];
