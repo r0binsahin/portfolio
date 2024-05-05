@@ -141,7 +141,7 @@ export const projects: IProject[] = [
     img2: 'https://www.dl.dropboxusercontent.com/scl/fi/xsprpsw94jnkwe4dnmd7h/stv2.png?rlkey=h78w7htvfi5gp09tir7vzr2qs&st=sehcxuvg&dl=0',
     img3: 'https://www.dl.dropboxusercontent.com/scl/fi/8kpvpqy2813arazych4ja/stv3.png?rlkey=5j6wxh7wn87ahl2s8twct4h39&st=kfpdejpb&dl=0',
     imgExtra:
-      'https://www.dl.dropboxusercontent.com/scl/fi/n9ij91trbbuebqau51svb/stvCover.png?rlkey=j0xbugkjwaftve6mb5xzlmb85&st=vlp9r594&dl=0',
+      'https://www.dl.dropboxusercontent.com/scl/fi/zjqrxmjpvc020qiibdbwl/stvExtra.png?rlkey=gqilqgig66ydy65hqberu3lvx&st=8fif2ypp&dl=0',
     coverImg:
       'https://www.dl.dropboxusercontent.com/scl/fi/n9ij91trbbuebqau51svb/stvCover.png?rlkey=j0xbugkjwaftve6mb5xzlmb85&st=iv5ed6no&dl=0',
     isProtected: true,
