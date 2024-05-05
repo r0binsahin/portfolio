@@ -54,13 +54,13 @@ export const projects: IProject[] = [
     id: 3,
     title: 'QR generator',
     costumer: 'Alligo',
-    date: 'october 2023',
+    date: 'november 2023',
     captionText: 'Alligo',
     tools: ['React', 'TypeScript', 'i18Next', 'SCSS', 'Vitest'],
     shortDesc: 'mention testing',
     longDesc:
       'Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ',
-    github: 'https://github.com/r0binsahin/Peyvok',
+    github: '',
     live: '',
     isLive: false,
     img1: 'https://www.dl.dropboxusercontent.com/scl/fi/m4f8kdcatyo43po45ygnm/alligo1.png?rlkey=joi7yc2cxpwsdc0zcs8hr74ba&st=uafi7yia&dl=0',
@@ -70,6 +70,30 @@ export const projects: IProject[] = [
       'https://www.dl.dropboxusercontent.com/scl/fi/76b8c1j4nbkioiovxqnqh/Gloriosum.jpg?rlkey=rts5gvbnunsuazcr8tmieix27&st=72xpnj04&dl=0',
     coverImg:
       'https://www.dl.dropboxusercontent.com/scl/fi/s24m2pv53wreuqg6p2ow2/alligoCover.png?rlkey=dn4jaeoatulntqckz3h89bzn8&st=z0pyiadi&dl=0',
+    isProtected: false,
+  },
+
+  {
+    id: 4,
+    title: 'Alisa portal',
+    costumer: 'Alisa',
+    date: 'october 2023',
+    captionText: 'Alisa',
+    tools: ['Svelte', 'TypeScript', 'DaisyUI', 'Tailwind'],
+    shortDesc:
+      'Do etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus port',
+    longDesc:
+      'Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ',
+    github: '',
+    live: '',
+    isLive: false,
+    img1: 'https://www.dl.dropboxusercontent.com/scl/fi/4i1rdts45yu2gb2hihy1s/alisa1.png?rlkey=7r4r2jvtdzojzwc77k6miwwda&st=qnx1cnrk&dl=0',
+    img2: 'https://www.dl.dropboxusercontent.com/scl/fi/dm5nmy0vwpfil437oafu4/alisa2.png?rlkey=44h9zvg2cy0dtc9bh1rea0ram&st=c0h8hwz5&dl=0',
+    img3: 'https://www.dl.dropboxusercontent.com/scl/fi/bo8ld22ku22j7t87ktt0u/alisa3.png?rlkey=dzovolfarz7cz5d7c05w1bw3l&st=c1y2temg&dl=0',
+    imgExtra:
+      'https://www.dl.dropboxusercontent.com/scl/fi/o3yaq9fnp9x5nsot4h2ho/alisaExtra.png?rlkey=m6oky0mo8n7edmlwusya5y7ik&st=degna2c3&dl=0',
+    coverImg:
+      'https://www.dl.dropboxusercontent.com/scl/fi/hjkwjvwxub8axg6o5d1wx/alisaCover.png?rlkey=nd26b0uqlry9rfllptsyxbk6g&st=p0midcka&dl=0',
     isProtected: false,
   },
 ];
