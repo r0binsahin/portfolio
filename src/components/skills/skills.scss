@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@import '../../styles/mixins';
 
 @keyframes scroll {
   0% {
@@ -27,7 +27,7 @@
 
     align-items: center;
 
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
 
     gap: 50px;
 
