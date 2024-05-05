@@ -96,4 +96,29 @@ export const projects: IProject[] = [
       'https://www.dl.dropboxusercontent.com/scl/fi/hjkwjvwxub8axg6o5d1wx/alisaCover.png?rlkey=nd26b0uqlry9rfllptsyxbk6g&st=p0midcka&dl=0',
     isProtected: false,
   },
+
+  {
+    id: 5,
+    title: 'Peyvok',
+    costumer: 'Case study',
+    date: 'december 2023',
+    captionText: 'Case study',
+    tools: ['React Native', 'TypeScript', 'MongoDB Realm'],
+    shortDesc:
+      'This project is a React Native mobile application developed as final project for my Frontend Development education at Medieinstitutet in Stockholm 2022-2024.',
+    longDesc:
+      ' Introducing a mobile digital dictionary designed for kids to  practice Northern Kurdish also known as Kurmancî. Tailored to assist parents raising bilingual children, the app features a  collection of visual and audible content, encompassing various  lexical categories. Each word within the application is accompanied by a vibrant image, informative text, and an audio  file pronouncing the word in Kurdish. With a simple click, users  can effortlessly immerse their children in the rich sounds of the Kurdish language, fostering a seamless bilingual learning experience.',
+
+    github: 'https://github.com/r0binsahin/Peyvok',
+    live: '',
+    isLive: false,
+    img1: 'https://www.dl.dropboxusercontent.com/scl/fi/0t6m3tlpn6r7cz70vf5pz/peyvok1.png?rlkey=hthdxcse8612na8s8fwmpcawn&st=4vonmxn5&dl=0',
+    img2: 'https://www.dl.dropboxusercontent.com/scl/fi/rvv1g2yfrq7o50jwiigny/peyvok2.png?rlkey=xfijjg7kl56zazaqcoz0355c3&st=h9vhyky6&dl=0',
+    img3: 'https://www.dl.dropboxusercontent.com/scl/fi/dzc6dwmon540dtw8hq98m/peyvok3.png?rlkey=4j4t7nwz6g844jjyk4ejdrwtz&st=8qyfvwtp&dl=0',
+    imgExtra:
+      ' https://www.dl.dropboxusercontent.com/scl/fi/z74ze42yandssw20sbj5t/peyvokExtra.png?rlkey=0e8w94m89b329f0yt577rarcg&st=nwipp9ym&dl=0',
+    coverImg:
+      'https://www.dl.dropboxusercontent.com/scl/fi/5p22t6ty41vr1pkypm1dk/peyvokCover.png?rlkey=a03fz23pxtyup6n5oz9jaq9o1&st=g1107yp4&dl=0',
+    isProtected: false,
+  },
 ];
