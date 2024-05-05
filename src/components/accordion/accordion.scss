@@ -31,22 +31,22 @@
     }
 
     &:nth-child(2) {
-      transform: translate(0px, 36px);
+      transform: translate(0px, 28.5px);
     }
 
     &:nth-child(3) {
-      transform: translate(0px, 72px);
+      transform: translate(0px, 57px);
     }
 
     &:nth-child(4) {
-      transform: translate(0px, 108px);
+      transform: translate(0px, 85.5px);
     }
     &:nth-child(5) {
-      transform: translate(0px, 144px);
+      transform: translate(0px, 114px);
     }
 
     &:nth-child(6) {
-      transform: translate(0px, 180px);
+      transform: translate(0px, 142.5px);
     }
 
     @include desktop {
@@ -88,8 +88,9 @@
 
       &__header {
         display: flex;
-        justify-content: space-between;
+        /*     justify-content: space-between; */
         align-items: baseline;
+        justify-content: space-between;
 
         font-family: var(--font-jakarta);
 
@@ -109,26 +110,22 @@
           color: #a4a4a4;
         }
 
-        p {
-          width: 33.3%;
-        }
-
         &--customer {
-          font-size: 13px;
+          font-size: 10px;
           margin: 0;
           padding: 0;
         }
 
         &--name {
           font-family: var(--font-cormorant);
-          font-size: 16px;
+          font-size: 11px;
           text-transform: uppercase;
           margin: 0;
           padding: 0;
         }
 
         &--date {
-          font-size: 13px;
+          font-size: 10px;
 
           margin: 0;
           padding: 0;
@@ -137,6 +134,10 @@
 
         @include desktop {
           padding: 10px 48px 10px 48px;
+
+          p {
+            width: 33.3%;
+          }
 
           &--customer {
             font-size: 24px;
