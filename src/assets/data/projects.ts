@@ -5,7 +5,7 @@ export const projects: IProject[] = [
     id: 1,
     title: "BPS Calculator",
     costumer: "Precision NanoSystems",
-    date: "march 2024",
+    date: "March 2024",
     captionText: "Precision NanoSystems",
     tools: ["Next.js", "React", "TypeScript", "Material UI"],
     shortDesc:
@@ -29,7 +29,7 @@ export const projects: IProject[] = [
     id: 2,
     title: "Check-in Generator",
     costumer: "Daresay",
-    date: "october 2023",
+    date: "October 2023",
     captionText: "Daresay",
     tools: ["React", "TypeScript", "Framer Motion"],
     shortDesc:
@@ -54,7 +54,7 @@ export const projects: IProject[] = [
     id: 3,
     title: "QR generator",
     costumer: "Alligo",
-    date: "november 2023",
+    date: "November 2023",
     captionText: "Alligo",
     tools: ["React", "TypeScript", "i18Next", "SCSS", "Vitest"],
     shortDesc: "mention testing",
@@ -77,7 +77,7 @@ export const projects: IProject[] = [
     id: 4,
     title: "Alisa portal",
     costumer: "Alisa",
-    date: "october 2023",
+    date: "October 2023",
     captionText: "Alisa",
     tools: ["Svelte", "TypeScript", "DaisyUI", "Tailwind"],
     shortDesc:
@@ -101,7 +101,7 @@ export const projects: IProject[] = [
     id: 5,
     title: "Peyvok",
     costumer: "Case study",
-    date: "december 2023",
+    date: "December 2023",
     captionText: "Case study",
     tools: ["React Native", "TypeScript", "MongoDB Realm"],
     shortDesc:
@@ -126,7 +126,7 @@ export const projects: IProject[] = [
     id: 6,
     title: "Electron Meeting App",
     costumer: "Private costumer",
-    date: "februari 2024",
+    date: "Februari 2024",
     captionText: "Private customer",
     tools: ["React", "TypeScript", "Electron"],
     shortDesc:

@@ -1,4 +1,4 @@
-@import '../../styles/mixins';
+@import "../../styles/mixins";
 
 .container {
   position: relative;
@@ -124,12 +124,14 @@
           padding: 0;
         }
 
-        &--date {
+        &--more {
           font-size: 10px;
+          text-transform: uppercase;
 
           margin: 0;
           padding: 0;
           text-align: right;
+          font-family: var(--font-cormorant);
         }
 
         @include desktop {
@@ -147,8 +149,8 @@
             font-size: 32px;
           }
 
-          &--date {
-            font-size: 20px;
+          &--more {
+            font-size: 24px;
           }
         }
       }
