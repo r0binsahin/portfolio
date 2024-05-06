@@ -50,6 +50,11 @@
   }
   .fullName {
     width: 80%;
+    span {
+      color: var(--footer-color);
+      font-family: var(--font-cormorant);
+      font-size: 18px;
+    }
     p {
       color: var(--footer-color);
       text-align: start;
@@ -81,6 +86,9 @@
       }
     }
     .fullName {
+      span {
+        font-size: 28px;
+      }
       p {
         font-size: 176px;
       }
