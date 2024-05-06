@@ -103,11 +103,12 @@ const About = () => {
         <h3>Fun facts</h3>
 
         <p>
-          There is no houseplant that I couldn't propagate through cuttings. 🌱
+          There is no houseplant that I couldn't propagate through cuttings.{' '}
+          <span>🌱</span>
         </p>
         <p>
           Currently, in my spare time, enjoying translating a novel from Swedish
-          into Kurdish.📚
+          into Kurdish. <span>📚</span>
         </p>
       </div>
       <div className='cv'>
