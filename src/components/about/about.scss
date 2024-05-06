@@ -160,6 +160,11 @@
   }
 
   .cv {
+    display: flex;
+    flex-direction: column;
+
+    gap: 60px;
+
     border-top: 1px solid var(--body-color);
     padding: 50px;
 
@@ -168,6 +173,75 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+    }
+    .education {
+      display: flex;
+      flex-direction: column;
+
+      gap: 40px;
+
+      .edu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+          width: 100%;
+
+          .school {
+            font-size: 18px;
+            font-family: var(--font-cormorant);
+          }
+
+          .program {
+            font-size: 20px;
+          }
+
+          .eduDate {
+            font-size: 16px;
+          }
+
+          p {
+            margin: 0;
+            padding: 3px 0;
+          }
+        }
+      }
+    }
+
+    .experience {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      gap: 40px;
+
+      .exp {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        div {
+          width: 100%;
+          .employer {
+            font-size: 18px;
+            font-family: var(--font-cormorant);
+          }
+
+          .job {
+            font-size: 20px;
+          }
+
+          .empDate {
+            font-size: 16px;
+          }
+
+          p {
+            margin: 0;
+            padding: 3px 0;
+          }
+        }
+      }
     }
   }
 
@@ -293,6 +367,67 @@
       h3 {
         font-size: 28px;
         font-weight: bold;
+      }
+
+      .education {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .edu {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+
+          gap: 30px;
+
+          div {
+            width: 33.3%;
+
+            .school {
+              font-size: 24px;
+              font-family: var(--font-cormorant);
+            }
+
+            .program {
+              font-size: 22px;
+            }
+
+            .eduDate {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .exp {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+
+          gap: 30px;
+
+          div {
+            width: 33.3%;
+            .employer {
+              font-size: 24px;
+              font-family: var(--font-cormorant);
+            }
+
+            .job {
+              font-size: 22px;
+            }
+
+            .empDate {
+              font-size: 18px;
+            }
+          }
+        }
       }
     }
   }

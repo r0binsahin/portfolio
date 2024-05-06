@@ -2,6 +2,7 @@ import './about.scss';
 
 import { gsap, Power1 } from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { education, experience } from '../../assets/data/resume';
 
 const About = () => {
   useGSAP(() => {
@@ -112,9 +113,42 @@ const About = () => {
       <div className='cv'>
         <div className='education'>
           <h3>Education</h3>
+          {education.map((edu, index) => (
+            <div className='edu' key={index}>
+              <div>
+                <p className='program'>{edu.education}</p>
+              </div>
+              <div>
+                <p className='school'>{edu.school}</p>
+              </div>
+              <div>
+                <p className='eduDate'>{edu.date}</p>
+              </div>
+            </div>
+          ))}
         </div>
         <div className='experience'>
           <h3>Experience</h3>
+
+          {experience.map((exp, index) => (
+            <div className='exp' key={index}>
+              <div>
+                <p className='job'>{exp.job}</p>
+              </div>
+              <div>
+                <p className='employer'>{exp.employeer}</p>
+              </div>
+
+              <div>
+                <p className='empDate'>{exp.employmentDate}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className='lang'>
+          <h3>Languages</h3>
+          <p> Swedish, English, Kurdish, Turkish, Italian</p>
         </div>
       </div>
     </div>
