@@ -142,11 +142,13 @@
     padding: 50px;
     border-top: 1px solid var(--body-color);
 
-    p {
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+    .shortDescription {
+      p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+      }
     }
   }
 
@@ -155,7 +157,10 @@
     padding: 50px;
 
     p {
-      font-size: 20px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
     }
   }
 
@@ -174,6 +179,7 @@
       font-weight: 400;
       line-height: normal;
     }
+
     .education {
       display: flex;
       flex-direction: column;
@@ -241,6 +247,15 @@
             padding: 3px 0;
           }
         }
+      }
+    }
+
+    .lang {
+      p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
       }
     }
   }
@@ -334,16 +349,15 @@
       flex-direction: column;
       gap: 75px;
 
-      h3 {
-        font-size: 28px;
-        font-weight: bold;
-      }
-
       .shortDescription {
         width: 80%;
 
+        h3 {
+          font-size: 28px;
+        }
+
         p {
-          font-size: 24px;
+          font-size: 20px;
         }
       }
     }
@@ -353,10 +367,9 @@
 
       h3 {
         font-size: 28px;
-        font-weight: bold;
       }
       p {
-        font-size: 24px;
+        font-size: 20px;
         font-style: italic;
       }
     }
@@ -366,7 +379,6 @@
 
       h3 {
         font-size: 28px;
-        font-weight: bold;
       }
 
       .education {
@@ -385,12 +397,12 @@
             width: 33.3%;
 
             .school {
-              font-size: 24px;
+              font-size: 22px;
               font-family: var(--font-cormorant);
             }
 
             .program {
-              font-size: 22px;
+              font-size: 20px;
             }
 
             .eduDate {
@@ -415,12 +427,12 @@
           div {
             width: 33.3%;
             .employer {
-              font-size: 24px;
+              font-size: 22px;
               font-family: var(--font-cormorant);
             }
 
             .job {
-              font-size: 22px;
+              font-size: 20px;
             }
 
             .empDate {
