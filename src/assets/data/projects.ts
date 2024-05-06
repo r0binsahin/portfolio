@@ -112,7 +112,7 @@ export const projects: IProject[] = [
     github: "https://github.com/r0binsahin/Peyvok",
     live: "",
     isLive: false,
-    img1: "https://www.dl.dropboxusercontent.com/scl/fi/o760zp9dupamspmte384t/peyvok1.png?rlkey=m95n17axljphe3a6i39kc4mig&st=ms9adw35&dl=0",
+    img1: "https://www.dl.dropboxusercontent.com/scl/fi/rqs4ky322xlf8gs08xzl4/peyvok1.png?rlkey=9nn6txpd5fxnkwnmt577ytvtg&st=r9rrdqid&dl=0",
     img2: "https://www.dl.dropboxusercontent.com/scl/fi/h2mwlnq68kcyzxbx6emnx/Peyvok2.png?rlkey=xnyinprq2t5cisbwu9l20ixg6&st=dv6hup1k&dl=0",
     img3: "https://www.dl.dropboxusercontent.com/scl/fi/q53274hycrda5rwct25zw/peyvok3.png?rlkey=d3qc6r4rnlhq0km20ww9e535a&st=c6cit9az&dl=0",
     imgExtra:
