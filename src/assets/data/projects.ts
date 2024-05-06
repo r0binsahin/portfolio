@@ -9,9 +9,9 @@ export const projects: IProject[] = [
     captionText: 'Precision NanoSystems',
     tools: ['Next.js', 'React', 'TypeScript', 'Material UI'],
     shortDesc:
-      'The app focuses on quantifying time savings in RNA-LNP drug development and presents the results in a report that highlights the benefits of using expertise of BioPharma Service',
+      "The BPS calculator app for Precision NanoSystem, Canada, quantifying time savings in RNA-LNP drug development. This web app, aimed at fairs and conferences, showcases the benefits of BioPharma Service expertise through visually engaging reports. As a front-end developer in a team of 2 developers and 2 UX/UI designers, I implemented the app's front-end, ensuring seamless collaboration and timely delivery.",
     longDesc:
-      "Our team crafted a web application to enhance customer engagement visually. This application delves into quantifying time efficiencies within RNA-LNP drug development, showcasing the outcomes in a comprehensive report that underscores the advantages of leveraging BioPharma Services' proficiency. Serving as a front-end developer within a dynamic team of 2 developers and 2 UX/UI designers, I was resposnible for  implementing the front-end aspect of the application. Thanks to seamless collaboration with UX designers and end-users, we successfully delivered the entire application in under a month.",
+      "The BPS calculator application quantifies time efficiencies in RNA-LNP drug development, spotlighting the benefits of BioPharma Service expertise. This responsive web-based tool generates comprehensive reports, visually illustrating the advantages of Precision NanoSystem's services, tailored for industry fairs and conferences. As the front-end developer in a dynamic team of two developers and two UX/UI designers, my responsibility was translating design concepts into functional interfaces. Close collaboration with UX designers and client ensured the app effectively conveys complex data intuitively, meeting both functional and aesthetic requirements while ensuring responsiveness across all devices.",
     github: '',
     live: '',
     isLive: false,
