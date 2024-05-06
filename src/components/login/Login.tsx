@@ -1,10 +1,10 @@
-import { FormEvent, useState } from "react";
-import "./login.scss";
+import { FormEvent, useState } from 'react';
+import './login.scss';
 
-import { IProject } from "../../models/IProject";
+import { IProject } from '../../models/IProject';
 
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 interface ILoginProps {
   projectId: number;
@@ -13,7 +13,7 @@ interface ILoginProps {
 }
 
 const Login = ({ projectId, projects, navigate }: ILoginProps) => {
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -40,37 +40,37 @@ const Login = ({ projectId, projects, navigate }: ILoginProps) => {
   useGSAP(() => {
     const tlSlide = gsap.timeline();
 
-    tlSlide.from(".loginFormContainer", {
+    tlSlide.from('.loginFormContainer', {
       duration: 1,
       x: 500,
     });
   });
 
   return (
-    <div className="loginFormContainer">
-      <div className="head">
+    <div className='loginFormContainer'>
+      <div className='head'>
         <h1>Protected project</h1>
 
         <p>
           This project is protected. In order to view it, please submit a valid
-          password
+          password.
         </p>
       </div>
 
-      <form action="submit" autoComplete="off" onSubmit={handleSubmit}>
-        <div className="inputHolder">
-          <label htmlFor="password">Password</label>
+      <form action='submit' autoComplete='off' onSubmit={handleSubmit}>
+        <div className='inputHolder'>
+          <label htmlFor='password'>Password</label>
           <input
             required
-            type="text"
-            name="password"
+            type='text'
+            name='password'
             value={password}
             onChange={handleChange}
           />
         </div>
 
         {error && (
-          <div className="errorMsg">
+          <div className='errorMsg'>
             <p>Invalid password!</p>
           </div>
         )}
