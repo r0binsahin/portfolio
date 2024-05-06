@@ -33,7 +33,7 @@ export const projects: IProject[] = [
     captionText: 'Daresay',
     tools: ['React', 'TypeScript', 'Framer Motion'],
     shortDesc:
-      ' Revamped the Daresay Check-in Generator, an existing application used for starting meetings and workshops with quick check-ins, fostering a human connection within the team. Upgraded both UI design and codebase to enhance user experience and streamline check-in processes. Users can now effortlessly swipe through a variety of check-ins collected from the web and colleagues, contributing to a more engaging and efficient team environment.',
+      'Revamped the Daresay Check-in Generator, an existing application used for starting meetings and workshops with quick check-ins, fostering a human connection within the team. Upgraded both UI design and codebase to enhance user experience and streamline check-in processes. Users can now effortlessly swipe through a variety of check-ins collected from the web and colleagues, contributing to a more engaging and efficient team environment.',
 
     longDesc:
       'The Daresay Check-in Generator underwent a significant overhaul, focusing on improving user experience and functionality. Designed to initiate meetings and workshops with engaging check-ins, the application emphasizes the human aspect of teamwork at Daresay. Updating both UI design and codebase, me and my developer colleague ensured a seamless and visually appealing experience for users.  Through this upgrade, we aimed to facilitate smoother check-in processes, encouraging active participation and fostering a stronger sense of camaraderie among team members. Users are also encouraged to share feedback and suggest new check-ins, contributing to continuous improvement and customization of the application.',
@@ -82,9 +82,9 @@ export const projects: IProject[] = [
     captionText: 'Alisa',
     tools: ['Svelte', 'TypeScript', 'DaisyUI', 'Tailwind'],
     shortDesc:
-      'Do etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus port',
+      'Alisa MedTech, a startup targeting hospitals and care centers in Sweden, developed a mobile application prototype to streamline the tracking of medical products and aids. Our team created their admin web application called Alisa Portal. This portal targets unit managers and executives, aiming to automate information flow and simplify compliance with guidelines and regulations. The goal is to reduce administrative burdens, freeing up more time for resident care.',
     longDesc:
-      'Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ',
+      "Alisa MedTech, dedicated to revolutionizing healthcare solutions for hospitals and care centers in Sweden, has innovated a prototype mobile application to tackle the complexities of tracking medical products and aids. Following encouraging feedback from prototype testing by nurses, we were tasked with crafting Alisa Portal, an administrative web application. Geared towards unit managers and executives, Alisa Portal streamlines information flow and ensures adherence to guidelines and regulations. The portal's primary aim is to minimize administrative overhead, empowering healthcare professionals to dedicate more time to delivering exceptional care to residents.",
     github: '',
     live: '',
     isLive: false,
