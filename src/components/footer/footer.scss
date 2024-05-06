@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@import '../../styles/mixins';
 
 .footerWrapper {
   width: 100%;
@@ -66,8 +66,6 @@
   }
 
   @include desktop {
-    padding: 200px 0px;
-
     .contact {
       p,
       a {
