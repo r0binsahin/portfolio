@@ -33,10 +33,10 @@ export const projects: IProject[] = [
     captionText: 'Daresay',
     tools: ['React', 'TypeScript', 'Framer Motion'],
     shortDesc:
-      ' Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim.',
+      ' Revamped the Daresay Check-in Generator, an existing application used for starting meetings and workshops with quick check-ins, fostering a human connection within the team. Upgraded both UI design and codebase to enhance user experience and streamline check-in processes. Users can now effortlessly swipe through a variety of check-ins collected from the web and colleagues, contributing to a more engaging and efficient team environment.',
 
     longDesc:
-      'Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ',
+      'The Daresay Check-in Generator underwent a significant overhaul, focusing on improving user experience and functionality. Designed to initiate meetings and workshops with engaging check-ins, the application emphasizes the human aspect of teamwork at Daresay. Updating both UI design and codebase, me and my developer colleague ensured a seamless and visually appealing experience for users.  Through this upgrade, we aimed to facilitate smoother check-in processes, encouraging active participation and fostering a stronger sense of camaraderie among team members. Users are also encouraged to share feedback and suggest new check-ins, contributing to continuous improvement and customization of the application.',
     github: '',
     live: 'https://checkin.daresay.io/',
     isLive: true,
@@ -57,9 +57,10 @@ export const projects: IProject[] = [
     date: 'November 2023',
     captionText: 'Alligo',
     tools: ['React', 'TypeScript', 'i18Next', 'SCSS', 'Vitest'],
-    shortDesc: 'mention testing',
+    shortDesc:
+      "A mobile web application for Alligo, a prominent construction clothing and equipment company in Scandinavia. This app generates QR codes containing client information for seamless checkout integration with the cashier system. Designed for Alligo's subsidiaries—Tools in Norway and Finland, and Swedol in Sweden—the multilingual application serves clients in three languages: Norwegian, Swedish, and Finnish and has two themes depending on country and company name. ",
     longDesc:
-      'Dictumst commodo etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim sit at. Consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitor tortor gravida quis dignissim. ',
+      "The application facilitates simplified checkout processes by generating QR codes embedded with client information, seamlessly integrating with the cashier system. This strategic approach ensures uniformity and efficiency in client interactions across Alligo's diverse market segments.  By enabling quick and accurate data entry at checkout, the application enhances customer service and expedites transactions, further solidifying Alligo's position as an industry leader in construction clothing and equipment. The code underwent rigorous testing using the Vitest testing library, ensuring reliability and performance. ",
     github: '',
     live: '',
     isLive: false,
