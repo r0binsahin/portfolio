@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@import '../../styles/mixins';
 
 .about {
   width: 100%;
@@ -138,7 +138,7 @@
     }
   }
 
-  .funFacts {
+  .resume {
     padding: 50px;
     border-top: 1px solid var(--body-color);
 
@@ -150,7 +150,16 @@
     }
   }
 
-  .resume {
+  .funFact {
+    border-top: 1px solid var(--body-color);
+    padding: 50px;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .cv {
     border-top: 1px solid var(--body-color);
     padding: 50px;
 
@@ -187,7 +196,7 @@
 
         p:not(:last-child) {
           &::after {
-            content: "|";
+            content: '|';
             margin-left: 15px;
           }
         }
@@ -244,19 +253,46 @@
       }
     }
 
-    .funFacts {
-      padding: 120px 160px;
-
-      p {
-        font-size: 28px;
-      }
-    }
-
     .resume {
       padding: 120px 160px;
 
-      p {
+      display: flex;
+      flex-direction: column;
+      gap: 75px;
+
+      h3 {
         font-size: 28px;
+        font-weight: bold;
+      }
+
+      .shortDescription {
+        width: 80%;
+
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .funFact {
+      padding: 120px 160px;
+
+      h3 {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 24px;
+        font-style: italic;
+      }
+    }
+
+    .cv {
+      padding: 120px 160px;
+
+      h3 {
+        font-size: 28px;
+        font-weight: bold;
       }
     }
   }

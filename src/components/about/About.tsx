@@ -1,79 +1,120 @@
-import "./about.scss";
+import './about.scss';
 
-import { gsap, Power1 } from "gsap";
-import { useGSAP } from "@gsap/react";
+import { gsap, Power1 } from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const About = () => {
   useGSAP(() => {
     const tlLoad = gsap.timeline();
 
-    tlLoad.from(".about", {
+    tlLoad.from('.about', {
       duration: 1,
       x: 500,
     });
 
     const tlImgBox = gsap.timeline({
       scrollTrigger: {
-        trigger: ".mail",
-        start: "top center+=200",
-        end: "top top",
+        trigger: '.mail',
+        start: 'top center+=200',
+        end: 'top top',
       },
     });
 
-    tlImgBox.from(".photo", {
-      y: "50%",
+    tlImgBox.from('.photo', {
+      y: '50%',
       duration: 0.9,
       ease: Power1.easeInOut,
     });
   });
 
   return (
-    <div className="about">
-      <div className="headBox">
-        <p>
-          a passionate developer driven by the infinite potential of programming
-          and constantly exploring
-        </p>
+    <div className='about'>
+      <div className='headBox'>
+        <p>Enthusiastic about technology and driven by curiosity.</p>
       </div>
-      <div className="specialties">
-        <p className="title">specialties</p>
+      <div className='specialties'>
+        <p className='title'>specialties</p>
         <div>
-          <p className="specs"> frontend </p>
-          <p className="specs"> react.js </p>
-          <p className="specs"> typescript </p>
-          <p className="specs"> node.js</p>
+          <p className='specs'> frontend </p>
+          <p className='specs'> react.js </p>
+          <p className='specs'> typescript </p>
+          <p className='specs'> node.js</p>
         </div>
       </div>
 
-      <div className="card">
-        <div className="info">
-          <div className="name">
-            <p className="fullname">robin sahin</p>
+      <div className='card'>
+        <div className='info'>
+          <div className='name'>
+            <p className='fullname'>robin sahin</p>
             <p>Developer</p>
           </div>
-          <div className="contacts">
-            <p className="city">Stockholm</p>
-            <p className="mail">robinsahin@outlook.com</p>
+          <div className='contacts'>
+            <p className='city'>Stockholm</p>
+            <p className='mail'>robinsahin@outlook.com</p>
           </div>
         </div>
-        <div className="photo">
+        <div className='photo'>
           <img
-            className="portrait"
-            src="https://i.postimg.cc/sfnk427k/Square-1.png"
-            alt="portrait"
+            className='portrait'
+            src='https://i.postimg.cc/sfnk427k/Square-1.png'
+            alt='portrait'
           />
         </div>
       </div>
 
-      <div className="funFacts">
-        <p>Fun fact</p>
-      </div>
-      <div className="resume">
-        <div className="experience">
-          <p>Experience</p>
+      <div className='resume'>
+        <div className='shortDescription'>
+          <h3>About me</h3>
+          <p>
+            A passionate developer driven by the infinite potential of
+            programming and constantly exploring.
+          </p>
+          <p>
+            With a diverse background spanning journalism, education, and
+            linguistic studies, I bring a unique perspective to my development
+            journey.
+          </p>
+          <p>
+            From reporting for Sveriges Radio to teaching languages, my
+            experiences have cultivated adaptability and a strong work ethic.
+          </p>
+          <p>
+            Having completed a rigorous two-year education in Frontend
+            Development at Medieinstitutet, I've honed my skills in
+            JavaScript/TypeScript, its framework React, and API development.
+          </p>
+          <p>
+            With a Master's degree in linguistics and literature I bring a
+            multifaceted approach to problem-solving and communication.
+          </p>
+          <p>
+            Passionate about collaborative work and continual learning, I
+            embrace challenges with enthusiasm and dedication.{' '}
+          </p>
+          <p>
+            As I continue to evolve in the dynamic realm of frontend
+            development, I'm eager to contribute my diverse skill set and drive
+            for excellence to impactful projects.
+          </p>
         </div>
-        <div className="education">
-          <p>Education</p>
+      </div>
+      <div className='funFact'>
+        <h3>Fun facts</h3>
+
+        <p>
+          There is no houseplant that I couldn't propagate through cuttings. 🌱
+        </p>
+        <p>
+          Currently, in my spare time, enjoying translating a novel from Swedish
+          into Kurdish.📚
+        </p>
+      </div>
+      <div className='cv'>
+        <div className='education'>
+          <h3>Education</h3>
+        </div>
+        <div className='experience'>
+          <h3>Experience</h3>
         </div>
       </div>
     </div>
