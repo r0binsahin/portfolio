@@ -131,9 +131,9 @@ export const projects: IProject[] = [
     captionText: 'Private customer',
     tools: ['React', 'TypeScript', 'Electron'],
     shortDesc:
-      'etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttito',
+      'The SVT Remote Round application, providing remote meeting capabilities. As frontend developer, I crafted the user interface of Remote Round, a desktop application enabling healthcare professionals to engage fully in round meetings remotely. The application integrates multiple audio and video feeds into a streamlined interface, featuring user authentication and selective access for enhanced security.',
     longDesc:
-      ' etiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttitoetiam volutpat orci vulputate id. Cursus cras eu sapien id. Enim suspendisse nunc congue ullamcorper donec lectus magna aenean tristique. Diam orci consectetur suspendisse maecenas bibendum ut augue pretium. Eget posuere luctus porttito',
+      'This desktop application, named STV Remote Round, enables healthcare professionals to participate in round meetings remotely, thanks to specialized video solutions provided by STV. My role centered on building the user interface of Remote Round, ensuring a seamless and intuitive experience for end-users. The application integrates multiple audio and video feeds into a streamlined interface, facilitating full engagement in round meetings without physical presence. With features like user authentication and selective access, Remote Round prioritizes security by restricting sensitive meeting information to authorized personnel only. ',
 
     github: '',
     live: '',
