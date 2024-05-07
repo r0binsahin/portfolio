@@ -88,7 +88,7 @@
 
       &__header {
         display: flex;
-        /*     justify-content: space-between; */
+
         align-items: baseline;
         justify-content: space-between;
 
@@ -97,7 +97,6 @@
         background-color: var(--body-bg);
         color: var(--body-color);
 
-        border-top: 1px solid var(--body-color);
         border-bottom: 1px solid var(--body-color);
 
         padding: 5px 20px 5px 20px;
