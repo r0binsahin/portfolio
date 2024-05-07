@@ -1,11 +1,11 @@
 import { NavigateFunction, useNavigate } from "react-router";
 import { IProject } from "../../models/IProject";
 import "./project.scss";
-import { useEffect, useState } from "react";
 
 import { gsap, Power1 } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import PrevNextBtn from "../prevNextBtn/PrevNextBtn";
 
 type NavigateFunctionType = (navigate: NavigateFunction) => void;
 
@@ -24,19 +24,6 @@ const Project = ({
 }: IProjectProps) => {
   const project = projects.find((project) => project.id === projectId);
   const navigate = useNavigate();
-  const currentIndex = projects.findIndex(
-    (project) => project.id === projectId
-  );
-  const [prevDisabled, setPrevDisabled] = useState(currentIndex === 0);
-  const [nextDisabled, setNextDisabled] = useState(
-    currentIndex === projects.length - 1
-  );
-
-  useEffect(() => {
-    const newIndex = projects.findIndex((project) => project.id === projectId);
-    setPrevDisabled(newIndex === 0);
-    setNextDisabled(newIndex === projects.length - 1);
-  }, [currentIndex, prevDisabled, nextDisabled, projectId, projects]);
 
   const handlePrevClick = () => {
     navigateToPrev(navigate);
@@ -211,18 +198,12 @@ const Project = ({
         </div>
       </div>
 
-      <div className="projectContainer__buttons">
-        <div className="projectContainer__buttons--prev">
-          <button disabled={prevDisabled} onClick={handlePrevClick}>
-            &lt;- previous
-          </button>
-        </div>
-        <div className="projectContainer__buttons--next">
-          <button disabled={nextDisabled} onClick={handleNextClick}>
-            next - &gt;
-          </button>
-        </div>
-      </div>
+      <PrevNextBtn
+        projects={projects}
+        projectId={projectId}
+        handleNextClick={handleNextClick}
+        handlePrevClick={handlePrevClick}
+      />
     </div>
   );
 };

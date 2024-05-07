@@ -1,4 +1,4 @@
-@import '../../styles/mixins';
+@import "../../styles/mixins";
 
 .projectContainer {
   width: 100vw;
@@ -231,7 +231,7 @@
 
       a:not(:last-child) {
         &::after {
-          content: '|';
+          content: "|";
           margin-left: 15px;
         }
       }
@@ -278,47 +278,6 @@
         height: 100%;
         object-fit: cover;
       }
-    }
-  }
-
-  &__buttons {
-    width: 100%;
-    display: flex;
-
-    border-top: 1px solid var(--body-color #111);
-    background: var(--bg-color-secondary);
-    padding-top: 13px;
-    padding-bottom: 13px;
-
-    &--prev,
-    &--next {
-      width: 50%;
-
-      padding-left: 24px;
-      padding-right: 24px;
-
-      button {
-        all: unset;
-        color: #111;
-
-        font-family: var(--font-cormorant);
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 44px;
-        text-transform: uppercase;
-
-        cursor: pointer;
-      }
-
-      button[disabled] {
-        visibility: hidden;
-      }
-    }
-
-    &--next {
-      display: flex;
-      justify-content: end;
     }
   }
 
@@ -431,7 +390,7 @@
 
         p:not(:last-child) {
           &::after {
-            content: '|';
+            content: "|";
             margin-left: 15px;
           }
         }
@@ -495,25 +454,6 @@
           width: 100%;
           height: 100%;
           object-fit: fill;
-        }
-      }
-    }
-
-    &__buttons {
-      width: 100%;
-
-      padding-top: 13px;
-      padding-bottom: 13px;
-
-      &--prev,
-      &--next {
-        width: 50%;
-
-        padding-left: 48px;
-        padding-right: 48px;
-
-        button {
-          font-size: 32px;
         }
       }
     }
