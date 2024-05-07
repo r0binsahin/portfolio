@@ -1,13 +1,13 @@
-import './App.scss';
-import Bio from './pages/bio/Bio';
-import Contact from './pages/contact/Contact';
-import Home from './pages/home/Home';
-import Platform from './pages/platform/Platform';
-import ProjectPage from './pages/projects/ProjectPage';
+import "./App.scss";
+import Bio from "./pages/bio/Bio";
+import Contact from "./pages/contact/Contact";
+import Home from "./pages/home/Home";
+import Platform from "./pages/platform/Platform";
+import ProjectPage from "./pages/projects/ProjectPage";
 
-import { projects } from './assets/data/projects';
+import { projects } from "./assets/data/projects";
 
-import './styles/globals.scss';
+import "./styles/globals.scss";
 
 import {
   Route,
@@ -15,19 +15,19 @@ import {
   NavigateFunction,
   useLocation,
   useNavigate,
-} from 'react-router-dom';
-import Project from './components/project/Project';
-import Login from './components/login/Login';
+} from "react-router-dom";
+import Project from "./components/project/Project";
+import Login from "./components/login/Login";
 
 function App() {
   const location = useLocation();
   const navigateTo = useNavigate();
 
   const navigateToPrev = (navigate: NavigateFunction) => {
-    const pathSegments = location.pathname.split('/');
+    const pathSegments = location.pathname.split("/");
     const lastSegment = pathSegments.pop();
     if (!lastSegment) {
-      console.error('Unexpected URL structure');
+      console.error("Unexpected URL structure");
       return;
     }
     const currentProjectIndex = projects.findIndex(
@@ -41,10 +41,10 @@ function App() {
   };
 
   const navigateToNext = (navigate: NavigateFunction) => {
-    const pathSegments = location.pathname.split('/');
+    const pathSegments = location.pathname.split("/");
     const lastSegment = pathSegments.pop();
     if (!lastSegment) {
-      console.error('Unexpected URL structure');
+      console.error("Unexpected URL structure");
       return;
     }
     const currentProjectIndex = projects.findIndex(
@@ -59,10 +59,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<Platform />}>
+      <Route path="/" element={<Platform />}>
         <Route index element={<Home />} />
 
-        <Route path='/projects' element={<ProjectPage />} />
+        <Route path="/projects" element={<ProjectPage />} />
         {projects.map((project, index) => (
           <Route
             key={project.id}
@@ -70,6 +70,8 @@ function App() {
             element={
               project.isProtected ? (
                 <Login
+                  navigateToNext={navigateToNext}
+                  navigateToPrev={navigateToPrev}
                   projectId={project.id}
                   projects={projects}
                   navigate={navigateTo}
@@ -87,8 +89,8 @@ function App() {
           />
         ))}
 
-        <Route path='/bio' element={<Bio />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
   );
