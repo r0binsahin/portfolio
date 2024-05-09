@@ -101,21 +101,21 @@ export const projects: IProject[] = [
   {
     id: 5,
     title: 'Peyvok',
-    costumer: 'Case study',
+    costumer: 'Graduation project ',
     date: 'December 2023',
     captionText: 'Case study',
     tools: ['React Native', 'TypeScript', 'MongoDB Realm'],
     shortDesc:
-      'This project is a React Native mobile application developed as final project for my Frontend Development education at Medieinstitutet in Stockholm 2022-2024.',
+      ' "Winner of the best graduation project". This project is a React Native mobile application developed as the final project for my Frontend Development education at Medieinstitutet in Stockholm 2022-2024, and it was chosen as the best graduation project with the motivation: "For a creative and innovative work with carefully chosen techniques and libraries. You demonstrate a good ability to tackle challenges and create stylish, well-executed projects with relevant methods and approaches."',
     longDesc:
       ' Introducing a mobile digital dictionary designed for kids to  practice Northern Kurdish also known as Kurmancî. Tailored to assist parents raising bilingual children, the app features a  collection of visual and audible content, encompassing various  lexical categories. Each word within the application is accompanied by a vibrant image, informative text, and an audio  file pronouncing the word in Kurdish. With a simple click, users  can effortlessly immerse their children in the rich sounds of the Kurdish language, fostering a seamless bilingual learning experience.',
 
     github: 'https://github.com/r0binsahin/Peyvok',
     live: '',
     isLive: false,
-    img1: 'https://www.dl.dropboxusercontent.com/scl/fi/rqs4ky322xlf8gs08xzl4/peyvok1.png?rlkey=9nn6txpd5fxnkwnmt577ytvtg&st=r9rrdqid&dl=0',
+    img1: 'https://www.dl.dropboxusercontent.com/scl/fi/xub5c3ojuvvl4lw2d9yty/peyvok1_new.png?rlkey=2oqe043lx0tf1qxr8vdltqv1e&st=p48lxm3f&dl=0',
     img2: 'https://www.dl.dropboxusercontent.com/scl/fi/h2mwlnq68kcyzxbx6emnx/Peyvok2.png?rlkey=xnyinprq2t5cisbwu9l20ixg6&st=dv6hup1k&dl=0',
-    img3: 'https://www.dl.dropboxusercontent.com/scl/fi/q53274hycrda5rwct25zw/peyvok3.png?rlkey=d3qc6r4rnlhq0km20ww9e535a&st=c6cit9az&dl=0',
+    img3: 'https://www.dl.dropboxusercontent.com/scl/fi/b2o1v12ybqwbdn8k52grs/peyvok3_new.png?rlkey=xb9ir6xeqe9m8e1l2z1j7j0gk&st=wa0v2701&dl=0',
     imgExtra:
       'https://www.dl.dropboxusercontent.com/scl/fi/wbiw1xkz6fcdv71m7y8v3/peyvokExtra.png?rlkey=mpwo0zurqgndh01mfr6c13aan&st=xj1vnof2&dl=0',
     coverImg:

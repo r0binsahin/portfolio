@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@import '../../styles/mixins';
 
 .projectContainer {
   width: 100vw;
@@ -131,6 +131,11 @@
         font-style: normal;
         font-weight: 400;
         line-height: 32px;
+
+        .italic {
+          font-style: italic;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -231,7 +236,7 @@
 
       a:not(:last-child) {
         &::after {
-          content: "|";
+          content: '|';
           margin-left: 15px;
         }
       }
@@ -390,7 +395,7 @@
 
         p:not(:last-child) {
           &::after {
-            content: "|";
+            content: '|';
             margin-left: 15px;
           }
         }
