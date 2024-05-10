@@ -101,7 +101,7 @@ export const projects: IProject[] = [
   {
     id: 5,
     title: 'Peyvok',
-    costumer: 'Graduation project ',
+    costumer: 'Graduation Project ',
     date: 'December 2023',
     captionText: 'Case study',
     tools: ['React Native', 'TypeScript', 'MongoDB Realm'],
