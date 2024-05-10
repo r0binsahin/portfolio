@@ -133,7 +133,6 @@
         line-height: 32px;
 
         .italic {
-          font-style: italic;
           font-weight: 600;
         }
       }
@@ -311,7 +310,7 @@
           box-shadow: none;
           backdrop-filter: none;
 
-          gap: 60px;
+          gap: 15px;
 
           .title {
             font-size: 66px;

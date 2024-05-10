@@ -53,7 +53,7 @@ const Project = ({
     });
 
     tlWrapper.to('.wrapper', {
-      yPercent: -130,
+      yPercent: -120,
       ease: Power1.easeInOut,
       y: 0,
       duration: 0.9,
