@@ -126,7 +126,7 @@ export const projects: IProject[] = [
   {
     id: 6,
     title: 'Electron Meeting App',
-    costumer: 'Private costumer',
+    costumer: 'Private Costumer',
     date: 'Februari 2024',
     captionText: 'Private customer',
     tools: ['React', 'TypeScript', 'Electron'],
