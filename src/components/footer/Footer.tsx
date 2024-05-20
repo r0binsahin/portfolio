@@ -1,6 +1,10 @@
 import './footer.scss';
 
-const Footer = () => {
+interface IFooterProps {
+  scrollToTop: () => void;
+}
+
+const Footer = ({ scrollToTop }: IFooterProps) => {
   return (
     <div className='footerWrapper'>
       <div className='info'>
@@ -49,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='fullName'>
-        <p>Robin Sahin</p>
+        <p onClick={scrollToTop}>Robin Sahin</p>
       </div>
     </div>
   );
