@@ -46,7 +46,7 @@ const Accordion = () => {
             <div className='projectInner'>
               <Link to={`/projects/${project.id}`} className='link'>
                 <div className='projectInner__header'>
-                  <p className='projectInner__header--customer'>
+                  <p className='projectInner__header--costumer'>
                     {project.costumer}
                   </p>
                   <p className='projectInner__header--name'>{project.title}</p>

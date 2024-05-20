@@ -49,7 +49,7 @@
       transform: translate(0px, 142.5px);
     }
 
-    @include desktop {
+    /*    @include desktop {
       &:nth-child(1) {
         transform: translate(0px, 0px);
       }
@@ -71,6 +71,31 @@
 
       &:nth-child(6) {
         transform: translate(0px, 350px);
+      }
+    } */
+
+    @include desktop {
+      &:nth-child(1) {
+        transform: translate(0px, 0px);
+      }
+
+      &:nth-child(2) {
+        transform: translate(0px, 78.5px);
+      }
+
+      &:nth-child(3) {
+        transform: translate(0px, 157px);
+      }
+
+      &:nth-child(4) {
+        transform: translate(0px, 235.5px);
+      }
+      &:nth-child(5) {
+        transform: translate(0px, 314px);
+      }
+
+      &:nth-child(6) {
+        transform: translate(0px, 392.5px);
       }
     }
 
@@ -109,8 +134,9 @@
           color: #a4a4a4;
         }
 
-        &--customer {
+        &--costumer {
           font-size: 10px;
+          text-transform: uppercase;
           margin: 0;
           padding: 0;
         }
@@ -129,7 +155,7 @@
 
           margin: 0;
           padding: 0;
-          text-align: right;
+          text-align: end;
           font-family: var(--font-cormorant);
         }
 
@@ -140,16 +166,17 @@
             width: 33.3%;
           }
 
-          &--customer {
-            font-size: 24px;
+          &--costumer {
+            font-size: 16px;
           }
 
           &--name {
-            font-size: 32px;
+            font-size: 34px;
+            text-align: center;
           }
 
           &--more {
-            font-size: 24px;
+            font-size: 16px;
           }
         }
       }
