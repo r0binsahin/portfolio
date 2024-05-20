@@ -49,53 +49,28 @@
       transform: translate(0px, 142.5px);
     }
 
-    /*    @include desktop {
-      &:nth-child(1) {
-        transform: translate(0px, 0px);
-      }
-
-      &:nth-child(2) {
-        transform: translate(0px, 70px);
-      }
-
-      &:nth-child(3) {
-        transform: translate(0px, 140px);
-      }
-
-      &:nth-child(4) {
-        transform: translate(0px, 210px);
-      }
-      &:nth-child(5) {
-        transform: translate(0px, 280px);
-      }
-
-      &:nth-child(6) {
-        transform: translate(0px, 350px);
-      }
-    } */
-
     @include desktop {
       &:nth-child(1) {
         transform: translate(0px, 0px);
       }
 
       &:nth-child(2) {
-        transform: translate(0px, 78.5px);
+        transform: translate(0px, 72px);
       }
 
       &:nth-child(3) {
-        transform: translate(0px, 157px);
+        transform: translate(0px, 144px);
       }
 
       &:nth-child(4) {
-        transform: translate(0px, 235.5px);
+        transform: translate(0px, 216px);
       }
       &:nth-child(5) {
-        transform: translate(0px, 314px);
+        transform: translate(0px, 288px);
       }
 
       &:nth-child(6) {
-        transform: translate(0px, 392.5px);
+        transform: translate(0px, 360px);
       }
     }
 
@@ -126,12 +101,10 @@
 
         padding: 5px 20px 5px 20px;
 
-        transition: all 0.4s ease-in-out;
-
         cursor: pointer;
 
         &:hover {
-          color: #a4a4a4;
+          background-color: var(--bg-color-secondary);
         }
 
         &--costumer {
