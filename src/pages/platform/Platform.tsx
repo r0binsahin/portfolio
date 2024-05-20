@@ -1,16 +1,22 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer";
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 function Platform() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <>
       <Navbar />
-      <div style={{ paddingTop: "65px" }}>
+      <div style={{ paddingTop: '65px' }}>
         <Outlet />
       </div>
-      <Footer />
+      <Footer scrollToTop={scrollToTop} />
     </>
   );
 }

@@ -1,7 +1,11 @@
 import './footer.scss';
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
+interface IFooterProps {
+  scrollToTop: () => void;
+}
+
+const Footer = ({ scrollToTop }: IFooterProps) => {
   return (
     <div className='footerWrapper'>
       <div className='contact'>
@@ -34,7 +38,7 @@ const Footer = () => {
       </div>
       <div className='fullName'>
         <span>Developed by</span>
-        <p>robin sahin</p>
+        <p onClick={scrollToTop}>robin sahin</p>
       </div>
     </div>
   );
