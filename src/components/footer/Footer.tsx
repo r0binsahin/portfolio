@@ -1,44 +1,55 @@
 import './footer.scss';
-import { Link } from 'react-router-dom';
 
-interface IFooterProps {
-  scrollToTop: () => void;
-}
-
-const Footer = ({ scrollToTop }: IFooterProps) => {
+const Footer = () => {
   return (
     <div className='footerWrapper'>
-      <div className='contact'>
-        <div className='contact__links'>
-          <Link to={'/contact'} className='contact__links--link'>
-            <p>contact </p>
-          </Link>
+      <div className='info'>
+        <div className='info__contact'>
+          <div className='info__contact--email'>
+            <p className='title'>say hello</p>
+            <p className='mail'>robinsahin@outlook.com</p>
+          </div>
+          <div className='info__contact--connect'>
+            <p>Connect</p>
+            <a
+              href='https://www.linkedin.com/in/robin-sahin-15404a24b/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              www.linkedin.com/robinsahin
+            </a>
+          </div>
 
-          <a
-            href='https://www.linkedin.com/in/robin-sahin-15404a24b/'
-            className='contact__links--link'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <p>linkedin</p>
-          </a>
-
-          <a
-            href='https://github.com/r0binsahin'
-            className='contact__links--link'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <p>github</p>
-          </a>
+          <div className='info__contact--github'>
+            <p>Github</p>
+            <a
+              href='https://github.com/r0binsahin'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              www.github.com/r0binsahin
+            </a>
+          </div>
         </div>
-        <div className='contact__copy'>
-          <p>&copy; 2024</p>
+        <div className='info__aboutSite'>
+          <span>website</span>
+          <p>Developed by Robin Sahin </p>
+          <p>
+            Composed by
+            <a
+              href='https://www.linkedin.com/in/hiertonn/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Maria Hiertonn
+            </a>
+          </p>
+
+          <p className='copy'>&copy; 2024</p>
         </div>
       </div>
       <div className='fullName'>
-        <span>Developed by</span>
-        <p onClick={scrollToTop}>robin sahin</p>
+        <p>Robin Sahin</p>
       </div>
     </div>
   );

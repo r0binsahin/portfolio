@@ -10,34 +10,66 @@
 
   align-items: center;
 
-  padding: 100px 0;
+  padding: 90px 0;
 
-  .contact {
+  gap: 100px;
+
+  .info {
     display: flex;
     flex-direction: column;
+    gap: 100px;
 
-    width: 80%;
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
 
-    a {
-      color: var(--footer-color);
-      font-family: var(--font-jakarta);
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: uppercase;
-    }
+      &--email {
+        p {
+          color: var(--footer-color);
+          font-family: var(--font-jakarta);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
 
-    &__links {
-      &--link {
-        text-decoration: none;
-        cursor: pointer;
+          margin: 0;
+        }
+        .title {
+          text-transform: uppercase;
+          padding-bottom: 5px;
+        }
+      }
+      &--connect,
+      &--github {
+        p {
+          color: var(--footer-color);
+          font-family: var(--font-jakarta);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: uppercase;
+          margin: 0;
+          padding: 0;
+          padding-bottom: 5px;
+        }
+
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          color: var(--footer-color);
+          font-family: var(--font-jakarta);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
       }
     }
-    &__copy {
-      padding: 50px 0 50px 0;
 
-      p {
+    &__aboutSite {
+      span {
         color: var(--footer-color);
         font-family: var(--font-jakarta);
         font-size: 20px;
@@ -46,8 +78,32 @@
         line-height: normal;
         text-transform: uppercase;
       }
+
+      p {
+        color: var(--footer-color);
+        font-family: var(--font-jakarta);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        margin: 0;
+        padding: 0;
+        padding-top: 5px;
+
+        a {
+          text-decoration: underline;
+          color: inherit;
+          padding-left: 5px;
+        }
+      }
+
+      .copy {
+        padding-top: 30px;
+      }
     }
   }
+
   .fullName {
     width: 80%;
     span {
@@ -59,7 +115,7 @@
       color: var(--footer-color);
       text-align: start;
       font-family: var(--font-jakarta);
-      font-size: 76px;
+      font-size: 80px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
@@ -71,27 +127,19 @@
   }
 
   @include desktop {
-    .contact {
-      p,
-      a {
-        font-size: 40px;
-      }
-
-      &__copy {
-        padding: 50px 0 50px 0;
-
-        p {
-          font-size: 32px;
-        }
-      }
+    gap: 130px;
+    .info {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
     }
+
     .fullName {
-      span {
-        font-size: 28px;
-      }
+      width: 100%;
       p {
-        font-size: 176px;
-        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        font-size: 150px;
       }
     }
   }
