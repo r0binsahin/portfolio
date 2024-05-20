@@ -31,22 +31,22 @@
     }
 
     &:nth-child(2) {
-      transform: translate(0px, 28.5px);
+      transform: translate(0px, 62px);
     }
 
     &:nth-child(3) {
-      transform: translate(0px, 57px);
+      transform: translate(0px, 124px);
     }
 
     &:nth-child(4) {
-      transform: translate(0px, 85.5px);
+      transform: translate(0px, 186px);
     }
     &:nth-child(5) {
-      transform: translate(0px, 114px);
+      transform: translate(0px, 248px);
     }
 
     &:nth-child(6) {
-      transform: translate(0px, 142.5px);
+      transform: translate(0px, 310px);
     }
 
     @include desktop {
@@ -88,6 +88,7 @@
 
       &__header {
         display: flex;
+        flex-direction: column;
 
         align-items: center;
         justify-content: space-between;
@@ -99,7 +100,7 @@
 
         border-bottom: 1px solid var(--body-color);
 
-        padding: 5px 20px 5px 20px;
+        padding: 5px;
 
         cursor: pointer;
 
@@ -116,24 +117,31 @@
 
         &--name {
           font-family: var(--font-cormorant);
-          font-size: 11px;
+          font-size: 24px;
           text-transform: uppercase;
           margin: 0;
           padding: 0;
+
+          width: 100%;
+          text-align: center;
         }
 
         &--more {
-          font-size: 10px;
+          font-size: 8px;
           text-transform: uppercase;
 
           margin: 0;
           padding: 0;
           text-align: end;
           font-family: var(--font-cormorant);
+
+          display: none;
         }
 
         @include desktop {
           padding: 10px 48px 10px 48px;
+
+          flex-direction: row;
 
           p {
             width: 33.3%;
@@ -141,15 +149,18 @@
 
           &--costumer {
             font-size: 16px;
+            display: inline;
           }
 
           &--name {
             font-size: 34px;
             text-align: center;
+            width: auto;
           }
 
           &--more {
             font-size: 16px;
+            display: inline;
           }
         }
       }
