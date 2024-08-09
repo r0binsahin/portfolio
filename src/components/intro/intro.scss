@@ -58,14 +58,11 @@
       padding: 175px 0 100px 0;
 
       h3 {
-        font-size: 4.5rem;
+        font-size: 72px;
       }
 
       h1 {
-        font-size: 25rem;
-        @include desktop {
-          font-size: 30rem;
-        }
+        font-size: 400px;
       }
     }
   }
