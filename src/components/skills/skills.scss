@@ -27,7 +27,7 @@
 
     align-items: center;
 
-    animation: scroll 40s linear infinite;
+    animation: scroll 90s linear infinite;
 
     gap: 50px;
 
@@ -35,7 +35,7 @@
 
     @include desktop {
       width: calc(638px * 40);
-      animation: scroll 50s linear infinite;
+      animation: scroll 110s linear infinite;
     }
 
     &--slide {
