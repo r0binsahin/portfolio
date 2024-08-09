@@ -63,9 +63,9 @@
 
       h1 {
         font-size: 25rem;
-        /*    @include desktop {
+        @include desktop {
           font-size: 30rem;
-        } */
+        }
       }
     }
   }
