@@ -82,7 +82,7 @@ const About = () => {
           </p>
           <p>
             Having completed a rigorous two-year education in Frontend
-            Development at Medieinstitutet and a 3 months intensive Fullstack
+            Development at Medieinstitutet and a 3 months intensive Full Stack
             Bootcamp at Salt, I've honed my skills in JavaScript/TypeScript, its
             framework React, and API development.
           </p>
