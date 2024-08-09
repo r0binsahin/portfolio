@@ -37,9 +37,10 @@ const About = () => {
         <p className='title'>specialties</p>
         <div>
           <p className='specs'> frontend </p>
+          <p className='specs'> backend</p>
           <p className='specs'> react.js </p>
+          <p className='specs'> next.js </p>
           <p className='specs'> typescript </p>
-          <p className='specs'> node.js</p>
         </div>
       </div>
 
@@ -47,7 +48,7 @@ const About = () => {
         <div className='info'>
           <div className='name'>
             <p className='fullname'>robin sahin</p>
-            <p>Developer</p>
+            <p>Fullstack Developer</p>
           </div>
           <div className='contacts'>
             <p className='city'>Stockholm</p>
@@ -81,8 +82,9 @@ const About = () => {
           </p>
           <p>
             Having completed a rigorous two-year education in Frontend
-            Development at Medieinstitutet, I've honed my skills in
-            JavaScript/TypeScript, its framework React, and API development.
+            Development at Medieinstitutet and a 3 months intensive Fullstack
+            Bootcamp at Salt, I've honed my skills in JavaScript/TypeScript, its
+            framework React, and API development.
           </p>
           <p>
             With a Master's degree in linguistics and literature I bring a
