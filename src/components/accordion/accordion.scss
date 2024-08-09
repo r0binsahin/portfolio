@@ -103,6 +103,7 @@
         padding: 5px;
 
         cursor: pointer;
+        transition: all 0.2s ease-in-out;
 
         &:hover {
           background-color: var(--bg-color-secondary);
