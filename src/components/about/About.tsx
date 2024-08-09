@@ -48,7 +48,7 @@ const About = () => {
         <div className='info'>
           <div className='name'>
             <p className='fullname'>robin sahin</p>
-            <p>Fullstack Developer</p>
+            <p>Full Stack Developer</p>
           </div>
           <div className='contacts'>
             <p className='city'>Stockholm</p>

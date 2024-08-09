@@ -3,7 +3,7 @@ import { IExperience } from '../../models/IExperience';
 
 export const education: IEducation[] = [
   {
-    education: 'JavaScript Fullstack Bootcamp ',
+    education: 'JavaScript Full Stack Bootcamp ',
     school: 'School of Applied Technology – </salt>',
     date: 'June, July, August 2024',
   },
