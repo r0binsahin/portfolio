@@ -16,7 +16,7 @@ const Footer = ({ scrollToTop }: IFooterProps) => {
           <div className='info__contact--connect'>
             <p>Connect</p>
             <a
-              href='https://www.linkedin.com/in/robin-sahin-15404a24b/'
+              href='https://www.linkedin.com/in/robinsahin/'
               target='_blank'
               rel='noopener noreferrer'
             >
