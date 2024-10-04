@@ -145,7 +145,12 @@ const Project = ({
           </div>
         </div>
         <div className='projectContainer__head--headImage'>
-          <img src={project?.img1} alt='first project image' />
+          <img
+            src={project?.img1}
+            alt='first project image'
+            loading='eager'
+            fetchPriority='high'
+          />
         </div>
       </div>
       <div className='projectContainer__themeImage'>
