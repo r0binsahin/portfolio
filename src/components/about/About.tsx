@@ -3,6 +3,7 @@ import './about.scss';
 import { gsap, Power1 } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { education, experience } from '../../assets/data/resume';
+import aboutImg from '../../assets/images/robin_2.jpeg';
 
 const About = () => {
   useGSAP(() => {
@@ -56,11 +57,7 @@ const About = () => {
           </div>
         </div>
         <div className='photo'>
-          <img
-            className='portrait'
-            src='https://i.postimg.cc/sfnk427k/Square-1.png'
-            alt='portrait'
-          />
+          <img className='portrait' src={aboutImg} alt='portrait' />
         </div>
       </div>
 

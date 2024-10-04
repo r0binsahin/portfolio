@@ -8,7 +8,6 @@ const Intro = () => {
     const tlIntro = gsap.timeline({});
 
     tlIntro.from('.firstname', { duration: 2, x: 1600 });
-    /*     tlIntro.from('.developer', { duration: 0.8, y: -100 }); */
     tlIntro.from('.wrapper__portrait', { duration: 1.5, y: -500 });
   }, []);
   return (
