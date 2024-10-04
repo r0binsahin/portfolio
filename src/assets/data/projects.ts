@@ -15,7 +15,7 @@ export const projects: IProject[] = [
     github: '',
     live: '',
     isLive: false,
-    img1: 'https://www.dropbox.com/scl/fi/ro0dzpnue2jjlb7aktq8k/nano1.png?rlkey=o0nbaxrorezwnjs6kjnfc5kvr&st=zjouyqre&raw=1',
+    img1: ' https://www.dropbox.com/scl/fi/naciy8j8ye5e2vq5hu6ic/nano1.png?rlkey=oao2bl0q4y4k2kxfg3oqw2y6r&st=q3ww0hlb&raw=1',
     img2: 'https://www.dropbox.com/scl/fi/2jiiuhhqlvfhhbgtp8i0q/nano2.png?rlkey=m3gv51txftjy93zq4lss3461a&st=eyahibrw&raw=1',
     img3: 'https://www.dropbox.com/scl/fi/70in4yak2ak08z8xuzxpx/nano3.png?rlkey=r2jmuikgknz3du0blscktyrse&st=mnp8wk5z&raw=1',
     imgExtra:
