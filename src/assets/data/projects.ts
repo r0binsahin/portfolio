@@ -88,7 +88,7 @@ export const projects: IProject[] = [
     github: '',
     live: '',
     isLive: false,
-    img1: 'https://www.dropbox.com/scl/fi/qaa111evc0c569ujkk5iw/alisa1.png?rlkey=pfyjuc3q76hhx5phsgjwthyyt&st=py8tzpld&raw=1',
+    img1: 'https://www.dropbox.com/scl/fi/4i1rdts45yu2gb2hihy1s/alisa1.png?rlkey=7r4r2jvtdzojzwc77k6miwwda&st=iqd4mucr&raw=1',
     img2: 'https://www.dropbox.com/scl/fi/1jd6tgcnvsu3bewgpejsl/alisa2.png?rlkey=r8ev5lpd83zwnlepvc7jmbapt&st=7upi51rx&raw=1',
     img3: 'https://www.dropbox.com/scl/fi/pn47qw3vxhxaobkec8dz8/alisa3.png?rlkey=5ibxlql5mh75686gr5vayduw4&st=o5e8v614&raw=1',
     imgExtra:
