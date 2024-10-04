@@ -68,6 +68,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     padding: 50px;
     border-top: 1px solid var(--body-color);
@@ -306,8 +307,9 @@
     }
 
     .card {
-      padding: 120px 160px;
+      padding: 140px 160px;
       flex-direction: row;
+      align-items: start;
 
       .info {
         gap: 80px;
