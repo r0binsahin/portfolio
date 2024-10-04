@@ -39,7 +39,7 @@ const Project = ({
     const tlhead = gsap.timeline();
 
     tlhead.from('.projectContainer__head--headImage', {
-      duration: 1.2,
+      duration: 2,
       x: 500,
     });
 
