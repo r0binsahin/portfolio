@@ -40,7 +40,7 @@ const Project = ({
 
     tlhead.from('.projectContainer__head--headImage', {
       duration: 2,
-      x: 500,
+      x: 1000,
     });
 
     const tlWrapper = gsap.timeline({
