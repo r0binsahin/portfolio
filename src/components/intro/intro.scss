@@ -1,12 +1,37 @@
 @import '../../styles/mixins';
 
+.wrapper__portrait {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+
+  top: 23%;
+  right: 8%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  @include desktop {
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    top: 5%;
+    right: 25%;
+  }
+}
+
 .wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
-  div {
+  &__titles {
     display: flex;
     flex-direction: column;
 
@@ -16,12 +41,12 @@
 
     gap: 40px;
 
-    padding-top: 125px;
+    padding: 125px 20px 0 20px;
 
     h3 {
       text-align: center;
       font-family: var(--font-cormorant);
-      font-size: 36px;
+      font-size: 32px;
       color: var(--body-color);
       font-style: normal;
       font-weight: 400;
@@ -29,7 +54,6 @@
       text-transform: uppercase;
 
       padding: 0;
-      padding-left: 10px;
       margin: 0;
     }
 
@@ -42,7 +66,6 @@
       font-weight: 500;
       line-height: normal;
       text-transform: uppercase;
-      text-align: center;
 
       padding: 0;
       margin: 0;
@@ -52,13 +75,13 @@
   @include desktop {
     gap: 122px;
 
-    div {
+    &__titles {
       width: auto;
-
-      padding: 175px 0 100px 0;
+      padding: 175px 0;
 
       h3 {
         font-size: 72px;
+        padding-left: 15px;
       }
 
       h1 {
