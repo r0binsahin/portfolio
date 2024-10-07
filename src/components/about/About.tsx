@@ -3,7 +3,7 @@ import './about.scss';
 import { gsap, Power1 } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { education, experience } from '../../assets/data/resume';
-import aboutImg from '../../assets/images/robin_2.jpeg';
+import aboutImg from '../../assets/images/robin_second.jpeg';
 
 const About = () => {
   useGSAP(() => {
