@@ -3,6 +3,30 @@ import { IProject } from '../../models/IProject';
 export const projects: IProject[] = [
   {
     id: 1,
+    title: 'In the loop',
+    costumer: 'Salt',
+    date: 'August 2024',
+    captionText: 'Salt',
+    tools: ['Next', 'TypeScript', 'OpenAI', 'PostgreSQL'],
+    shortDesc:
+      'Introducing In the Loop, an innovative app designed to help businesses build and maintain a positive office culture by transforming employee feedback into meaningful, actionable insights. Employers often face challenges in obtaining honest feedback, leading to disengaged staff and higher turnover rates. In the Loop addresses this by collecting real-time feedback from employees through surveys, generating dynamic visualizations such as graphs and gauges, and providing tailored suggestions for improvements.',
+    longDesc:
+      'For administrators, In the Loop offers full control over survey management, allowing them to create, edit, and review surveys while accessing detailed results. A unique feature of the app is the ability to receive targeted advice enpowered by OpenAI when survey ratings fall below a certain threshold. Supported by scientific research and proven methods, the app provides reliable suggestions, complete with detailed explanations, actions to take, and additional resources. This ensures that organizations can make informed decisions to enhance communication and engagement within their teams.',
+
+    github: 'https://github.com/r0binsahin/in_the_loop',
+    live: 'https://in-the-loop.vercel.app/',
+    isLive: true,
+    img1: 'https://www.dropbox.com/scl/fi/0cb7p4x2d5k1trhw7q3oi/loop1.png?rlkey=w02nq7j0eqvlnalssg2yzs9qs&st=76fdx77i&raw=1',
+    img2: 'https://www.dropbox.com/scl/fi/6e9d91tqflmiku02he77f/loop3.png?rlkey=8g54ba93tf5diti54va4pfccb&st=gi53ir7t&raw=1',
+    img3: 'https://www.dropbox.com/scl/fi/nzdczz0bplrmtw7ocycjg/loop4.png?rlkey=lmraeyqdvvk4ah3xr2vofa5a0&st=rua7rwlm&raw=1',
+    imgExtra:
+      'https://www.dropbox.com/scl/fi/t4rwt3d16xrrfoyjek0ml/loop2_extra.jpeg?rlkey=2s0xrvj5m2hqqnfvgtb7p336x&st=9420wm78&raw=1',
+    coverImg:
+      'https://www.dropbox.com/scl/fi/zlflzb41ttukgnse20p61/loop_cover.png?rlkey=24d8q33zgd12kumv3h1ltz4ub&st=uvqrq056&raw=1',
+    isProtected: false,
+  },
+  {
+    id: 2,
     title: 'BPS Calculator',
     costumer: 'Precision NanoSystems',
     date: 'March 2024',
@@ -22,31 +46,6 @@ export const projects: IProject[] = [
       'https://www.dropbox.com/scl/fi/60999qpn49fp1rk6qdn7s/nanoExtra.jpg?rlkey=hk2hbg5erii3kvgrgbw0bfuzp&st=zxrzv7wq&raw=1',
     coverImg:
       'https://www.dropbox.com/scl/fi/fjpdh3ckc0pd3eom6u94l/nanoCover.png?rlkey=jl1gn5ctd3uvu84ii2p3cfayy&st=qapknc0s&raw=1',
-    isProtected: false,
-  },
-
-  {
-    id: 2,
-    title: 'Check-in Generator',
-    costumer: 'Daresay',
-    date: 'October 2023',
-    captionText: 'Daresay',
-    tools: ['React', 'TypeScript', 'Framer Motion'],
-    shortDesc:
-      'Revamped the Daresay Check-in Generator, an existing application used for starting meetings and workshops with quick check-ins, fostering a human connection within the team. Upgraded both UI design and codebase to enhance user experience and streamline check-in processes. Users can now effortlessly swipe through a variety of check-ins collected from the web and colleagues, contributing to a more engaging and efficient team environment.',
-
-    longDesc:
-      'The Daresay Check-in Generator underwent a significant overhaul, focusing on improving user experience and functionality. Designed to initiate meetings and workshops with engaging check-ins, the application emphasizes the human aspect of teamwork at Daresay. Updating both UI design and codebase, me and my developer colleague ensured a seamless and visually appealing experience for users.  Through this upgrade, we aimed to facilitate smoother check-in processes, encouraging active participation and fostering a stronger sense of camaraderie among team members. Users are also encouraged to share feedback and suggest new check-ins, contributing to continuous improvement and customization of the application.',
-    github: '',
-    live: 'https://checkin.daresay.io/',
-    isLive: true,
-    img1: 'https://www.dropbox.com/scl/fi/ps4iyuceb96fn5y9q68mz/checkin1.png?rlkey=q91cyhzzncx16rl1c7j4yk5qp&st=o89m9et3&raw=1',
-    img2: 'https://www.dropbox.com/scl/fi/4gwob4hvp9dc8bshuag6l/checkin2.png?rlkey=iqrc4eoayb6plxlzr6fta2hfw&st=kn0d2t7f&raw=1',
-    img3: 'https://www.dropbox.com/scl/fi/t2fix1kmcth6uom4sxf88/checkin3.png?rlkey=fkowc1nass2mxx3xokgnnxdn6&st=j0cfdebl&raw=1',
-    imgExtra:
-      'https://www.dropbox.com/scl/fi/g6nxq9l9iq9os547pzpab/checkinExtra.jpg?rlkey=guyw6mwgwvcfgqr8atxbivfhj&st=ptbn32j3&raw=1',
-    coverImg:
-      'https://www.dropbox.com/scl/fi/jdhz0gl7fx9t0valqljz2/checkinCover.png?rlkey=g5l0w47ijbli4wlv90q1nb2cv&st=hhoxag3i&raw=1',
     isProtected: false,
   },
 
@@ -122,9 +121,33 @@ export const projects: IProject[] = [
       'https://www.dropbox.com/scl/fi/judyytbg8hbqk5qi158c7/peyvokCover.png?rlkey=5qfv2rys03bp2330ki6rf0h1t&st=ws2elg3h&raw=1',
     isProtected: false,
   },
-
-  {
+  /*   {
     id: 6,
+    title: 'Check-in Generator',
+    costumer: 'Daresay',
+    date: 'October 2023',
+    captionText: 'Daresay',
+    tools: ['React', 'TypeScript', 'Framer Motion'],
+    shortDesc:
+      'Revamped the Daresay Check-in Generator, an existing application used for starting meetings and workshops with quick check-ins, fostering a human connection within the team. Upgraded both UI design and codebase to enhance user experience and streamline check-in processes. Users can now effortlessly swipe through a variety of check-ins collected from the web and colleagues, contributing to a more engaging and efficient team environment.',
+
+    longDesc:
+      'The Daresay Check-in Generator underwent a significant overhaul, focusing on improving user experience and functionality. Designed to initiate meetings and workshops with engaging check-ins, the application emphasizes the human aspect of teamwork at Daresay. Updating both UI design and codebase, me and my developer colleague ensured a seamless and visually appealing experience for users.  Through this upgrade, we aimed to facilitate smoother check-in processes, encouraging active participation and fostering a stronger sense of camaraderie among team members. Users are also encouraged to share feedback and suggest new check-ins, contributing to continuous improvement and customization of the application.',
+    github: '',
+    live: 'https://checkin.daresay.io/',
+    isLive: true,
+    img1: 'https://www.dropbox.com/scl/fi/ps4iyuceb96fn5y9q68mz/checkin1.png?rlkey=q91cyhzzncx16rl1c7j4yk5qp&st=o89m9et3&raw=1',
+    img2: 'https://www.dropbox.com/scl/fi/4gwob4hvp9dc8bshuag6l/checkin2.png?rlkey=iqrc4eoayb6plxlzr6fta2hfw&st=kn0d2t7f&raw=1',
+    img3: 'https://www.dropbox.com/scl/fi/t2fix1kmcth6uom4sxf88/checkin3.png?rlkey=fkowc1nass2mxx3xokgnnxdn6&st=j0cfdebl&raw=1',
+    imgExtra:
+      'https://www.dropbox.com/scl/fi/g6nxq9l9iq9os547pzpab/checkinExtra.jpg?rlkey=guyw6mwgwvcfgqr8atxbivfhj&st=ptbn32j3&raw=1',
+    coverImg:
+      'https://www.dropbox.com/scl/fi/jdhz0gl7fx9t0valqljz2/checkinCover.png?rlkey=g5l0w47ijbli4wlv90q1nb2cv&st=hhoxag3i&raw=1',
+    isProtected: false,
+  }, */
+
+  /*   {
+    id: 7,
     title: 'Electron Meeting App',
     costumer: 'Private Costumer',
     date: 'Februari 2024',
@@ -146,5 +169,5 @@ export const projects: IProject[] = [
     coverImg:
       'https://www.dropbox.com/scl/fi/n9ij91trbbuebqau51svb/stvCover.png?rlkey=j0xbugkjwaftve6mb5xzlmb85&st=iv5ed6no&raw=1',
     isProtected: true,
-  },
+  }, */
 ];
