@@ -1,7 +1,7 @@
 import './intro.scss';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
-import portrait from '../../assets/images/robin_sahin_round.jpeg';
+import portrait from '../../assets/images//round.jpg';
 
 const Intro = () => {
   useGSAP(() => {
