@@ -98,7 +98,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className='funFact'>
+      {/* <div className='funFact'>
         <h3>Fun facts</h3>
 
         <p>
@@ -109,7 +109,7 @@ const About = () => {
           Currently, in my spare time, enjoying translating a novel from Swedish
           into Kurdish. <span>📚</span>
         </p>
-      </div>
+      </div> */}
       <div className='cv'>
         <div className='education'>
           <h3>Education</h3>
