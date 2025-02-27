@@ -3,6 +3,7 @@ import './skills.scss';
 const Skills = () => {
   const skills: string[] = [
     '<react/>',
+    '<svelte/>',
     '<next/>',
     '<JavaScript/>',
     '<TypeScript/>',
@@ -15,6 +16,7 @@ const Skills = () => {
     '<figma/>',
     '<git/>',
     '<react/>',
+    '<svelte/>',
     '<next/>',
     '<JavaScript/>',
     '<TypeScript/>',
@@ -27,6 +29,7 @@ const Skills = () => {
     '<figma/>',
     '<git/>',
     '<react/>',
+    '<svelte/>',
     '<next/>',
     '<JavaScript/>',
     '<TypeScript/>',
@@ -39,6 +42,7 @@ const Skills = () => {
     '<figma/>',
     '<git/>',
     '<react/>',
+    '<svelte/>',
     '<next/>',
     '<JavaScript/>',
     '<TypeScript/>',
